@@ -45,8 +45,66 @@
 @media(max-width:1120px){.script-reader{grid-template-columns:minmax(170px,200px) minmax(300px,1fr) minmax(245px,275px);gap:10px}.reader-scene-sidebar,.reader-checklist{padding:11px}.reader-page{padding:24px 20px}.reader-toolbar-group{gap:4px}.reader-toolbar-group .btn{padding:7px 8px}}
 @media(max-width:900px){.script-reader{grid-template-columns:minmax(160px,210px) minmax(0,1fr)}.reader-checklist{grid-column:2;position:static;max-height:none}.reader-scene-sidebar{grid-row:1 / span 2;position:sticky;top:12px;max-height:calc(100vh - 100px)}.reader-main{grid-column:2}.reader-page{min-height:auto}.reader-text{min-height:220px}}
 @media(max-width:620px){.script-reader{grid-template-columns:1fr;gap:10px}.reader-scene-sidebar,.reader-checklist{position:static;max-height:none}.reader-scene-list{display:flex;flex-direction:row;gap:5px;overflow-x:auto;padding-bottom:4px}.reader-script-item{width:auto;min-width:170px;max-width:230px}.reader-main,.reader-checklist{grid-column:1}.reader-main{grid-row:2}.reader-checklist{grid-row:3}.reader-toolbar{align-items:flex-start}.reader-toolbar-group{max-width:100%}.reader-page{padding:25px 20px}.reader-text{font-size:var(--reader-font-size,20px);line-height:1.8;min-height:180px}.reader-page-footer{font-size:11px}}
+
+/* In-the-field travel sequence */
+.travel-intro{margin:10px 0 18px}
+.travel-safety-note{padding:12px 14px;border:1px solid #f1d5a3;background:#fff9ed;color:#7b5317;border-radius:11px;font-size:13px;line-height:1.6;margin:14px 0}
+.travel-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.travel-layout{display:grid;grid-template-columns:minmax(210px,250px) minmax(330px,1fr) minmax(270px,330px);gap:14px;align-items:start}
+.travel-layout .panel{min-width:0;padding:15px}
+.travel-rail,.travel-script{position:sticky;top:12px;max-height:calc(100vh - 100px);overflow:auto}
+.travel-panel-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px}
+.travel-panel-head h3,.travel-checklist-header h3{font-size:15px;margin:0}
+.travel-stop-list{display:flex;flex-direction:column;gap:5px}
+.travel-stop{display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:start;gap:9px;text-align:left;width:100%;padding:10px 9px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--ink)}
+.travel-stop:hover{background:#f8f9fc;border-color:#e3e8f1}
+.travel-stop.active{background:var(--soft);border-color:#cbd7ff;color:#214bcc}
+.travel-stop-number{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;background:#edf1f6;color:#607086;font-size:11px;font-weight:800}
+.travel-stop.active .travel-stop-number{background:#315ee8;color:white}
+.travel-stop-name{font-size:12px;line-height:1.4;font-weight:750;display:block;overflow-wrap:anywhere}
+.travel-stop-sub{font-size:10px;line-height:1.4;color:var(--muted);display:block;margin-top:4px}
+.travel-stop-check{font-size:10px;font-weight:800;color:#16845b;white-space:nowrap}
+.travel-main{min-width:0}
+.travel-main-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.travel-main-head h2{font-size:23px;line-height:1.2;letter-spacing:-.4px;margin:4px 0 7px;overflow-wrap:anywhere}
+.travel-main-head .intro{font-size:13px;margin:0}
+.travel-step-progress{height:5px;background:#e9edf3;border-radius:8px;overflow:hidden;margin:14px 0}
+.travel-step-progress i{display:block;height:100%;background:var(--blue);transition:width .2s}
+.travel-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 18px}
+.travel-step-index{font-size:11px;color:var(--muted);text-align:center}
+.travel-step-safety{font-size:12px;line-height:1.6;color:#7b5317;background:#fff9ed;border:1px solid #f1d5a3;border-radius:10px;padding:10px 12px;margin-bottom:13px}
+.travel-checklist-header{margin:16px 0 8px}
+.travel-shot-list,.travel-extra-list{display:flex;flex-direction:column;gap:9px}
+.travel-shot-card{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff}
+.travel-shot-card.done{background:#f8fbf9;border-color:#d9eee2}
+.travel-shot-card input[type=checkbox],.travel-extra-card input[type=checkbox]{width:19px;height:19px;flex:0 0 19px;margin:2px 0 0;accent-color:var(--blue);cursor:pointer}
+.travel-shot-body{min-width:0;flex:1}
+.travel-shot-title{font-size:13px;font-weight:750;line-height:1.5;overflow-wrap:anywhere}
+.travel-shot-card.done .travel-shot-title{text-decoration:line-through;color:#8993a1}
+.travel-shot-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.travel-shot-tags span{display:inline-block;padding:4px 7px;border-radius:30px;background:#f0f3f7;color:#59677a;font-size:10px;font-weight:650;line-height:1.4}
+.travel-shot-tags .travel-type-tag{background:#eaf0ff;color:#3154bd}
+.travel-shot-source{font-size:10px;color:var(--muted);margin-top:7px;line-height:1.4}
+.travel-extra-card{display:flex;align-items:flex-start;gap:10px;padding:11px 12px;border-radius:11px;background:#f8f9fc;border:1px dashed #d5dce7;font-size:12px;line-height:1.55}
+.travel-extra-card.done span{text-decoration:line-through;color:#8993a1}
+.travel-empty{padding:22px;border:1px dashed #cfd6e1;border-radius:12px;color:var(--muted);font-size:13px;line-height:1.6}
+.travel-nav-bottom{border-top:1px solid var(--line);padding-top:14px;margin-top:20px}
+.travel-label{display:block;font-size:11px;font-weight:750;color:#536174;margin:14px 0 6px}
+.travel-select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);font-size:12px;min-width:0}
+.travel-script-tabs{margin:12px 0}
+.travel-script-paper{border:1px solid var(--line);background:#fbfcfe;border-radius:12px;padding:15px}
+.travel-script-paper .reader-kicker{margin-bottom:10px}
+.travel-script-paper h3{font-size:17px;line-height:1.4;margin:0 0 8px;overflow-wrap:anywhere}
+.travel-script-meta{font-size:10px;color:var(--muted);margin-bottom:10px}
+.travel-script-content{white-space:pre-wrap;overflow-wrap:anywhere;font-size:16px;line-height:1.8;color:#263347;min-height:180px}
+.travel-script-content.empty{font-size:13px;min-height:auto}
+.travel-script-tip{font-size:11px;line-height:1.6;color:var(--muted);margin:12px 0}
+#travelOpenReader{width:100%;white-space:normal}
+@media(max-width:1120px){.travel-layout{grid-template-columns:minmax(190px,220px) minmax(300px,1fr)}.travel-script{position:static;grid-column:2;max-height:none}.travel-rail{grid-row:1 / span 2}.travel-main{grid-column:2}.travel-script-content{min-height:130px}}
+@media(max-width:850px){.travel-overview{gap:7px}.travel-overview .stat{padding:11px}.travel-overview .stat strong{font-size:20px}.travel-layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"route" "script" "tasks";gap:10px}.travel-rail{grid-area:route;position:static;max-height:none}.travel-main{grid-area:tasks;grid-column:1}.travel-script{grid-area:script;grid-column:1;position:static;max-height:none}.travel-stop-list{display:flex;flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:5px}.travel-stop{min-width:190px;max-width:245px;grid-template-columns:26px minmax(0,1fr) auto}.travel-nav{gap:5px}.travel-nav .btn{font-size:11px;padding:7px 8px}.travel-main-head h2{font-size:21px}}
+@media(max-width:540px){.travel-overview{grid-template-columns:repeat(3,minmax(0,1fr))}.travel-overview .stat span{font-size:10px;line-height:1.3}.travel-overview .stat strong{font-size:17px}.travel-layout .panel{padding:12px}.travel-safety-note{font-size:12px}.travel-main-head{gap:7px}.travel-main-head .pill{font-size:9px;max-width:100px;white-space:normal;text-align:center}.travel-shot-card{padding:10px}.travel-shot-title{font-size:12px}.travel-script-content{font-size:15px;line-height:1.75}.travel-step-index{font-size:10px}}
 @media(max-width:850px){.shell{grid-template-columns:1fr}.side{display:none}.top{padding:0 14px}.content{padding:18px 12px}.editor{grid-template-columns:1fr;gap:12px}.scene-resizer{display:none}.scene-list{display:block;overflow:auto;margin-right:0}.scene-row{min-width:0}.projects{grid-template-columns:1fr}.shot,.shothead{grid-template-columns:22px minmax(90px,1fr) 82px 88px 100px 30px}.shot select[data-k=orientation],.shothead span:nth-child(6){display:none}.shot input[type=text]{grid-column:auto}}@media(max-width:540px){.stats{gap:7px}.stat{padding:11px}.stat strong{font-size:20px}.h1{font-size:24px}.top{height:56px}.saved{display:none}.twocol,.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.shot,.shothead{grid-template-columns:20px minmax(70px,1fr) 74px 76px 84px 26px}.shot select[data-k=orientation],.shothead span:nth-child(6){display:none}.shot input[type=text]{grid-column:auto}.topright .btn{font-size:11px;padding:7px}}@media print{.side,.top,.no-print,.scene-list{display:none!important}.shell,.editor{display:block}.content{max-width:none;padding:0}.scene-card,.panel{break-inside:avoid}}
-</style></head><body><div class="shell"><aside class="side"><div class="brand"><span class="mark">VS</span><span>VlogScript<div class="sub">STUDIO</div></span></div><div><div class="label">WORKSPACE</div><button class="nav active" id="homeNav">▦ &nbsp; My projects</button><button class="nav" id="shootNav">◉ &nbsp; Shooting checklist</button></div><div class="sidefoot"><strong>✦ Your work stays yours</strong>Projects are saved in this browser. Nothing is uploaded to a server.</div><div class="sub">VLOGSCRIPT STUDIO · 1.0</div></aside><main><header class="top"><div class="crumb" id="crumb">Workspace / <b>My projects</b></div><div class="topright"><span class="saved" id="saveState">● Saved locally</span><button class="btn no-print" id="exportBtn">Export</button><button class="btn no-print" id="importBtn">Import</button><button class="btn no-print" id="printBtn">Print</button><input type="file" id="importFile" accept=".json,application/json" hidden></div></header><div class="content"><section id="dashboard"><div class="eyebrow">YOUR CREATOR WORKSPACE</div><h1 class="h1">Plan your next story.</h1><p class="intro">Every scene, every angle, every line — ready before you hit record.</p><div class="stats"><div class="stat"><span>Total projects</span><strong id="statProjects">0</strong></div><div class="stat"><span>Scenes planned</span><strong id="statScenes">0</strong></div><div class="stat"><span>Shots captured</span><strong id="statShots">0%</strong></div></div><div class="sectionhead"><h2>Your projects</h2><button class="btn primary" id="newProject">＋ New project</button></div><div id="projectGrid" class="projects"></div></section><section id="workspace" class="hidden"><div class="eyebrow">PROJECT WORKSPACE</div><div class="sectionhead" style="margin-top:4px"><div><h1 class="h1" id="projectHeading">Untitled vlog</h1><p class="intro" id="projectSummary">Scene-by-scene production plan</p></div><div class="no-print" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="backBtn">← Projects</button><button class="btn primary" id="readScriptsBtn">Read scripts</button><button class="btn danger" id="deleteProject">Delete project</button></div></div><div id="projectEditorView"><div class="stats"><div class="stat"><span>Scenes</span><strong id="sceneCount">0</strong></div><div class="stat"><span>Shots completed</span><strong id="shotCount">0 / 0</strong></div><div class="stat"><span>Overall progress</span><strong id="progressCount">0%</strong><div class="bar"><i id="progressBar" style="width:0%"></i></div></div></div><div class="panel fields"><div class="field"><label>Project title</label><input id="projectTitle" placeholder="e.g. A weekend in Coorg"></div><div class="field"><label>Location</label><input id="projectLocation" placeholder="Where are you filming?"></div><div class="field full"><label>Story / video summary</label><textarea id="projectDescription" rows="2" placeholder="What story do you want viewers to experience?"></textarea></div></div><div class="editor"><div class="panel scene-list"><div class="sectionhead" style="margin:3px 2px 10px"><h3>Scenes</h3><button class="btn small primary no-print" id="addScene">＋ Add</button></div><div id="sceneList"></div></div><div id="sceneResizer" class="scene-resizer no-print" role="separator" aria-label="Resize Scenes panel" aria-orientation="vertical" tabindex="0" title="Drag to resize Scenes panel"></div><div id="sceneDetail"></div></div></div>
+</style></head><body><div class="shell"><aside class="side"><div class="brand"><span class="mark">VS</span><span>VlogScript<div class="sub">STUDIO</div></span></div><div><div class="label">WORKSPACE</div><button class="nav active" id="homeNav">▦ &nbsp; My projects</button><button class="nav" id="shootNav">◉ &nbsp; Shooting checklist</button></div><div class="sidefoot"><strong>✦ Your work stays yours</strong>Projects are saved in this browser. Nothing is uploaded to a server.</div><div class="sub">VLOGSCRIPT STUDIO · 1.0</div></aside><main><header class="top"><div class="crumb" id="crumb">Workspace / <b>My projects</b></div><div class="topright"><span class="saved" id="saveState">● Saved locally</span><button class="btn no-print" id="exportBtn">Export</button><button class="btn no-print" id="importBtn">Import</button><button class="btn no-print" id="printBtn">Print</button><input type="file" id="importFile" accept=".json,application/json" hidden></div></header><div class="content"><section id="dashboard"><div class="eyebrow">YOUR CREATOR WORKSPACE</div><h1 class="h1">Plan your next story.</h1><p class="intro">Every scene, every angle, every line — ready before you hit record.</p><div class="stats"><div class="stat"><span>Total projects</span><strong id="statProjects">0</strong></div><div class="stat"><span>Scenes planned</span><strong id="statScenes">0</strong></div><div class="stat"><span>Shots captured</span><strong id="statShots">0%</strong></div></div><div class="sectionhead"><h2>Your projects</h2><button class="btn primary" id="newProject">＋ New project</button></div><div id="projectGrid" class="projects"></div></section><section id="workspace" class="hidden"><div class="eyebrow">PROJECT WORKSPACE</div><div class="sectionhead" style="margin-top:4px"><div><h1 class="h1" id="projectHeading">Untitled vlog</h1><p class="intro" id="projectSummary">Scene-by-scene production plan</p></div><div class="no-print" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="backBtn">← Projects</button><button class="btn primary" id="travelModeBtn">Travel Shoot Mode</button><button class="btn" id="readScriptsBtn">Read scripts</button><button class="btn danger" id="deleteProject">Delete project</button></div></div><div id="projectEditorView"><div class="stats"><div class="stat"><span>Scenes</span><strong id="sceneCount">0</strong></div><div class="stat"><span>Shots completed</span><strong id="shotCount">0 / 0</strong></div><div class="stat"><span>Overall progress</span><strong id="progressCount">0%</strong><div class="bar"><i id="progressBar" style="width:0%"></i></div></div></div><div class="panel fields"><div class="field"><label>Project title</label><input id="projectTitle" placeholder="e.g. A weekend in Coorg"></div><div class="field"><label>Location</label><input id="projectLocation" placeholder="Where are you filming?"></div><div class="field full"><label>Story / video summary</label><textarea id="projectDescription" rows="2" placeholder="What story do you want viewers to experience?"></textarea></div></div><div class="editor"><div class="panel scene-list"><div class="sectionhead" style="margin:3px 2px 10px"><h3>Scenes</h3><button class="btn small primary no-print" id="addScene">＋ Add</button></div><div id="sceneList"></div></div><div id="sceneResizer" class="scene-resizer no-print" role="separator" aria-label="Resize Scenes panel" aria-orientation="vertical" tabindex="0" title="Drag to resize Scenes panel"></div><div id="sceneDetail"></div></div></div>
 <div id="scriptReaderView" class="script-reader hidden">
  <aside class="reader-scene-sidebar">
   <div class="reader-sidebar-head"><h2>Scenes</h2><span class="pill" id="readerSceneCount">0 scenes</span></div>
@@ -86,6 +144,65 @@
   <p class="reader-checklist-note" id="readerChecklistHint">Tick each shot after recording it. Progress is saved in this browser.</p>
   <div id="readerShotList" class="reader-shot-list"></div>
  </aside>
+</div>
+<div id="travelShootView" class="hidden">
+ <div class="travel-intro">
+  <div class="eyebrow">FIELD PRODUCTION · IN REAL-TIME ORDER</div>
+  <h2 class="h1">Travel Shoot Mode</h2>
+  <p class="intro">Follow your real journey from departure to the last location. Checklists reuse the same shots as your scene editor, and completed shots stay in sync everywhere.</p>
+  <div class="travel-safety-note"><strong>Camera safety:</strong> Set up shots before moving. Never operate your camera or phone while driving; pull over safely or ask a passenger to handle recording.</div>
+  <div class="travel-overview">
+   <div class="stat"><span>Journey stops</span><strong id="travelStopTotal">0</strong></div>
+   <div class="stat"><span>Capture tasks done</span><strong id="travelTaskProgress">0 / 0</strong></div>
+   <div class="stat"><span>Journey progress</span><strong id="travelPercent">0%</strong><div class="bar"><i id="travelProgressBar" style="width:0%"></i></div></div>
+  </div>
+ </div>
+ <div class="travel-layout">
+  <aside class="travel-rail panel">
+   <div class="travel-panel-head"><h3>Your journey</h3><span class="pill" id="travelRailProgress">0%</span></div>
+   <p class="hint">Stops are ordered by where you’ll be, not by the final edited video.</p>
+   <div id="travelStopList" class="travel-stop-list"></div>
+  </aside>
+  <section class="travel-main panel">
+   <div class="travel-main-head">
+    <div><div class="eyebrow" id="travelStepKicker">STOP 01</div><h2 id="travelStepTitle">Before you leave</h2><p id="travelStepSubtitle" class="intro"></p></div>
+    <span class="pill" id="travelStepCount">0 / 0 done</span>
+   </div>
+   <div class="travel-step-progress"><i id="travelStepProgressBar" style="width:0%"></i></div>
+   <div class="travel-nav no-print">
+    <button class="btn" id="travelPrev">← Previous stop</button>
+    <span id="travelStepIndex" class="travel-step-index">Stop 1 of 1</span>
+    <button class="btn primary" id="travelNext">Next stop →</button>
+   </div>
+   <div id="travelStepSafety" class="travel-step-safety hidden"></div>
+   <div class="travel-checklist-header"><div><h3>Record these shots here</h3><p class="hint">Tick a shot as soon as you have the footage. Angle, FPS and orientation travel with each item.</p></div></div>
+   <div id="travelShotList" class="travel-shot-list"></div>
+   <div id="travelExtraList" class="travel-extra-list"></div>
+   <div id="travelStepEmpty" class="travel-empty hidden">There are no specific shot cards for this stop yet. Use it as a route reminder and continue when ready.</div>
+   <div class="travel-nav travel-nav-bottom no-print">
+    <button class="btn" id="travelPrevBottom">← Previous stop</button>
+    <button class="btn primary" id="travelNextBottom">Next stop →</button>
+   </div>
+  </section>
+  <aside class="travel-script panel">
+   <div class="travel-panel-head"><h3>Read the script here</h3><span class="pill">Live prompt</span></div>
+   <p class="hint">Choose a scene associated with this stop, then switch between the voice-over and the words to say on camera.</p>
+   <label class="travel-label" for="travelScriptScene">Scene / story beat</label>
+   <select id="travelScriptScene" class="travel-select"></select>
+   <div class="reader-script-tabs travel-script-tabs" role="tablist" aria-label="Travel script type">
+    <button class="btn" id="travelVoiceTab" role="tab" aria-selected="false">Voice-over</button>
+    <button class="btn primary" id="travelOnCameraTab" role="tab" aria-selected="true">On-camera</button>
+   </div>
+   <div class="travel-script-paper">
+    <div id="travelScriptKicker" class="reader-kicker">ON-CAMERA SCRIPT</div>
+    <h3 id="travelScriptTitle">Choose a scene</h3>
+    <div id="travelScriptMeta" class="travel-script-meta"></div>
+    <div id="travelScriptContent" class="travel-script-content">Select a stop to see its related script.</div>
+   </div>
+   <p class="travel-script-tip">For voice-over, capture the footage now and record the narration later. On-camera lines are shown as a field prompt.</p>
+   <button class="btn no-print" id="travelOpenReader">Open full Read Scripts page</button>
+  </aside>
+ </div>
 </div></section></div></main></div>
 <script>
 const KEY='vlogscript-studio-v1',$=id=>document.getElementById(id);let projects=[],activeProject=null,activeScene=null,view='home',timer;const uid=()=>Math.random().toString(36).slice(2,10),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -137,17 +254,19 @@ function openScriptReader(){
  if(!p.scenes.length)return;
  if(!p.scenes.some(x=>x.id===activeReaderSceneId))activeReaderSceneId=p.scenes.some(x=>x.id===activeScene)?activeScene:p.scenes[0].id;
  $('projectEditorView').classList.add('hidden');
+ $('travelShootView').classList.add('hidden');
  $('scriptReaderView').classList.remove('hidden');
  $('readScriptsBtn').textContent='← Edit project';
- $('readScriptsBtn').classList.remove('primary');
+ $('readScriptsBtn').classList.add('primary');$('travelModeBtn').textContent='Travel Shoot Mode';$('travelModeBtn').classList.remove('primary');
  $('crumb').innerHTML='Workspace / <b>'+esc(p.title||'Project')+'</b> / <b>Read scripts</b>';
  renderReader();
 }
 function closeScriptReader(){
  $('scriptReaderView').classList.add('hidden');
+ $('travelShootView').classList.add('hidden');
  $('projectEditorView').classList.remove('hidden');
  $('readScriptsBtn').textContent='Read scripts';
- $('readScriptsBtn').classList.add('primary');
+ $('readScriptsBtn').classList.remove('primary');$('travelModeBtn').textContent='Travel Shoot Mode';$('travelModeBtn').classList.remove('primary');
  $('crumb').innerHTML='Workspace / <b>'+esc(cur()?.title||'Project')+'</b>';
  if(cur()){sceneList();sceneEditor();}
 }
@@ -196,7 +315,205 @@ function stepReader(delta){
  if(next<0||next>=p.scenes.length)return;
  activeReaderSceneId=p.scenes[next].id;activeScene=activeReaderSceneId;renderReader();
 }
-function show(v){view=v;if($('projectEditorView')&&$('scriptReaderView')){$('projectEditorView').classList.remove('hidden');$('scriptReaderView').classList.add('hidden');if($('readScriptsBtn')){$('readScriptsBtn').textContent='Read scripts';$('readScriptsBtn').classList.add('primary');}}$('dashboard').classList.toggle('hidden',v!=='home');$('workspace').classList.toggle('hidden',v==='home');$('homeNav').classList.toggle('active',v==='home');$('shootNav').classList.toggle('active',v==='shoot');$('crumb').innerHTML='Workspace / <b>'+esc(v==='home'?'My projects':v==='shoot'?'Shooting checklist':cur()?.title||'Project')+'</b>';if(v==='home')dash();else if(cur())workspace()}
+
+function travelStateFor(p){
+ if(!p.travelState||typeof p.travelState!=='object')p.travelState={};
+ const st=p.travelState;
+ if(!st.extraDone||typeof st.extraDone!=='object')st.extraDone={};
+ if(!st.sceneByStop||typeof st.sceneByStop!=='object')st.sceneByStop={};
+ if(!['voiceover','oncamera'].includes(st.scriptType))st.scriptType='oncamera';
+ return st;
+}
+function travelCleanShotName(name){return String(name||'').replace(/^(?:VO|ON[\s-]*CAMERA)\s*[·:–—-]\s*/i,'').trim()||'Unnamed shot'}
+function travelTaskHasNoCapture(name){
+ const n=String(name||'');
+ return /^(?:VO|ON[\s-]*CAMERA)\s*[·:–—-]\s*(?:No dialogue required|No spoken dialogue|No on-camera dialogue|No separate voice-over required|No voice-over required)/i.test(n)
+  || /leave the full reservoir panorama for scene 6/i.test(n)
+  || /text overlays? during editing/i.test(n)
+  || /if you are not visiting a silk-related location, skip the scene/i.test(n)
+  || /do not use unrelated footage/i.test(n)
+  || /do not add artificial sound effects/i.test(n)
+  || /reuse (?:your strongest|the clearest|silk footage|selected shots)/i.test(n)
+  || /if you cannot get a suitable on-camera location/i.test(n)
+  || /don't operate the camera while driving/i.test(n);
+}
+function travelStopDefs(){
+ const clean=s=>s.replace(/^(?:VO|ON[\s-]*CAMERA)\s*[·:–—-]\s*/i,'');
+ const nm=(sh,rx)=>rx.test(clean(sh.name||''));
+ const title=(sc,rx)=>rx.test(sc.title||'');
+ return [
+  {id:'travel-car-prep',title:'Before departure — car prep',subtitle:'Get the camera-ready car shots and spoken introduction while parked.',hint:'Leaving Bengaluru',safety:'Film the car keys, getting in, engine start, seatbelt and introduction while parked. Finish setup before driving.',extraTasks:[{id:'gear-check',text:'Check battery, card space, lens cleanliness and camera mount before you set off.'}],match:(sc,sh)=>title(sc,/leaving bengaluru/i)&&nm(sh,/car keys|getting into the car|starting the engine|seatbelt|main introduction|full introduction|second take if your delivery|still footage before and after speaking/i)},
+  {id:'travel-city-traffic',title:'Bengaluru traffic',subtitle:'Capture the city atmosphere as the journey begins.',hint:'Leaving Bengaluru',safety:'Do not reach for the camera or phone while driving. Use a secure mount or ask a passenger to record.',extraTasks:[],match:(sc,sh)=>title(sc,/leaving bengaluru/i)&&nm(sh,/bengaluru traffic/i)},
+  {id:'travel-highway',title:'Highway & road out',subtitle:'Record the transition from the city to the open road.',hint:'Leaving Bengaluru',safety:'Only record while safely parked, with a secure camera setup, or with a passenger operating the camera.',extraTasks:[],match:(sc,sh)=>(title(sc,/leaving bengaluru/i)&&nm(sh,/highway|roadside scenery|keep each driving clip short/i))||(title(sc,/the hook/i)&&nm(sh,/road teaser/i))},
+  {id:'travel-ramanagara-town',title:'Entering Ramanagara — town & history',subtitle:'Capture the town identity, place signs and any genuine silk-market visuals you actually visit.',hint:'Ramanagara Wasn’t Always Ramanagara',safety:'Pull over in a legal, safe place before framing a signboard or recording yourself.',extraTasks:[],match:(sc,sh)=>(title(sc,/leaving bengaluru/i)&&nm(sh,/entering ramanagara/i))||(title(sc,/ramanagara wasn.t always ramanagara/i)&&!nm(sh,/distant rocky hills|road leading to the hills|you with ramanagara hills behind/i))||title(sc,/the silk story/i)||(title(sc,/the hook/i)&&nm(sh,/ramanagara town from a viewpoint/i))},
+  {id:'travel-rock-reveal',title:'Sholay hills — first reveal',subtitle:'Start with the establishing reveal, then record the rocks and your on-camera lines.',hint:'The Rocks',safety:'Use stable, permitted viewpoints. Don’t climb onto an exposed edge just to improve a shot.',extraTasks:[],match:(sc,sh)=>(title(sc,/the rocks/i)&&!nm(sh,/walking on the trail|steps and feet|hilltop view|slow-motion detail|standing quietly in the landscape/i))||(title(sc,/the hook/i)&&nm(sh,/distant rocky hills|final teaser of rocks/i))||(title(sc,/ramanagara wasn.t always ramanagara/i)&&nm(sh,/distant rocky hills|road leading to the hills|you with ramanagara hills behind/i))},
+  {id:'travel-trek-hilltop',title:'Trekking up & hilltop views',subtitle:'Record walking movement, footsteps, the climb and a steady view from the top.',hint:'The Rocks',safety:'Keep one hand free where needed, stay on the safe trail and never walk backwards near a drop for a shot.',extraTasks:[{id:'trek-pov',text:'Capture a short POV / feet-on-trail clip from stable ground, only where it is safe.'}],match:(sc,sh)=>(title(sc,/the rocks/i)&&nm(sh,/walking on the trail|steps and feet|hilltop view|slow-motion detail|standing quietly in the landscape/i))||(title(sc,/the hook/i)&&nm(sh,/you in the landscape/i))},
+  {id:'travel-descent',title:'Coming down — last look at the hills',subtitle:'Before leaving the hill area, capture the descent and a final look back.',hint:'The Rocks',safety:'Keep the camera secure on uneven ground. Skip any shot that makes the descent less safe.',extraTasks:[{id:'descent-walk',text:'Record a short clip of yourself coming down from a stationary, safe camera position.'},{id:'last-look-rocks',text:'Capture one last wide shot looking back at the rocks before moving on.'}],match:(sc,sh)=>false},
+  {id:'travel-road-to-kanva',title:'Drive towards Kanva Reservoir',subtitle:'Capture the road, trees and a glimpse of the water as you approach.',hint:'The Transition to Kanva',safety:'Use a secure mount or a passenger for moving-car footage. Never handle your camera while driving.',extraTasks:[],match:(sc,sh)=>title(sc,/the transition to kanva/i)&&nm(sh,/road and trees|first glimpse of water|approach to reservoir/i)},
+  {id:'travel-kanva-arrival',title:'Arrive at Kanva — first reveal',subtitle:'Get the wide water reveal before activities begin, then record your genuine first impression.',hint:'The Transition to Kanva',safety:'Film only from permitted public areas and stable ground near the water.',extraTasks:[],match:(sc,sh)=>(title(sc,/the transition to kanva/i)&&nm(sh,/dam structure|complete reservoir reveal|second panorama|landscape hold|first impression|walk towards the reservoir|silent reaction|first-impression dialogue/i))||(title(sc,/the hook/i)&&nm(sh,/water teaser/i))},
+  {id:'travel-kanva-story',title:'Reservoir story & name',subtitle:'Capture the dam, water, nearby surroundings and the story-to-camera sections.',hint:'The Real Kanva Story',safety:'Keep filming from safe, permitted ground; do not enter restricted dam areas.',extraTasks:[],match:(sc,sh)=>title(sc,/the real kanva story|why is it called kanva/i)},
+  {id:'travel-quiet-water',title:'Quiet water & natural sound',subtitle:'Slow down and record natural details, reflections, water and ambience.',hint:'Let the Place Breathe',safety:'Hold shots steadily and capture 5–8 seconds of clean natural sound where it is present.',extraTasks:[],match:(sc,sh)=>title(sc,/let the place breathe/i)},
+  {id:'travel-water-activity',title:'Water activities',subtitle:'Record the real preparation, safety equipment, movement and your genuine reaction.',hint:'Activities, But Don’t Make Them the Story',safety:'Follow operator instructions, wear required life-saving equipment and secure the action camera. Never prioritize a shot over water safety.',extraTasks:[],match:(sc,sh)=>title(sc,/activities, but don.t make them the story/i)||(title(sc,/the hook/i)&&nm(sh,/boat or kayak|water movement detail/i))},
+  {id:'travel-reflection-outro',title:'Reflection & outro',subtitle:'Finish with a calm reflection, the closing dialogue and a final landscape shot.',hint:'The Reflection',safety:'Record the full spoken section in one take first; capture extra takes only if time and conditions allow.',extraTasks:[],match:(sc,sh)=>title(sc,/the reflection|outro/i)},
+  {id:'travel-return-pickups',title:'Return route — one last surprise',subtitle:'Get the town establishing shots and the final on-camera twist on the way back, if the route allows.',hint:'One Last Surprise',safety:'Only stop for town signs and road footage where parking and filming are safe and permitted.',extraTasks:[],match:(sc,sh)=>title(sc,/one last surprise/i)},
+  {id:'travel-location-wrap',title:'Location wrap & file check',subtitle:'Before you leave, confirm footage, sound and camera settings are usable.',hint:'Departure checklist',safety:'Run this check while you are still at each location; the saved checklist marks the overall wrap-up, so use it as a reminder at earlier stops too.',extraTasks:[],match:(sc,sh)=>title(sc,/departure checklist/i)}
+ ];
+}
+function buildTravelPlan(p){
+ if(!p)return [];
+ const ramanTrip=(p.id==='ramanagara-kanva-reservoir-project'||(p.scenes||[]).some(s=>/the rocks/i.test(s.title||''))&&(p.scenes||[]).some(s=>/transition to kanva/i.test(s.title||'')));
+ if(!ramanTrip){
+  return (p.scenes||[]).map((sc,i)=>({
+   id:'scene-'+sc.id,title:(String(i+1).padStart(2,'0')+' · '+(sc.title||'Untitled scene')),
+   subtitle:sc.subtitle||sc.purpose||'Record this scene’s shots at the relevant point in your trip.',
+   hint:sc.title||'',safety:'Follow location rules and stay aware of your surroundings.',
+   extraTasks:[],sceneIds:[sc.id],items:(sc.shots||[]).map(sh=>({scene:sc,shot:sh}))
+  }));
+ }
+ const defs=travelStopDefs(),used=new Set(),stops=defs.map(d=>({...d,items:[],sceneIds:[]}));
+ (p.scenes||[]).forEach(sc=>(sc.shots||[]).forEach(sh=>{
+  if(!isTravelChecklistShot(sc,sh))return;
+  const stop=stops.find(d=>d.match(sc,sh));
+  if(stop){stop.items.push({scene:sc,shot:sh});used.add(sc.id+'::'+sh.id);}
+ }));
+ const wrapIndex=stops.findIndex(x=>x.id==='travel-location-wrap');
+ const missing=[];
+ (p.scenes||[]).forEach(sc=>(sc.shots||[]).forEach(sh=>{
+  if(!isTravelChecklistShot(sc,sh)||used.has(sc.id+'::'+sh.id))return;
+  missing.push({scene:sc,shot:sh});
+ }));
+ if(missing.length)stops.splice(wrapIndex,0,{id:'travel-extra-pickups',title:'Extra pickups — anything still missing',subtitle:'These capture items did not match a route stop. Use this section to avoid leaving planned coverage behind.',hint:'',safety:'Skip any pickup that requires an unsafe position or an unnecessary detour.',extraTasks:[],items:missing,sceneIds:[]});
+ stops.forEach(stop=>{
+  const sceneIds=stop.items.map(x=>x.scene.id);
+  const context=(p.scenes||[]).find(sc=>String(sc.title||'').toLowerCase().includes(String(stop.hint||'').toLowerCase()));
+  if(context)sceneIds.push(context.id);
+  stop.sceneIds=[...new Set(sceneIds)];
+ });
+ return stops;
+}
+function isTravelChecklistShot(sc,sh){
+ if(/departure checklist/i.test(sc.title||''))return true;
+ return !travelTaskHasNoCapture(sh.name);
+}
+function currentTravelPlan(p){return buildTravelPlan(p)}
+function getTravelDoneCounts(plan,p){
+ const st=travelStateFor(p);let done=0,total=0;
+ plan.forEach(stop=>{
+  (stop.items||[]).forEach(x=>{total++;if(x.shot.done)done++});
+  (stop.extraTasks||[]).forEach(x=>{total++;if(st.extraDone[stop.id+'::'+x.id])done++});
+ });
+ return {done,total};
+}
+function setProjectMode(mode){
+ const reader=$('scriptReaderView'),editor=$('projectEditorView'),travel=$('travelShootView');
+ if(editor)editor.classList.toggle('hidden',mode!=='edit');
+ if(reader)reader.classList.toggle('hidden',mode!=='reader');
+ if(travel)travel.classList.toggle('hidden',mode!=='travel');
+ if($('readScriptsBtn')){$('readScriptsBtn').textContent=mode==='reader'?'← Edit project':'Read scripts';$('readScriptsBtn').classList.toggle('primary',mode==='reader');}
+ if($('travelModeBtn')){$('travelModeBtn').textContent=mode==='travel'?'← Edit project':'Travel Shoot Mode';$('travelModeBtn').classList.toggle('primary',mode==='travel');}
+}
+function openTravelShootMode(){
+ const p=cur();if(!p)return;
+ const state=travelStateFor(p),plan=currentTravelPlan(p);
+ if(!plan.length)return;
+ if(!plan.some(x=>x.id===state.activeStopId))state.activeStopId=plan[0].id;
+ setProjectMode('travel');
+ $('crumb').innerHTML='Workspace / <b>'+esc(p.title||'Project')+'</b> / <b>Travel Shoot Mode</b>';
+ renderTravelShoot();
+ save();
+}
+function closeTravelShootMode(){
+ setProjectMode('edit');
+ $('crumb').innerHTML='Workspace / <b>'+esc(cur()?.title||'Project')+'</b>';
+ if(cur())workspace();
+}
+function openTravelStop(stopId){
+ const p=cur();if(!p)return;
+ const state=travelStateFor(p);state.activeStopId=stopId;save();renderTravelShoot();
+}
+function renderTravelShoot(){
+ const p=cur();if(!p)return;
+ const state=travelStateFor(p),plan=currentTravelPlan(p);
+ if(!plan.length){$('travelStopList').innerHTML='<div class="travel-empty">Add a scene to create a travel plan.</div>';return;}
+ if(!plan.some(x=>x.id===state.activeStopId))state.activeStopId=plan[0].id;
+ let stopIndex=plan.findIndex(x=>x.id===state.activeStopId),stop=plan[stopIndex];
+ const overall=getTravelDoneCounts(plan,p),pct=overall.total?Math.round(overall.done/overall.total*100):0;
+ $('travelStopTotal').textContent=plan.length;
+ $('travelTaskProgress').textContent=overall.done+' / '+overall.total;
+ $('travelPercent').textContent=pct+'%';$('travelProgressBar').style.width=pct+'%';$('travelRailProgress').textContent=pct+'%';
+ $('travelStopList').innerHTML=plan.map((st,i)=>{
+  const t=(st.items||[]).length+(st.extraTasks||[]).length;
+  const d=(st.items||[]).filter(x=>x.shot.done).length+(st.extraTasks||[]).filter(x=>state.extraDone[st.id+'::'+x.id]).length;
+  return '<button class="travel-stop '+(st.id===stop.id?'active':'')+'" data-travel-stop="'+esc(st.id)+'"><span class="travel-stop-number">'+String(i+1).padStart(2,'0')+'</span><span><span class="travel-stop-name">'+esc(st.title)+'</span><span class="travel-stop-sub">'+esc(st.subtitle||'')+'</span></span><span class="travel-stop-check">'+d+'/'+t+'</span></button>';
+ }).join('');
+ $('travelStopList').querySelectorAll('[data-travel-stop]').forEach(b=>b.onclick=()=>openTravelStop(b.dataset.travelStop));
+ const stopDone=(stop.items||[]).filter(x=>x.shot.done).length+(stop.extraTasks||[]).filter(x=>state.extraDone[stop.id+'::'+x.id]).length;
+ const stopTotal=(stop.items||[]).length+(stop.extraTasks||[]).length;
+ $('travelStepKicker').textContent='STOP '+String(stopIndex+1).padStart(2,'0')+' · '+Math.round(stopTotal?stopDone/stopTotal*100:0)+'% COMPLETE';
+ $('travelStepTitle').textContent=stop.title;$('travelStepSubtitle').textContent=stop.subtitle;
+ $('travelStepCount').textContent=stopDone+' / '+stopTotal+' done';
+ $('travelStepProgressBar').style.width=(stopTotal?Math.round(stopDone/stopTotal*100):0)+'%';
+ $('travelStepIndex').textContent='Stop '+(stopIndex+1)+' of '+plan.length;
+ ['travelPrev','travelPrevBottom'].forEach(id=>{$(id).disabled=stopIndex<=0;$(id).style.opacity=stopIndex<=0?'.45':'1';});
+ ['travelNext','travelNextBottom'].forEach(id=>{$(id).disabled=stopIndex>=plan.length-1;$(id).textContent=stopIndex>=plan.length-1?'Journey complete ✓':'Next stop →';$(id).style.opacity=stopIndex>=plan.length-1?'.45':'1';});
+ $('travelStepSafety').textContent=stop.safety||'';$('travelStepSafety').classList.toggle('hidden',!stop.safety);
+ $('travelShotList').innerHTML=(stop.items||[]).map(x=>{
+  const sh=x.shot,typ=shotScriptType(sh),typLabel=typ==='voiceover'?'Voice-over B-roll':typ==='oncamera'?'On-camera':'Shared / general';
+  return '<label class="travel-shot-card '+(sh.done?'done':'')+'"><input type="checkbox" data-travel-shot="'+esc(sh.id)+'" '+(sh.done?'checked':'')+'><span class="travel-shot-body"><span class="travel-shot-title">'+esc(travelCleanShotName(sh.name))+'</span><span class="travel-shot-tags"><span class="travel-type-tag">'+typLabel+'</span>'+[sh.angle,sh.fps,sh.orientation].filter(Boolean).map(v=>'<span>'+esc(v)+'</span>').join('')+'</span><span class="travel-shot-source">'+esc(x.scene.title||'Untitled scene')+'</span></span></label>';
+ }).join('');
+ $('travelShotList').querySelectorAll('[data-travel-shot]').forEach(input=>input.onchange=()=>{
+  const shotId=input.dataset.travelShot;
+  for(const sc of (cur()?.scenes||[])){const sh=(sc.shots||[]).find(q=>q.id===shotId);if(sh){sh.done=input.checked;break;}}
+  save();renderTravelShoot();
+ });
+ $('travelExtraList').innerHTML=(stop.extraTasks||[]).map(task=>{
+  const key=stop.id+'::'+task.id,done=!!state.extraDone[key];
+  return '<label class="travel-extra-card '+(done?'done':'')+'"><input type="checkbox" data-travel-extra="'+esc(task.id)+'" '+(done?'checked':'')+'><span>'+esc(task.text)+'</span></label>';
+ }).join('');
+ $('travelExtraList').querySelectorAll('[data-travel-extra]').forEach(input=>input.onchange=()=>{
+  state.extraDone[stop.id+'::'+input.dataset.travelExtra]=input.checked;save();renderTravelShoot();
+ });
+ $('travelStepEmpty').classList.toggle('hidden',stopTotal!==0);
+ renderTravelScript(stop,p,state);
+}
+function renderTravelScript(stop,p,state){
+ let scenes=(stop.sceneIds||[]).map(id=>p.scenes.find(sc=>sc.id===id)).filter(Boolean);
+ if(!scenes.length&&stop.hint){const found=p.scenes.find(sc=>String(sc.title||'').toLowerCase().includes(stop.hint.toLowerCase()));if(found)scenes=[found];}
+ if(!scenes.length)scenes=p.scenes.slice(0,1);
+ const selectedId=state.sceneByStop[stop.id];
+ let active=scenes.find(sc=>sc.id===selectedId);
+ if(!active){
+  const preferred=scenes.find(sc=>String(sc.title||'').toLowerCase().includes(String(stop.hint||'').toLowerCase()));
+  active=preferred||scenes.find(sc=>String(sc[state.scriptType]||'').trim())||scenes[0];
+  if(active)state.sceneByStop[stop.id]=active.id;
+ }
+ $('travelScriptScene').innerHTML=scenes.map(sc=>'<option value="'+esc(sc.id)+'" '+(active&&sc.id===active.id?'selected':'')+'>'+esc(sc.title||'Untitled scene')+'</option>').join('');
+ $('travelScriptScene').disabled=!scenes.length;
+ $('travelScriptScene').onchange=()=>{state.sceneByStop[stop.id]=$('travelScriptScene').value;save();renderTravelShoot();};
+ $('travelVoiceTab').classList.toggle('primary',state.scriptType==='voiceover');$('travelOnCameraTab').classList.toggle('primary',state.scriptType==='oncamera');
+ $('travelVoiceTab').setAttribute('aria-selected',String(state.scriptType==='voiceover'));$('travelOnCameraTab').setAttribute('aria-selected',String(state.scriptType==='oncamera'));
+ const label=state.scriptType==='voiceover'?'Voice-over':'On-camera';
+ $('travelScriptKicker').textContent=label.toUpperCase()+' SCRIPT';
+ $('travelScriptTitle').textContent=active?.title||'Choose a scene';
+ $('travelScriptMeta').textContent=active?[active.location,active.duration&&('Estimated '+active.duration)].filter(Boolean).join(' · '):'';
+ const text=active?String(active[state.scriptType]||''):'';
+ $('travelScriptContent').textContent=text.trim()?text:'No '+label.toLowerCase()+' script has been written for this scene yet.';
+ $('travelScriptContent').classList.toggle('empty',!text.trim());
+ $('travelVoiceTab').onclick=()=>{state.scriptType='voiceover';save();renderTravelShoot();};
+ $('travelOnCameraTab').onclick=()=>{state.scriptType='oncamera';save();renderTravelShoot();};
+ $('travelOpenReader').onclick=()=>{if(active){activeScene=active.id;activeReaderSceneId=active.id;}openScriptReader();};
+}
+function stepTravel(delta){
+ const p=cur();if(!p)return;
+ const state=travelStateFor(p),plan=currentTravelPlan(p),idx=plan.findIndex(x=>x.id===state.activeStopId),next=idx+delta;
+ if(next<0||next>=plan.length)return;
+ state.activeStopId=plan[next].id;save();renderTravelShoot();
+}
+function isTravelChecklistShot(sc,sh){
+ if(/departure checklist/i.test(sc.title||''))return true;
+ return !travelTaskHasNoCapture(sh.name);
+}
+function show(v){view=v;if($('projectEditorView')&&$('scriptReaderView')){$('projectEditorView').classList.remove('hidden');$('scriptReaderView').classList.add('hidden');$('travelShootView').classList.add('hidden');if($('readScriptsBtn')){$('readScriptsBtn').textContent='Read scripts';$('readScriptsBtn').classList.remove('primary');$('travelModeBtn').textContent='Travel Shoot Mode';$('travelModeBtn').classList.remove('primary');}}$('dashboard').classList.toggle('hidden',v!=='home');$('workspace').classList.toggle('hidden',v==='home');$('homeNav').classList.toggle('active',v==='home');$('shootNav').classList.toggle('active',v==='shoot');$('crumb').innerHTML='Workspace / <b>'+esc(v==='home'?'My projects':v==='shoot'?'Shooting checklist':cur()?.title||'Project')+'</b>';if(v==='home')dash();else if(cur())workspace()}
 function dash(){stats();let g=$('projectGrid');if(!projects.length){g.innerHTML='<div class="empty" style="grid-column:1/-1"><div style="font-size:28px">▧</div><b>No projects yet</b><p>Create your first vlog plan to start organising scenes and shots.</p><button class="btn primary" id="emptyCreate">＋ Create your first project</button></div>';$('emptyCreate').onclick=create;return}g.innerHTML=projects.map(p=>{let t=totals(p),v=t.shots?Math.round(t.done/t.shots*100):0;return '<button class="project" data-open="'+p.id+'"><span class="pill">VLOG PROJECT</span><h3>'+esc(p.title||'Untitled vlog')+'</h3><p>'+esc(p.location||p.description||'Add a location and story summary')+'</p><div class="meta"><span>'+t.scenes+' scenes · '+t.shots+' shots</span><span>'+v+'% ready</span></div><div class="bar"><i style="width:'+v+'%"></i></div></button>'}).join('');g.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>open(b.dataset.open))}
 function create(){let p=makeProject();projects.unshift(p);activeProject=p.id;activeScene=p.scenes[0].id;save();show('workspace');$('projectTitle').focus()}function open(id){activeProject=id;activeScene=cur().scenes[0]?.id;show('workspace')}
 function workspace(){let p=cur();if(!p)return show('home');$('projectHeading').textContent=p.title||'Untitled vlog';$('projectSummary').textContent=p.location||p.description||'Scene-by-scene production plan';$('projectTitle').value=p.title;$('projectLocation').value=p.location;$('projectDescription').value=p.description;stats();sceneList();sceneEditor()}
@@ -205,7 +522,7 @@ function sceneEditor(){let s=sc();if(!s){$('sceneDetail').innerHTML='<div class=
 $('sTitle').oninput=e=>{s.title=e.target.value;sceneList();$('projectHeading').textContent=cur().title;later()};[['sSubtitle','subtitle'],['sLocation','location'],['sDuration','duration'],['sPurpose','purpose'],['sNotes','notes'],['sVoice','voiceover'],['sCamera','oncamera']].forEach(([id,k])=>$(id).oninput=e=>{s[k]=e.target.value;later()});
 $('dupScene').onclick=()=>{let c=JSON.parse(JSON.stringify(s));c.id=uid();c.title+=' (copy)';c.shots=c.shots.map(x=>({...x,id:uid(),done:false}));cur().scenes.splice(cur().scenes.indexOf(s)+1,0,c);activeScene=c.id;later();sceneList();sceneEditor()};$('delScene').onclick=()=>{if(confirm('Delete this scene?')){cur().scenes=cur().scenes.filter(x=>x.id!==s.id);activeScene=cur().scenes[0]?.id||null;save();workspace()}};$('upScene').onclick=()=>moveScene(-1);$('downScene').onclick=()=>moveScene(1);$('addShot').onclick=()=>{s.shots.push({...shot(),name:'New shot'});later();shotsEditor()};shotsEditor()}
 function moveScene(d){let a=cur().scenes,i=a.findIndex(s=>s.id===activeScene),j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];later();sceneList();sceneEditor()}
-function shotsEditor(){let s=sc();$('shots').innerHTML=s.shots.map(x=>'<div class="shot '+(x.done?'done':'')+'" data-shot="'+x.id+'"><input type="checkbox" data-k="done" '+(x.done?'checked':'')+' aria-label="Completed"><input type="text" class="shotname" data-k="name" value="'+esc(x.name)+'" aria-label="Shot name"><select data-k="scriptType" aria-label="Used for" title="Which script this shot supports">'+[['voiceover','Voice-over'],['oncamera','On-camera'],['both','Both / shared']].map(([v,l])=>'<option value="'+v+'" '+(shotScriptType(x)===v?'selected':'')+'>'+l+'</option>').join('')+'</select><select data-k="angle" aria-label="Angle">'+['Wide','Ultra-wide','Medium','Close-up','Extreme close-up','POV','Over-the-shoulder','Low angle','High angle','Tracking','Drone','Detail'].map(v=>'<option '+(x.angle===v?'selected':'')+'>'+v+'</option>').join('')+'</select><select data-k="fps" aria-label="Frame rate">'+['4K / 30 FPS','4K / 60 FPS','4K / 100 FPS','1080p / 30 FPS','1080p / 60 FPS','Custom'].map(v=>'<option '+(x.fps===v?'selected':'')+'>'+v+'</option>').join('')+'</select><select data-k="orientation" aria-label="Orientation">'+['Landscape','Portrait','Square'].map(v=>'<option '+(x.orientation===v?'selected':'')+'>'+v+'</option>').join('')+'</select><button class="btn small no-print" data-remove title="Remove shot">×</button></div>').join('');$('shots').querySelectorAll('[data-shot]').forEach(row=>{let x=s.shots.find(a=>a.id===row.dataset.shot);row.querySelectorAll('[data-k]').forEach(el=>{let fn=e=>{const k=e.target.dataset.k,val=e.target.type==='checkbox'?e.target.checked:e.target.value;if(k==='name'&&x.scriptType==null){x.name=val;row.querySelector('[data-k="scriptType"]').value=shotScriptType(x)}else{x[k]=val}row.classList.toggle('done',x.done);later();stats();sceneList()};el.onchange=fn;el.oninput=fn});row.querySelector('[data-remove]').onclick=()=>{s.shots=s.shots.filter(a=>a.id!==x.id);later();shotsEditor()}})}$('newProject').onclick=create;$('backBtn').onclick=()=>show('home');$('readScriptsBtn').onclick=()=>{if($('scriptReaderView').classList.contains('hidden'))openScriptReader();else closeScriptReader();};
+function shotsEditor(){let s=sc();$('shots').innerHTML=s.shots.map(x=>'<div class="shot '+(x.done?'done':'')+'" data-shot="'+x.id+'"><input type="checkbox" data-k="done" '+(x.done?'checked':'')+' aria-label="Completed"><input type="text" class="shotname" data-k="name" value="'+esc(x.name)+'" aria-label="Shot name"><select data-k="scriptType" aria-label="Used for" title="Which script this shot supports">'+[['voiceover','Voice-over'],['oncamera','On-camera'],['both','Both / shared']].map(([v,l])=>'<option value="'+v+'" '+(shotScriptType(x)===v?'selected':'')+'>'+l+'</option>').join('')+'</select><select data-k="angle" aria-label="Angle">'+['Wide','Ultra-wide','Medium','Close-up','Extreme close-up','POV','Over-the-shoulder','Low angle','High angle','Tracking','Drone','Detail'].map(v=>'<option '+(x.angle===v?'selected':'')+'>'+v+'</option>').join('')+'</select><select data-k="fps" aria-label="Frame rate">'+['4K / 30 FPS','4K / 60 FPS','4K / 100 FPS','1080p / 30 FPS','1080p / 60 FPS','Custom'].map(v=>'<option '+(x.fps===v?'selected':'')+'>'+v+'</option>').join('')+'</select><select data-k="orientation" aria-label="Orientation">'+['Landscape','Portrait','Square'].map(v=>'<option '+(x.orientation===v?'selected':'')+'>'+v+'</option>').join('')+'</select><button class="btn small no-print" data-remove title="Remove shot">×</button></div>').join('');$('shots').querySelectorAll('[data-shot]').forEach(row=>{let x=s.shots.find(a=>a.id===row.dataset.shot);row.querySelectorAll('[data-k]').forEach(el=>{let fn=e=>{const k=e.target.dataset.k,val=e.target.type==='checkbox'?e.target.checked:e.target.value;if(k==='name'&&x.scriptType==null){x.name=val;row.querySelector('[data-k="scriptType"]').value=shotScriptType(x)}else{x[k]=val}row.classList.toggle('done',x.done);later();stats();sceneList()};el.onchange=fn;el.oninput=fn});row.querySelector('[data-remove]').onclick=()=>{s.shots=s.shots.filter(a=>a.id!==x.id);later();shotsEditor()}})}$('newProject').onclick=create;$('backBtn').onclick=()=>show('home');$('readScriptsBtn').onclick=()=>{if($('scriptReaderView').classList.contains('hidden'))openScriptReader();else closeScriptReader();};$('travelModeBtn').onclick=()=>{if($('travelShootView').classList.contains('hidden'))openTravelShootMode();else closeTravelShootMode();};$('travelPrev').onclick=()=>stepTravel(-1);$('travelPrevBottom').onclick=()=>stepTravel(-1);$('travelNext').onclick=()=>stepTravel(1);$('travelNextBottom').onclick=()=>stepTravel(1);
 $('readerPrev').onclick=()=>stepReader(-1);$('readerNext').onclick=()=>stepReader(1);$('readerVoiceTab').onclick=()=>{readerScriptType='voiceover';renderReader()};$('readerOnCameraTab').onclick=()=>{readerScriptType='oncamera';renderReader()};
 $('fontDown').onclick=()=>{readerFontSize=Math.max(16,readerFontSize-2);renderReader()};
 $('fontUp').onclick=()=>{readerFontSize=Math.min(32,readerFontSize+2);renderReader()};
