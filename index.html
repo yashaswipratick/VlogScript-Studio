@@ -501,7 +501,7 @@ function buildTravelPlan(p){
  (p.scenes||[]).forEach(sc=>(sc.shots||[]).forEach(sh=>{
   if(!isTravelChecklistShot(sc,sh))return;
   const isWrap=/departure checklist/i.test(sc.title||'');
-  const matched=isWrap?wrap:stops.filter(d=>!['travel-location-wrap','travel-final-pickups'].includes(d.id)).find(d=>d.match(sc,sh));
+  const matched=isWrap?wrap:(stops.filter(d=>!['travel-location-wrap','travel-final-pickups'].includes(d.id)).find(d=>d.match(sc,sh))||(finalPickups.match(sc,sh)?finalPickups:null));
   const target=matched||finalPickups;
   target.items.push({scene:sc,shot:sh});
  }));
@@ -599,9 +599,9 @@ function renderTravelShoot(){
  });
  const visibleTasks=shownItems.length+(stop.extraTasks||[]).length;
  $('travelStepEmpty').textContent=state.scriptType==='voiceover'
-  ?'No voice-over / B-roll shots at this stop. Switch to On-camera or continue to the next stop.'
-  :'No on-camera shots assigned to this stop. Switch to Voice-over / B-roll or continue to the next stop.';
- $('travelStepEmpty').classList.toggle('hidden',visibleTasks!==0);
+  ?'No voice-over / B-roll shot cards are assigned to this stop. Any location reminders remain below; switch to On-camera or continue to the next stop.'
+  :'No on-camera shot cards are assigned to this stop. Any location reminders remain below; switch to Voice-over / B-roll or continue to the next stop.';
+ $('travelStepEmpty').classList.toggle('hidden',shownItems.length!==0);
  renderTravelScript(stop,p,state);
 }
 function travelHasUsableScript(scene,type){
