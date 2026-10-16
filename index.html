@@ -47,7 +47,7 @@
     <button class="btn" id="readerFullscreen">⛶ Focus mode</button>
    </div>
   </div>
-  <div id="readerFullscreenArea">
+  <div id="readerFullscreenArea" class="reader-fullscreen">
    <article class="reader-page" id="readerPage">
     <div class="reader-kicker" id="readerKicker">SCRIPT READER</div>
     <h1 class="reader-page-title" id="readerTitle">Choose a script</h1>
@@ -160,7 +160,7 @@ function stepReader(delta){
  if(next<0||next>=readerScripts.length)return;
  activeScriptKey=readerScripts[next].key;renderReader();
 }
-function show(v){view=v;$('dashboard').classList.toggle('hidden',v!=='home');$('workspace').classList.toggle('hidden',v==='home');$('homeNav').classList.toggle('active',v==='home');$('shootNav').classList.toggle('active',v==='shoot');$('crumb').innerHTML='Workspace / <b>'+esc(v==='home'?'My projects':v==='shoot'?'Shooting checklist':cur()?.title||'Project')+'</b>';if(v==='home')dash();else if(cur())workspace()}
+function show(v){view=v;if($('projectEditorView')&&$('scriptReaderView')){$('projectEditorView').classList.remove('hidden');$('scriptReaderView').classList.add('hidden');if($('readScriptsBtn')){$('readScriptsBtn').textContent='Read scripts';$('readScriptsBtn').classList.add('primary');}}$('dashboard').classList.toggle('hidden',v!=='home');$('workspace').classList.toggle('hidden',v==='home');$('homeNav').classList.toggle('active',v==='home');$('shootNav').classList.toggle('active',v==='shoot');$('crumb').innerHTML='Workspace / <b>'+esc(v==='home'?'My projects':v==='shoot'?'Shooting checklist':cur()?.title||'Project')+'</b>';if(v==='home')dash();else if(cur())workspace()}
 function dash(){stats();let g=$('projectGrid');if(!projects.length){g.innerHTML='<div class="empty" style="grid-column:1/-1"><div style="font-size:28px">▧</div><b>No projects yet</b><p>Create your first vlog plan to start organising scenes and shots.</p><button class="btn primary" id="emptyCreate">＋ Create your first project</button></div>';$('emptyCreate').onclick=create;return}g.innerHTML=projects.map(p=>{let t=totals(p),v=t.shots?Math.round(t.done/t.shots*100):0;return '<button class="project" data-open="'+p.id+'"><span class="pill">VLOG PROJECT</span><h3>'+esc(p.title||'Untitled vlog')+'</h3><p>'+esc(p.location||p.description||'Add a location and story summary')+'</p><div class="meta"><span>'+t.scenes+' scenes · '+t.shots+' shots</span><span>'+v+'% ready</span></div><div class="bar"><i style="width:'+v+'%"></i></div></button>'}).join('');g.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>open(b.dataset.open))}
 function create(){let p=makeProject();projects.unshift(p);activeProject=p.id;activeScene=p.scenes[0].id;save();show('workspace');$('projectTitle').focus()}function open(id){activeProject=id;activeScene=cur().scenes[0]?.id;show('workspace')}
 function workspace(){let p=cur();if(!p)return show('home');$('projectHeading').textContent=p.title||'Untitled vlog';$('projectSummary').textContent=p.location||p.description||'Scene-by-scene production plan';$('projectTitle').value=p.title;$('projectLocation').value=p.location;$('projectDescription').value=p.description;stats();sceneList();sceneEditor()}
