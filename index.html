@@ -19,16 +19,18 @@ $('newProject').onclick=create;$('backBtn').onclick=()=>show('home');$('addScene
  try{
   const saved=localStorage.getItem(KEY);
   if(saved!==null){const d=JSON.parse(saved);if(Array.isArray(d))projects=d;}
-  const seedKey='vlogscript-ramanagara-seeded-v1';
+  const seedKey='vlogscript-ramanagara-seeded-v2';
+  const previousSeedKey='vlogscript-ramanagara-seeded-v1';
   if(!localStorage.getItem(seedKey)){
-   if(!projects.some(p=>p.id==='ramanagara-kanva-reservoir-project')){
-    const response=await fetch('./ramanagara-kanva-project.json',{cache:'no-store'});
-    if(!response.ok) throw new Error('Starter project fetch failed: '+response.status);
-    const project=await response.json();
-    projects.push(project);
-    localStorage.setItem(KEY,JSON.stringify(projects));
-   }
+   const response=await fetch('./ramanagara-kanva-project.json',{cache:'no-store'});
+   if(!response.ok) throw new Error('Starter project fetch failed: '+response.status);
+   const starter=await response.json();
+   const existingIndex=projects.findIndex(p=>p.id===starter.id);
+   if(existingIndex<0) projects.push(starter);
+   else if(localStorage.getItem(previousSeedKey)==='1') projects[existingIndex]=starter;
+   localStorage.setItem(KEY,JSON.stringify(projects));
    localStorage.setItem(seedKey,'1');
+   localStorage.removeItem(previousSeedKey);
   }
  }catch(e){console.warn('Could not automatically load the Ramanagara project. You can import ramanagara-kanva-project.json from the repository.',e);}
  dash();
