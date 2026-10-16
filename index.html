@@ -17,7 +17,7 @@ const shot=()=>({id:uid(),done:false,name:'Wide establishing shot',angle:'Wide',
   if(window.matchMedia('(max-width:850px)').matches)return;
   event.preventDefault();
   startX=event.clientX;
-  startWidth=document.querySelector('.scene-list').getBoundingClientRect().width;
+  startWidth=document.querySelector('.scene-list').getBoundingClientRect().width+14;
   handle.classList.add('dragging');
   handle.setPointerCapture(event.pointerId);
  });
