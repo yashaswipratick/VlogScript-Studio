@@ -542,10 +542,34 @@ function openTravelShootMode(){
  renderTravelShoot();
  save();
 }
+function travelSceneForEdit(p){
+ if(!p)return null;
+ const state=travelStateFor(p),plan=currentTravelPlan(p);
+ const stop=plan.find(x=>x.id===state.activeStopId);
+ if(!stop)return null;
+ const items=travelFilteredItems(stop,state);
+ const candidates=[];
+ items.forEach(item=>{
+  if(!travelHasUsableScript(item.scene,state.scriptType))return;
+  if(!candidates.some(scene=>scene.id===item.scene.id))candidates.push(item.scene);
+ });
+ const stateKey=stop.id+'::'+state.scriptType;
+ const preferredId=state.sceneByStop[stateKey]||state.sceneByStop[stop.id];
+ const preferred=candidates.find(scene=>scene.id===preferredId);
+ if(preferred)return preferred.id;
+ if(candidates.length)return candidates[0].id;
+ const visibleScene=items[0]?.scene;
+ if(visibleScene)return visibleScene.id;
+ if(stop.items?.length)return stop.items[0].scene.id;
+ return stop.sceneIds?.[0]||null;
+}
 function closeTravelShootMode(){
+ const p=cur();
+ const travelSceneId=travelSceneForEdit(p);
+ if(travelSceneId)activeScene=travelSceneId;
  setProjectMode('edit');
- $('crumb').innerHTML='Workspace / <b>'+esc(cur()?.title||'Project')+'</b>';
- if(cur())workspace();
+ $('crumb').innerHTML='Workspace / <b>'+esc(p?.title||'Project')+'</b>';
+ if(p)workspace();
 }
 function openTravelStop(stopId){
  const p=cur();if(!p)return;
