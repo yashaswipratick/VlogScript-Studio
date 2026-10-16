@@ -1,56 +1,67 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VlogScript Studio</title><style>
 :root{--ink:#17212f;--muted:#687587;--line:#e2e7ef;--bg:#f6f7fa;--blue:#315ee8;--soft:#edf2ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:225px 1fr;min-height:100vh}.side{background:white;border-right:1px solid var(--line);padding:24px 16px;display:flex;flex-direction:column;gap:22px}.brand{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:800}.mark{background:#1d2b42;color:white;width:36px;height:36px;border-radius:11px;display:grid;place-items:center}.sub,.label{font-size:10px;color:var(--muted);letter-spacing:1.5px}.nav{display:block;width:100%;text-align:left;border:0;background:transparent;padding:11px;border-radius:9px;color:#596779;margin:3px 0}.nav.active,.nav:hover{background:var(--soft);color:var(--blue)}.sidefoot{margin-top:auto;border:1px solid var(--line);background:#fafbfc;border-radius:12px;padding:14px;font-size:12px;color:var(--muted)}.sidefoot strong{display:block;color:var(--ink)}.top{height:66px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px}.crumb{color:var(--muted)}.topright{display:flex;align-items:center;gap:8px}.saved{font-size:12px;color:#16845b}.content{max-width:1200px;padding:28px;margin:auto}.eyebrow{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:1.5px}.h1{font-size:28px;letter-spacing:-.7px;margin:4px 0}.intro{color:var(--muted);margin:0 0 22px}.btn{border:1px solid var(--line);background:white;border-radius:9px;padding:9px 13px;font-weight:650;color:var(--ink)}.btn.primary{background:var(--blue);border-color:var(--blue);color:white}.btn.small{font-size:12px;padding:6px 9px}.btn.danger{color:#b42318}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}.stat,.panel,.project,.scene-card{background:white;border:1px solid var(--line);border-radius:13px}.stat{padding:16px}.stat span{color:var(--muted);font-size:12px}.stat strong{display:block;font-size:24px;margin-top:4px}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 12px}.sectionhead h2,.sectionhead h3{margin:0;font-size:16px}.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.project{padding:18px;text-align:left}.project:hover{border-color:#9db0ff}.project h3{margin:10px 0 4px;font-size:16px}.project p{margin:0;color:var(--muted);font-size:12px}.meta{display:flex;justify-content:space-between;margin-top:14px;color:var(--muted);font-size:12px}.pill{display:inline-block;border-radius:30px;padding:4px 8px;background:#eef2f6;color:#5e6b7a;font-size:10px;font-weight:800}.bar{height:5px;background:#e9edf3;border-radius:9px;overflow:hidden;margin-top:8px}.bar i{display:block;height:100%;background:var(--blue)}.editor{display:grid;grid-template-columns:var(--scene-panel-width,230px) 8px minmax(0,1fr);gap:0;align-items:start}.scene-resizer{align-self:stretch;min-height:180px;cursor:col-resize;touch-action:none;position:relative;display:flex;justify-content:center;outline:none}.scene-resizer:after{content:'';width:3px;border-radius:4px;background:#d9e0eb;transition:background .15s,width .15s}.scene-resizer:hover:after,.scene-resizer:focus:after,.scene-resizer.dragging:after{background:#315ee8;width:4px}.scene-list{margin-right:14px;min-width:0}.scene-list{padding:12px;height:max-content}.scene-row{display:flex;align-items:flex-start;gap:8px;padding:10px;border-radius:9px;margin:3px 0;cursor:pointer;color:#596678;min-width:0}.scene-row .num{flex:0 0 25px}.scene-name{min-width:0;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;line-height:1.35}.scene-row>span:last-child{flex:0 0 auto}.scene-row.active,.scene-row:hover{background:var(--soft);color:var(--blue)}.num{width:25px;height:25px;border:1px solid var(--line);border-radius:7px;display:grid;place-items:center;font-size:11px;flex-shrink:0}.scene-name{overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere;flex:1;min-width:0;line-height:1.35}.scene-card,.panel{padding:18px;margin-bottom:14px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:5px;min-width:0}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:750;color:#556173}.field input,.field textarea,.field select{width:100%;border:1px solid #dce2ea;border-radius:8px;padding:10px;background:white;color:var(--ink);outline:none}.field input:focus,.field textarea:focus{border-color:#7893ff}.field textarea{resize:vertical;min-height:100px;line-height:1.6}.field textarea.script{min-height:155px}.twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.hint{color:var(--muted);font-size:12px;margin:4px 0 12px}.shot{display:grid;grid-template-columns:24px minmax(100px,1fr) 115px 130px 100px 30px;align-items:center;gap:7px;padding:9px 0;border-top:1px solid #eef0f4}.shot input[type=checkbox]{width:16px;height:16px;accent-color:var(--blue)}.shot input[type=text],.shot select{width:100%;min-width:0;border:1px solid var(--line);border-radius:7px;padding:7px;font-size:12px;background:white}.shot.done .shotname{text-decoration:line-through;color:#8993a1}.shothead{display:grid;grid-template-columns:24px minmax(100px,1fr) 115px 130px 100px 30px;gap:7px;color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;padding-bottom:8px}.empty{padding:32px;text-align:center;color:var(--muted);border:1px dashed #cfd6e1;border-radius:12px}.hidden{display:none!important}
-/* Dedicated shooting-time script reader */
-.script-reader{display:grid;grid-template-columns:minmax(230px,300px) minmax(0,1fr);gap:18px;align-items:start;margin-top:8px}
-.reader-sidebar{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;position:sticky;top:16px;max-height:calc(100vh - 120px);overflow:auto}
-.reader-sidebar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 2px 12px}
-.reader-sidebar-head h2{font-size:14px;margin:0}
-.reader-script-item{display:block;width:100%;text-align:left;background:transparent;border:1px solid transparent;border-radius:10px;padding:11px;margin:3px 0;color:var(--ink)}
+/* Three-panel shooting reader: scenes | script | shot checklist */
+.script-reader{display:grid;grid-template-columns:minmax(190px,225px) minmax(350px,1fr) minmax(270px,320px);gap:14px;align-items:start;margin-top:8px}
+.reader-scene-sidebar,.reader-checklist{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;position:sticky;top:16px;max-height:calc(100vh - 120px);overflow:auto;min-width:0}
+.reader-sidebar-head,.reader-checklist-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 2px 12px}
+.reader-sidebar-head h2,.reader-checklist-head h2{font-size:14px;margin:0}
+.reader-scene-list{display:flex;flex-direction:column;gap:4px}
+.reader-script-item{display:block;width:100%;text-align:left;background:transparent;border:1px solid transparent;border-radius:10px;padding:11px;margin:0;color:var(--ink)}
 .reader-script-item:hover{background:#f7f8fb;border-color:#e7ebf2}
 .reader-script-item.active{background:var(--soft);border-color:#cbd7ff;color:#214bcc}
 .reader-script-item .reader-item-scene{font-weight:750;font-size:12px;line-height:1.45;display:block;overflow-wrap:anywhere}
 .reader-script-item .reader-item-type{display:block;font-size:11px;color:var(--muted);margin-top:5px}
 .reader-script-item.active .reader-item-type{color:#315ee8}
 .reader-main{min-width:0}
-.reader-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-.reader-toolbar-group{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-.reader-page{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 30px #17212f0a;max-width:920px;margin:0 auto;min-height:68vh;padding:clamp(24px,5vw,64px)}
+.reader-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.reader-toolbar-group{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.reader-script-tabs{display:flex;align-items:center;gap:4px;padding:4px;background:#eef1f6;border-radius:10px}
+.reader-script-tabs .btn{border-color:transparent;background:transparent;padding:7px 10px}
+.reader-script-tabs .btn.primary{background:#fff;border-color:#dce3ef;color:var(--blue);box-shadow:0 1px 3px #15223812}
+.reader-page{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 30px #17212f0a;max-width:none;margin:0;min-height:68vh;padding:clamp(22px,3vw,40px)}
 .reader-kicker{color:var(--blue);font-weight:850;font-size:11px;letter-spacing:1.7px;text-transform:uppercase;margin-bottom:16px}
-.reader-page-title{font-size:clamp(26px,3vw,38px);line-height:1.16;letter-spacing:-1px;margin:0 0 10px;overflow-wrap:anywhere}
-.reader-page-subtitle{font-size:15px;color:var(--muted);margin:0;line-height:1.6}
-.reader-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-.reader-meta span{background:#f3f5f8;border-radius:30px;padding:5px 10px;color:#566274;font-size:11px;font-weight:700}
-.reader-rule{height:1px;background:var(--line);margin:28px 0}
-.reader-text{white-space:pre-wrap;overflow-wrap:anywhere;font-size:var(--reader-font-size,21px);line-height:1.9;letter-spacing:.01em;color:#263347;max-width:67ch;margin:0 auto}
-.reader-shot-list{display:flex;flex-direction:column;gap:10px;max-width:860px;margin:0 auto}
-.reader-shot{display:flex;align-items:flex-start;gap:14px;padding:16px 17px;border:1px solid #e0e6ef;border-radius:12px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
-.reader-shot:hover{border-color:#afbeef;background:#fbfcff}
-.reader-shot input{width:22px;height:22px;flex:0 0 22px;margin:3px 0 0;accent-color:#315ee8;cursor:pointer}
-.reader-shot-content{display:block;min-width:0;flex:1}
-.reader-shot-name{display:block;font-size:clamp(16px,1.7vw,20px);font-weight:650;line-height:1.5;overflow-wrap:anywhere}
-.reader-shot.complete .reader-shot-name{text-decoration:line-through;color:#8b95a3}
-.reader-shot-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
-.reader-shot-meta span{display:inline-block;background:#f1f4f8;border-radius:30px;padding:4px 9px;font-size:12px;line-height:1.4;color:#556173}
-.reader-shot.complete{background:#f8fbf9;border-color:#d9eee2}
-
-.reader-empty{border:1px dashed #ccd5e2;border-radius:12px;padding:24px;color:var(--muted);background:#fafbfc;line-height:1.7}
-.reader-page-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+.reader-page-title{font-size:clamp(25px,2.4vw,34px);line-height:1.16;letter-spacing:-1px;margin:0 0 10px;overflow-wrap:anywhere}
+.reader-page-subtitle{font-size:14px;color:var(--muted);margin:0;line-height:1.6;overflow-wrap:anywhere}
+.reader-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.reader-meta span{background:#f3f5f8;border-radius:30px;padding:5px 9px;color:#566274;font-size:11px;font-weight:700}
+.reader-rule{height:1px;background:var(--line);margin:23px 0}
+.reader-text{white-space:pre-wrap;overflow-wrap:anywhere;font-size:var(--reader-font-size,21px);line-height:1.9;letter-spacing:.01em;color:#263347;max-width:67ch;margin:0 auto;min-height:36vh}
+.reader-page-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:25px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
 .reader-fullscreen:fullscreen{background:var(--bg);overflow:auto;padding:24px}
-.reader-fullscreen:fullscreen .reader-page{min-height:calc(100vh - 140px)}
-@media(max-width:850px){.script-reader{grid-template-columns:1fr}.reader-sidebar{position:static;max-height:230px}.reader-script-item{width:auto;min-width:180px;display:inline-block;vertical-align:top}.reader-sidebar-list{display:flex;gap:4px;overflow-x:auto}.reader-page{min-height:auto;padding:28px 22px}.reader-text{font-size:var(--reader-font-size,20px);line-height:1.8}}
+.reader-fullscreen:fullscreen .reader-page{min-height:calc(100vh - 140px);max-width:1000px;margin:0 auto}
+.reader-checklist-head{margin-bottom:7px}
+.reader-checklist-note{font-size:12px;line-height:1.6;color:var(--muted);margin:0 2px 13px}
+.reader-shot-list{display:flex;flex-direction:column;gap:8px}
+.reader-shot{display:flex;align-items:flex-start;gap:10px;padding:11px 10px;border:1px solid #e0e6ef;border-radius:11px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
+.reader-shot:hover{border-color:#afbeef;background:#fbfcff}
+.reader-shot input{width:18px;height:18px;flex:0 0 18px;margin-top:2px;accent-color:var(--blue);cursor:pointer}
+.reader-shot-content{min-width:0;display:block}
+.reader-shot-name{display:block;font-size:12px;font-weight:750;line-height:1.5;overflow-wrap:anywhere}
+.reader-shot-meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.reader-shot-meta span{display:inline-block;background:#f1f4f8;border-radius:30px;padding:3px 7px;font-size:10px;line-height:1.4;color:#556173}
+.reader-shot.complete{background:#f8fbf9;border-color:#d9eee2}
+.reader-shot.complete .reader-shot-name{text-decoration:line-through;color:#8b95a3}
+.reader-empty{border:1px dashed #ccd5e2;border-radius:12px;padding:20px;color:var(--muted);background:#fafbfc;line-height:1.7;font-size:13px}
+@media(max-width:1120px){.script-reader{grid-template-columns:minmax(170px,200px) minmax(300px,1fr) minmax(245px,275px);gap:10px}.reader-scene-sidebar,.reader-checklist{padding:11px}.reader-page{padding:24px 20px}.reader-toolbar-group{gap:4px}.reader-toolbar-group .btn{padding:7px 8px}}
+@media(max-width:900px){.script-reader{grid-template-columns:minmax(160px,210px) minmax(0,1fr)}.reader-checklist{grid-column:2;position:static;max-height:none}.reader-scene-sidebar{grid-row:1 / span 2;position:sticky;top:12px;max-height:calc(100vh - 100px)}.reader-main{grid-column:2}.reader-page{min-height:auto}.reader-text{min-height:220px}}
+@media(max-width:620px){.script-reader{grid-template-columns:1fr;gap:10px}.reader-scene-sidebar,.reader-checklist{position:static;max-height:none}.reader-scene-list{display:flex;flex-direction:row;gap:5px;overflow-x:auto;padding-bottom:4px}.reader-script-item{width:auto;min-width:170px;max-width:230px}.reader-main,.reader-checklist{grid-column:1}.reader-main{grid-row:2}.reader-checklist{grid-row:3}.reader-toolbar{align-items:flex-start}.reader-toolbar-group{max-width:100%}.reader-page{padding:25px 20px}.reader-text{font-size:var(--reader-font-size,20px);line-height:1.8;min-height:180px}.reader-page-footer{font-size:11px}}
 @media(max-width:850px){.shell{grid-template-columns:1fr}.side{display:none}.top{padding:0 14px}.content{padding:18px 12px}.editor{grid-template-columns:1fr;gap:12px}.scene-resizer{display:none}.scene-list{display:block;overflow:auto;margin-right:0}.scene-row{min-width:0}.projects{grid-template-columns:1fr}.shot,.shothead{grid-template-columns:22px minmax(90px,1fr) 90px 110px 30px}.shot select[data-k=orientation],.shothead span:nth-child(5){display:none}.shot input[type=text]{grid-column:2/5}}@media(max-width:540px){.stats{gap:7px}.stat{padding:11px}.stat strong{font-size:20px}.h1{font-size:24px}.top{height:56px}.saved{display:none}.twocol,.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.shot,.shothead{grid-template-columns:20px minmax(80px,1fr) 78px 95px 26px}.shot select[data-k=orientation]{display:none}.shot input[type=text]{grid-column:2/5}.topright .btn{font-size:11px;padding:7px}}@media print{.side,.top,.no-print,.scene-list{display:none!important}.shell,.editor{display:block}.content{max-width:none;padding:0}.scene-card,.panel{break-inside:avoid}}
 </style></head><body><div class="shell"><aside class="side"><div class="brand"><span class="mark">VS</span><span>VlogScript<div class="sub">STUDIO</div></span></div><div><div class="label">WORKSPACE</div><button class="nav active" id="homeNav">▦ &nbsp; My projects</button><button class="nav" id="shootNav">◉ &nbsp; Shooting checklist</button></div><div class="sidefoot"><strong>✦ Your work stays yours</strong>Projects are saved in this browser. Nothing is uploaded to a server.</div><div class="sub">VLOGSCRIPT STUDIO · 1.0</div></aside><main><header class="top"><div class="crumb" id="crumb">Workspace / <b>My projects</b></div><div class="topright"><span class="saved" id="saveState">● Saved locally</span><button class="btn no-print" id="exportBtn">Export</button><button class="btn no-print" id="importBtn">Import</button><button class="btn no-print" id="printBtn">Print</button><input type="file" id="importFile" accept=".json,application/json" hidden></div></header><div class="content"><section id="dashboard"><div class="eyebrow">YOUR CREATOR WORKSPACE</div><h1 class="h1">Plan your next story.</h1><p class="intro">Every scene, every angle, every line — ready before you hit record.</p><div class="stats"><div class="stat"><span>Total projects</span><strong id="statProjects">0</strong></div><div class="stat"><span>Scenes planned</span><strong id="statScenes">0</strong></div><div class="stat"><span>Shots captured</span><strong id="statShots">0%</strong></div></div><div class="sectionhead"><h2>Your projects</h2><button class="btn primary" id="newProject">＋ New project</button></div><div id="projectGrid" class="projects"></div></section><section id="workspace" class="hidden"><div class="eyebrow">PROJECT WORKSPACE</div><div class="sectionhead" style="margin-top:4px"><div><h1 class="h1" id="projectHeading">Untitled vlog</h1><p class="intro" id="projectSummary">Scene-by-scene production plan</p></div><div class="no-print" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="backBtn">← Projects</button><button class="btn primary" id="readScriptsBtn">Read scripts</button><button class="btn danger" id="deleteProject">Delete project</button></div></div><div id="projectEditorView"><div class="stats"><div class="stat"><span>Scenes</span><strong id="sceneCount">0</strong></div><div class="stat"><span>Shots completed</span><strong id="shotCount">0 / 0</strong></div><div class="stat"><span>Overall progress</span><strong id="progressCount">0%</strong><div class="bar"><i id="progressBar" style="width:0%"></i></div></div></div><div class="panel fields"><div class="field"><label>Project title</label><input id="projectTitle" placeholder="e.g. A weekend in Coorg"></div><div class="field"><label>Location</label><input id="projectLocation" placeholder="Where are you filming?"></div><div class="field full"><label>Story / video summary</label><textarea id="projectDescription" rows="2" placeholder="What story do you want viewers to experience?"></textarea></div></div><div class="editor"><div class="panel scene-list"><div class="sectionhead" style="margin:3px 2px 10px"><h3>Scenes</h3><button class="btn small primary no-print" id="addScene">＋ Add</button></div><div id="sceneList"></div></div><div id="sceneResizer" class="scene-resizer no-print" role="separator" aria-label="Resize Scenes panel" aria-orientation="vertical" tabindex="0" title="Drag to resize Scenes panel"></div><div id="sceneDetail"></div></div></div>
 <div id="scriptReaderView" class="script-reader hidden">
- <aside class="reader-sidebar">
-  <div class="reader-sidebar-head"><h2>Scripts & shot lists</h2><span class="pill" id="readerScriptCount">0 scripts</span></div>
-  <p class="hint">Choose voice-over, on-camera dialogue, or a scene shooting checklist to open a clear reading page.</p>
-  <div id="readerScriptList" class="reader-sidebar-list"></div>
+ <aside class="reader-scene-sidebar">
+  <div class="reader-sidebar-head"><h2>Scenes</h2><span class="pill" id="readerSceneCount">0 scenes</span></div>
+  <p class="hint">Select a scene. Its script and shooting checklist stay visible side by side.</p>
+  <div id="readerSceneList" class="reader-scene-list"></div>
  </aside>
  <div class="reader-main">
   <div class="reader-toolbar no-print">
    <div class="reader-toolbar-group">
-    <button class="btn" id="readerPrev">← Previous</button>
-    <button class="btn" id="readerNext">Next →</button>
+    <button class="btn" id="readerPrev">← Previous scene</button>
+    <button class="btn" id="readerNext">Next scene →</button>
+   </div>
+   <div class="reader-script-tabs" role="tablist" aria-label="Script type">
+    <button class="btn primary" id="readerVoiceTab" role="tab" aria-selected="true">Voice-over</button>
+    <button class="btn" id="readerOnCameraTab" role="tab" aria-selected="false">On-camera</button>
    </div>
    <div class="reader-toolbar-group">
     <button class="btn" id="fontDown" title="Decrease text size">A−</button>
@@ -60,18 +71,22 @@
   </div>
   <div id="readerFullscreenArea" class="reader-fullscreen">
    <article class="reader-page" id="readerPage">
-    <div class="reader-kicker" id="readerKicker">SCRIPT READER</div>
-    <h1 class="reader-page-title" id="readerTitle">Choose a script</h1>
+    <div class="reader-kicker" id="readerKicker">SCENE 01 · VOICE-OVER</div>
+    <h1 class="reader-page-title" id="readerTitle">Choose a scene</h1>
     <p class="reader-page-subtitle" id="readerSubtitle"></p>
     <div class="reader-meta" id="readerMeta"></div>
     <div class="reader-rule"></div>
     <div class="reader-text" id="readerText"></div>
-    <div class="reader-page-footer"><span id="readerPageNumber">Script 0 of 0</span><span>Keep this page open while filming</span></div>
+    <div class="reader-page-footer"><span id="readerPageNumber">Scene 0 of 0</span><span>Keep your script open while filming</span></div>
    </article>
   </div>
  </div>
-</div>
-</section></div></main></div>
+ <aside class="reader-checklist">
+  <div class="reader-checklist-head"><h2>Shooting checklist</h2><span class="pill" id="readerShotCount">0 / 0</span></div>
+  <p class="reader-checklist-note" id="readerChecklistHint">Tick each shot after recording it. Progress is saved in this browser.</p>
+  <div id="readerShotList" class="reader-shot-list"></div>
+ </aside>
+</div></section></div></main></div>
 <script>
 const KEY='vlogscript-studio-v1',$=id=>document.getElementById(id);let projects=[],activeProject=null,activeScene=null,view='home',timer;const uid=()=>Math.random().toString(36).slice(2,10),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shot=()=>({id:uid(),done:false,name:'Wide establishing shot',angle:'Wide',fps:'4K / 30 FPS',orientation:'Landscape'});function newScene(n){return{id:uid(),title:'Scene '+String(n).padStart(2,'0')+' — New scene',subtitle:'Purpose / story beat',location:'',duration:'00:30',purpose:'',notes:'',voiceover:'',oncamera:'',shots:[shot(),{...shot(),id:uid(),name:'Walking / POV shot',angle:'POV',fps:'4K / 60 FPS'},{...shot(),id:uid(),name:'Detail close-up',angle:'Close-up',fps:'4K / 100 FPS'}]}}function makeProject(){return{id:uid(),title:'Untitled vlog',location:'',description:'',scenes:[newScene(1)]}}function cur(){return projects.find(p=>p.id===activeProject)}function sc(){return cur()?.scenes.find(s=>s.id===activeScene)}function totals(p){let a=p.scenes.flatMap(s=>s.shots);return{scenes:p.scenes.length,shots:a.length,done:a.filter(x=>x.done).length}}function save(){try{localStorage.setItem(KEY,JSON.stringify(projects));$('saveState').textContent='● Saved locally'}catch(e){$('saveState').textContent='Storage unavailable'}stats()}function later(){ $('saveState').textContent='Saving…';clearTimeout(timer);timer=setTimeout(save,250)}
@@ -116,27 +131,16 @@ const shot=()=>({id:uid(),done:false,name:'Wide establishing shot',angle:'Wide',
  });
 })();
 function stats(){let a=projects.flatMap(p=>p.scenes.flatMap(s=>s.shots));$('statProjects').textContent=projects.length;$('statScenes').textContent=projects.reduce((n,p)=>n+p.scenes.length,0);$('statShots').textContent=(a.length?Math.round(a.filter(x=>x.done).length/a.length*100):0)+'%';if(cur()){let t=totals(cur()),v=t.shots?Math.round(t.done/t.shots*100):0;$('sceneCount').textContent=t.scenes;$('shotCount').textContent=t.done+' / '+t.shots;$('progressCount').textContent=v+'%';$('progressBar').style.width=v+'%'}}
-let activeScriptKey=null,readerFontSize=21,readerScripts=[];
-function collectReaderScripts(){
- const p=cur();if(!p)return [];
- const items=[];
- p.scenes.forEach((s,i)=>{
-  items.push({key:s.id+'::voiceover',scene:s,sceneIndex:i,field:'voiceover',type:'Voice-over',content:s.voiceover||''});
-  items.push({key:s.id+'::oncamera',scene:s,sceneIndex:i,field:'oncamera',type:'On-camera',content:s.oncamera||''});
-  items.push({key:s.id+'::shots',scene:s,sceneIndex:i,field:'shots',type:'Shooting checklist',content:'',shots:s.shots||[]});
- });
- return items;
-}
+let activeReaderSceneId=null,readerScriptType='voiceover',readerFontSize=21;
 function openScriptReader(){
- if(!cur())return;
- readerScripts=collectReaderScripts();
- if(!readerScripts.length)return;
- if(!readerScripts.some(x=>x.key===activeScriptKey))activeScriptKey=readerScripts.find(x=>x.content.trim())?.key||readerScripts[0].key;
+ const p=cur();if(!p)return;
+ if(!p.scenes.length)return;
+ if(!p.scenes.some(x=>x.id===activeReaderSceneId))activeReaderSceneId=p.scenes.some(x=>x.id===activeScene)?activeScene:p.scenes[0].id;
  $('projectEditorView').classList.add('hidden');
  $('scriptReaderView').classList.remove('hidden');
  $('readScriptsBtn').textContent='← Edit project';
  $('readScriptsBtn').classList.remove('primary');
- $('crumb').innerHTML='Workspace / <b>'+esc(cur().title||'Project')+'</b> / <b>Read scripts</b>';
+ $('crumb').innerHTML='Workspace / <b>'+esc(p.title||'Project')+'</b> / <b>Read scripts</b>';
  renderReader();
 }
 function closeScriptReader(){
@@ -148,45 +152,49 @@ function closeScriptReader(){
  if(cur()){sceneList();sceneEditor();}
 }
 function renderReader(){
- if(!cur())return;
- readerScripts=collectReaderScripts();
- if(!readerScripts.some(x=>x.key===activeScriptKey))activeScriptKey=readerScripts.find(x=>x.content.trim())?.key||readerScripts[0]?.key;
- const idx=readerScripts.findIndex(x=>x.key===activeScriptKey), item=readerScripts[idx];
- $('readerScriptCount').textContent=readerScripts.length+' reader items';
- $('readerScriptList').innerHTML=readerScripts.map(x=>{
-  const shotsDone=(x.shots||[]).filter(sh=>sh.done).length, shotsTotal=(x.shots||[]).length;
-  const shortType=x.type==='Voice-over'?'◖ ':x.type==='On-camera'?'◉ ':'☷ ';
-  const note=x.field==='shots'?' · '+shotsDone+'/'+shotsTotal+' shots done':(x.content.trim()?'':' · Not written yet');
-  return '<button class="reader-script-item '+(x.key===activeScriptKey?'active':'')+'" data-script-key="'+esc(x.key)+'"><span class="reader-item-scene">'+String(x.sceneIndex+1).padStart(2,'0')+' · '+esc(x.scene.title||'Untitled scene')+'</span><span class="reader-item-type">'+shortType+x.type+note+'</span></button>';
+ const p=cur();if(!p)return;
+ if(!p.scenes.some(x=>x.id===activeReaderSceneId))activeReaderSceneId=p.scenes.some(x=>x.id===activeScene)?activeScene:(p.scenes[0]?.id||null);
+ const scene=p.scenes.find(x=>x.id===activeReaderSceneId);
+ $('readerSceneCount').textContent=p.scenes.length+' scenes';
+ $('readerSceneList').innerHTML=p.scenes.map((x,i)=>{
+  const done=(x.shots||[]).filter(sh=>sh.done).length,total=(x.shots||[]).length;
+  return '<button class="reader-script-item '+(x.id===activeReaderSceneId?'active':'')+'" data-reader-scene="'+esc(x.id)+'"><span class="reader-item-scene">'+String(i+1).padStart(2,'0')+' · '+esc(x.title||'Untitled scene')+'</span><span class="reader-item-type">'+done+'/'+total+' shots recorded</span></button>';
  }).join('');
- $('readerScriptList').querySelectorAll('[data-script-key]').forEach(b=>b.onclick=()=>{activeScriptKey=b.dataset.scriptKey;renderReader();});
- if(!item){$('readerTitle').textContent='No reading items yet';$('readerText').textContent='Add a scene to begin.';return;}
- const sceneNumber=String(item.sceneIndex+1).padStart(2,'0');
- $('readerKicker').textContent='SCENE '+sceneNumber+' · '+item.type.toUpperCase();
- $('readerTitle').textContent=item.scene.title||'Untitled scene';
- $('readerSubtitle').textContent=item.field==='shots'?'Use this checklist while filming. Tap a checkbox as soon as each shot is recorded.':(item.scene.subtitle||'');
- const doneShots=(item.shots||[]).filter(sh=>sh.done).length, totalShots=(item.shots||[]).length;
- const meta=[item.type,item.scene.location,item.scene.duration&&('Estimated duration '+item.scene.duration)];
- if(item.field==='shots')meta.push(doneShots+' of '+totalShots+' shots completed');
- $('readerMeta').innerHTML=meta.filter(Boolean).map(x=>'<span>'+esc(x)+'</span>').join('');
- if(item.field==='shots'){
-  $('readerText').innerHTML=totalShots?'<div class="reader-shot-list">'+item.shots.map((sh,i)=>'<label class="reader-shot '+(sh.done?'complete':'')+'"><input type="checkbox" data-reader-shot="'+esc(sh.id)+'" '+(sh.done?'checked':'')+'><span class="reader-shot-content"><span class="reader-shot-name">'+esc(sh.name||('Shot '+(i+1)))+'</span><span class="reader-shot-meta">'+[sh.angle,sh.fps,sh.orientation].filter(Boolean).map(v=>'<span>'+esc(v)+'</span>').join('')+'</span></span></label>').join('')+'</div>':'<div class="reader-empty">No shots in this checklist yet. Add shots from Edit project.</div>';
-  $('readerText').querySelectorAll('[data-reader-shot]').forEach(input=>input.onchange=()=>{
-   const sh=item.scene.shots.find(x=>x.id===input.dataset.readerShot);if(!sh)return;
-   sh.done=input.checked;save();renderReader();
-  });
- }else{
-  $('readerText').textContent=item.content.trim()?item.content:'No script written yet. Select “Edit project” to add this script.';
+ $('readerSceneList').querySelectorAll('[data-reader-scene]').forEach(b=>b.onclick=()=>{activeReaderSceneId=b.dataset.readerScene;activeScene=activeReaderSceneId;renderReader();});
+ $('readerVoiceTab').classList.toggle('primary',readerScriptType==='voiceover');
+ $('readerOnCameraTab').classList.toggle('primary',readerScriptType==='oncamera');
+ $('readerVoiceTab').setAttribute('aria-selected',String(readerScriptType==='voiceover'));
+ $('readerOnCameraTab').setAttribute('aria-selected',String(readerScriptType==='oncamera'));
+ if(!scene){
+  $('readerKicker').textContent='SCRIPT READER';$('readerTitle').textContent='No scenes yet';$('readerSubtitle').textContent='Add a scene from Edit project to begin.';$('readerMeta').innerHTML='';$('readerText').textContent='';$('readerShotList').innerHTML='<div class="reader-empty">No scenes yet.</div>';$('readerShotCount').textContent='0 / 0';$('readerPageNumber').textContent='Scene 0 of 0';return;
  }
+ const idx=p.scenes.findIndex(x=>x.id===scene.id),sceneNumber=String(idx+1).padStart(2,'0');
+ const scriptLabel=readerScriptType==='voiceover'?'Voice-over':'On-camera';
+ $('readerKicker').textContent='SCENE '+sceneNumber+' · '+scriptLabel.toUpperCase();
+ $('readerTitle').textContent=scene.title||'Untitled scene';
+ $('readerSubtitle').textContent=scene.subtitle||'';
+ const meta=[scene.location,scene.duration&&('Estimated duration '+scene.duration)];
+ $('readerMeta').innerHTML=meta.filter(Boolean).map(x=>'<span>'+esc(x)+'</span>').join('');
+ const content=scene[readerScriptType]||'';
+ $('readerText').textContent=content.trim()?content:'No '+scriptLabel.toLowerCase()+' script written yet. Choose “Edit project” to add it.';
  $('readerText').style.setProperty('font-size',readerFontSize+'px');
- $('readerPageNumber').textContent='Item '+(idx+1)+' of '+readerScripts.length;
- $('readerPrev').disabled=idx<=0;$('readerNext').disabled=idx>=readerScripts.length-1;
- $('readerPrev').style.opacity=idx<=0?'.45':'1';$('readerNext').style.opacity=idx>=readerScripts.length-1?'.45':'1';
+ const shots=scene.shots||[],done=shots.filter(sh=>sh.done).length,total=shots.length;
+ $('readerShotCount').textContent=done+' / '+total;
+ $('readerChecklistHint').textContent=total?done+' of '+total+' shots recorded. Tick each shot once it is captured.':'No shots added yet. Add them from Edit project.';
+ $('readerShotList').innerHTML=total?shots.map((sh,i)=>'<label class="reader-shot '+(sh.done?'complete':'')+'"><input type="checkbox" data-reader-shot="'+esc(sh.id)+'" '+(sh.done?'checked':'')+'><span class="reader-shot-content"><span class="reader-shot-name">'+esc(sh.name||('Shot '+(i+1)))+'</span><span class="reader-shot-meta">'+[sh.angle,sh.fps,sh.orientation].filter(Boolean).map(v=>'<span>'+esc(v)+'</span>').join('')+'</span></span></label>').join(''):'<div class="reader-empty">No shots in this checklist yet. Add shots from Edit project.</div>';
+ $('readerShotList').querySelectorAll('[data-reader-shot]').forEach(input=>input.onchange=()=>{
+  const sh=scene.shots.find(x=>x.id===input.dataset.readerShot);if(!sh)return;
+  sh.done=input.checked;save();renderReader();
+ });
+ $('readerPageNumber').textContent='Scene '+(idx+1)+' of '+p.scenes.length;
+ $('readerPrev').disabled=idx<=0;$('readerNext').disabled=idx>=p.scenes.length-1;
+ $('readerPrev').style.opacity=idx<=0?'.45':'1';$('readerNext').style.opacity=idx>=p.scenes.length-1?'.45':'1';
 }
 function stepReader(delta){
- const idx=readerScripts.findIndex(x=>x.key===activeScriptKey),next=idx+delta;
- if(next<0||next>=readerScripts.length)return;
- activeScriptKey=readerScripts[next].key;renderReader();
+ const p=cur();if(!p)return;
+ const idx=p.scenes.findIndex(x=>x.id===activeReaderSceneId),next=idx+delta;
+ if(next<0||next>=p.scenes.length)return;
+ activeReaderSceneId=p.scenes[next].id;activeScene=activeReaderSceneId;renderReader();
 }
 function show(v){view=v;if($('projectEditorView')&&$('scriptReaderView')){$('projectEditorView').classList.remove('hidden');$('scriptReaderView').classList.add('hidden');if($('readScriptsBtn')){$('readScriptsBtn').textContent='Read scripts';$('readScriptsBtn').classList.add('primary');}}$('dashboard').classList.toggle('hidden',v!=='home');$('workspace').classList.toggle('hidden',v==='home');$('homeNav').classList.toggle('active',v==='home');$('shootNav').classList.toggle('active',v==='shoot');$('crumb').innerHTML='Workspace / <b>'+esc(v==='home'?'My projects':v==='shoot'?'Shooting checklist':cur()?.title||'Project')+'</b>';if(v==='home')dash();else if(cur())workspace()}
 function dash(){stats();let g=$('projectGrid');if(!projects.length){g.innerHTML='<div class="empty" style="grid-column:1/-1"><div style="font-size:28px">▧</div><b>No projects yet</b><p>Create your first vlog plan to start organising scenes and shots.</p><button class="btn primary" id="emptyCreate">＋ Create your first project</button></div>';$('emptyCreate').onclick=create;return}g.innerHTML=projects.map(p=>{let t=totals(p),v=t.shots?Math.round(t.done/t.shots*100):0;return '<button class="project" data-open="'+p.id+'"><span class="pill">VLOG PROJECT</span><h3>'+esc(p.title||'Untitled vlog')+'</h3><p>'+esc(p.location||p.description||'Add a location and story summary')+'</p><div class="meta"><span>'+t.scenes+' scenes · '+t.shots+' shots</span><span>'+v+'% ready</span></div><div class="bar"><i style="width:'+v+'%"></i></div></button>'}).join('');g.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>open(b.dataset.open))}
@@ -199,7 +207,7 @@ $('dupScene').onclick=()=>{let c=JSON.parse(JSON.stringify(s));c.id=uid();c.titl
 function moveScene(d){let a=cur().scenes,i=a.findIndex(s=>s.id===activeScene),j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];later();sceneList();sceneEditor()}
 function shotsEditor(){let s=sc();$('shots').innerHTML=s.shots.map(x=>'<div class="shot '+(x.done?'done':'')+'" data-shot="'+x.id+'"><input type="checkbox" data-k="done" '+(x.done?'checked':'')+' aria-label="Completed"><input type="text" class="shotname" data-k="name" value="'+esc(x.name)+'" aria-label="Shot name"><select data-k="angle" aria-label="Angle">'+['Wide','Ultra-wide','Medium','Close-up','Extreme close-up','POV','Over-the-shoulder','Low angle','High angle','Tracking','Drone','Detail'].map(v=>'<option '+(x.angle===v?'selected':'')+'>'+v+'</option>').join('')+'</select><select data-k="fps" aria-label="Frame rate">'+['4K / 30 FPS','4K / 60 FPS','4K / 100 FPS','1080p / 30 FPS','1080p / 60 FPS','Custom'].map(v=>'<option '+(x.fps===v?'selected':'')+'>'+v+'</option>').join('')+'</select><select data-k="orientation" aria-label="Orientation">'+['Landscape','Portrait','Square'].map(v=>'<option '+(x.orientation===v?'selected':'')+'>'+v+'</option>').join('')+'</select><button class="btn small no-print" data-remove title="Remove shot">×</button></div>').join('');$('shots').querySelectorAll('[data-shot]').forEach(row=>{let x=s.shots.find(a=>a.id===row.dataset.shot);row.querySelectorAll('[data-k]').forEach(el=>{let fn=e=>{x[e.target.dataset.k]=e.target.type==='checkbox'?e.target.checked:e.target.value;row.classList.toggle('done',x.done);later();stats();sceneList()};el.onchange=fn;el.oninput=fn});row.querySelector('[data-remove]').onclick=()=>{s.shots=s.shots.filter(a=>a.id!==x.id);later();shotsEditor()}})}
 $('newProject').onclick=create;$('backBtn').onclick=()=>show('home');$('readScriptsBtn').onclick=()=>{if($('scriptReaderView').classList.contains('hidden'))openScriptReader();else closeScriptReader();};
-$('readerPrev').onclick=()=>stepReader(-1);$('readerNext').onclick=()=>stepReader(1);
+$('readerPrev').onclick=()=>stepReader(-1);$('readerNext').onclick=()=>stepReader(1);$('readerVoiceTab').onclick=()=>{readerScriptType='voiceover';renderReader()};$('readerOnCameraTab').onclick=()=>{readerScriptType='oncamera';renderReader()};
 $('fontDown').onclick=()=>{readerFontSize=Math.max(16,readerFontSize-2);renderReader()};
 $('fontUp').onclick=()=>{readerFontSize=Math.min(32,readerFontSize+2);renderReader()};
 $('readerFullscreen').onclick=async()=>{const area=$('readerFullscreenArea');try{if(!document.fullscreenElement){await area.requestFullscreen();$('readerFullscreen').textContent='⛶ Exit focus mode'}else{await document.exitFullscreen();$('readerFullscreen').textContent='⛶ Focus mode'}}catch(e){alert('Focus mode is not available in this browser.')}};
