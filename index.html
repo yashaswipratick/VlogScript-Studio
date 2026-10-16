@@ -75,7 +75,8 @@
 .travel-step-safety{font-size:12px;line-height:1.6;color:#7b5317;background:#fff9ed;border:1px solid #f1d5a3;border-radius:10px;padding:10px 12px;margin-bottom:13px}
 .travel-checklist-header{margin:16px 0 8px}
 .travel-shot-list,.travel-extra-list{display:flex;flex-direction:column;gap:9px}
-.travel-shot-card{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff}
+.travel-shot-card{display:flex;align-items:flex-start;gap:9px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff}
+.travel-shot-seq{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:8px;background:#edf1f6;color:#516176;font-size:10px;font-weight:850;line-height:1}
 .travel-shot-card.done{background:#f8fbf9;border-color:#d9eee2}
 .travel-shot-card input[type=checkbox],.travel-extra-card input[type=checkbox]{width:19px;height:19px;flex:0 0 19px;margin:2px 0 0;accent-color:var(--blue);cursor:pointer}
 .travel-shot-body{min-width:0;flex:1}
@@ -190,7 +191,7 @@
    <label class="travel-label" for="travelScriptScene">Scene / story beat</label>
    <select id="travelScriptScene" class="travel-select"></select>
    <div class="reader-script-tabs travel-script-tabs" role="tablist" aria-label="Travel script type">
-    <button class="btn" id="travelVoiceTab" role="tab" aria-selected="false">Voice-over</button>
+    <button class="btn" id="travelVoiceTab" role="tab" aria-selected="false">Voice-over / B-roll</button>
     <button class="btn primary" id="travelOnCameraTab" role="tab" aria-selected="true">On-camera</button>
    </div>
    <div class="travel-script-paper">
@@ -325,6 +326,20 @@ function travelStateFor(p){
  return st;
 }
 function travelCleanShotName(name){return String(name||'').replace(/^(?:VO|ON[\s-]*CAMERA)\s*[·:–—-]\s*/i,'').trim()||'Unnamed shot'}
+function travelShotTypeFor(scene,shot){
+ if(['voiceover','oncamera','both'].includes(shot?.scriptType))return shot.scriptType;
+ const script=String(scene?.oncamera||'').trim();
+ const noSpokenScript=!script||/(?:^|\n)\s*(?:no dialogue required|no spoken dialogue required|no on-camera dialogue (?:is )?required|no spoken dialogue(?:[.!:\s]|$)|this scene is voice-over driven|the reflection is carried by voice-over)/i.test(script);
+ const base=shotScriptType(shot);
+ if(noSpokenScript&&base==='oncamera')return 'voiceover';
+ return base;
+}
+function travelFilteredItems(stop,state){
+ return (stop.items||[]).filter(x=>{
+  const type=travelShotTypeFor(x.scene,x.shot);
+  return type===state.scriptType||type==='both';
+ });
+}
 function travelTaskHasNoCapture(name){
  const n=String(name||'');
  return /^(?:VO|ON[\s-]*CAMERA)\s*[·:–—-]\s*(?:No dialogue required|No spoken dialogue|No on-camera dialogue|No separate voice-over required|No voice-over required)/i.test(n)
@@ -436,20 +451,23 @@ function renderTravelShoot(){
  const state=travelStateFor(p),plan=currentTravelPlan(p);
  if(!plan.length){$('travelStopList').innerHTML='<div class="travel-empty">Add a scene to create a travel plan.</div>';return;}
  if(!plan.some(x=>x.id===state.activeStopId))state.activeStopId=plan[0].id;
- let stopIndex=plan.findIndex(x=>x.id===state.activeStopId),stop=plan[stopIndex];
+ const stopIndex=plan.findIndex(x=>x.id===state.activeStopId),stop=plan[stopIndex];
  const overall=getTravelDoneCounts(plan,p),pct=overall.total?Math.round(overall.done/overall.total*100):0;
  $('travelStopTotal').textContent=plan.length;
  $('travelTaskProgress').textContent=overall.done+' / '+overall.total;
  $('travelPercent').textContent=pct+'%';$('travelProgressBar').style.width=pct+'%';$('travelRailProgress').textContent=pct+'%';
  $('travelStopList').innerHTML=plan.map((st,i)=>{
-  const t=(st.items||[]).length+(st.extraTasks||[]).length;
-  const d=(st.items||[]).filter(x=>x.shot.done).length+(st.extraTasks||[]).filter(x=>state.extraDone[st.id+'::'+x.id]).length;
-  return '<button class="travel-stop '+(st.id===stop.id?'active':'')+'" data-travel-stop="'+esc(st.id)+'"><span class="travel-stop-number">'+String(i+1).padStart(2,'0')+'</span><span><span class="travel-stop-name">'+esc(st.title)+'</span><span class="travel-stop-sub">'+esc(st.subtitle||'')+'</span></span><span class="travel-stop-check">'+d+'/'+t+'</span></button>';
+  const items=travelFilteredItems(st,state);
+  const total=items.length+(st.extraTasks||[]).length;
+  const done=items.filter(x=>x.shot.done).length+(st.extraTasks||[]).filter(x=>state.extraDone[st.id+'::'+x.id]).length;
+  return '<button class="travel-stop '+(st.id===stop.id?'active':'')+'" data-travel-stop="'+esc(st.id)+'"><span class="travel-stop-number">'+String(i+1).padStart(2,'0')+'</span><span><span class="travel-stop-name">'+esc(st.title)+'</span><span class="travel-stop-sub">'+esc(st.subtitle||'')+'</span></span><span class="travel-stop-check">'+done+'/'+total+'</span></button>';
  }).join('');
  $('travelStopList').querySelectorAll('[data-travel-stop]').forEach(b=>b.onclick=()=>openTravelStop(b.dataset.travelStop));
- const stopDone=(stop.items||[]).filter(x=>x.shot.done).length+(stop.extraTasks||[]).filter(x=>state.extraDone[stop.id+'::'+x.id]).length;
- const stopTotal=(stop.items||[]).length+(stop.extraTasks||[]).length;
- $('travelStepKicker').textContent='STOP '+String(stopIndex+1).padStart(2,'0')+' · '+Math.round(stopTotal?stopDone/stopTotal*100:0)+'% COMPLETE';
+ const shownItems=travelFilteredItems(stop,state);
+ const stopDone=shownItems.filter(x=>x.shot.done).length+(stop.extraTasks||[]).filter(x=>state.extraDone[stop.id+'::'+x.id]).length;
+ const stopTotal=shownItems.length+(stop.extraTasks||[]).length;
+ const modeLabel=state.scriptType==='voiceover'?'VOICE-OVER / B-ROLL':'ON-CAMERA';
+ $('travelStepKicker').textContent='STOP '+String(stopIndex+1).padStart(2,'0')+' · '+modeLabel+' · '+Math.round(stopTotal?stopDone/stopTotal*100:0)+'% COMPLETE';
  $('travelStepTitle').textContent=stop.title;$('travelStepSubtitle').textContent=stop.subtitle;
  $('travelStepCount').textContent=stopDone+' / '+stopTotal+' done';
  $('travelStepProgressBar').style.width=(stopTotal?Math.round(stopDone/stopTotal*100):0)+'%';
@@ -457,13 +475,14 @@ function renderTravelShoot(){
  ['travelPrev','travelPrevBottom'].forEach(id=>{$(id).disabled=stopIndex<=0;$(id).style.opacity=stopIndex<=0?'.45':'1';});
  ['travelNext','travelNextBottom'].forEach(id=>{$(id).disabled=stopIndex>=plan.length-1;$(id).textContent=stopIndex>=plan.length-1?'Journey complete ✓':'Next stop →';$(id).style.opacity=stopIndex>=plan.length-1?'.45':'1';});
  $('travelStepSafety').textContent=stop.safety||'';$('travelStepSafety').classList.toggle('hidden',!stop.safety);
- $('travelShotList').innerHTML=(stop.items||[]).map(x=>{
-  const sh=x.shot,typ=shotScriptType(sh),typLabel=typ==='voiceover'?'Voice-over B-roll':typ==='oncamera'?'On-camera':'Shared / general';
-  return '<label class="travel-shot-card '+(sh.done?'done':'')+'"><input type="checkbox" data-travel-shot="'+esc(sh.id)+'" '+(sh.done?'checked':'')+'><span class="travel-shot-body"><span class="travel-shot-title">'+esc(travelCleanShotName(sh.name))+'</span><span class="travel-shot-tags"><span class="travel-type-tag">'+typLabel+'</span>'+[sh.angle,sh.fps,sh.orientation].filter(Boolean).map(v=>'<span>'+esc(v)+'</span>').join('')+'</span><span class="travel-shot-source">'+esc(x.scene.title||'Untitled scene')+'</span></span></label>';
+ $('travelShotList').innerHTML=shownItems.map((x,i)=>{
+  const sh=x.shot,type=travelShotTypeFor(x.scene,sh);
+  const typLabel=type==='voiceover'?'Voice-over B-roll':type==='oncamera'?'On-camera':'Shared / general';
+  return '<label class="travel-shot-card '+(sh.done?'done':'')+'"><span class="travel-shot-seq">'+String(i+1).padStart(2,'0')+'</span><input type="checkbox" data-travel-shot="'+esc(sh.id)+'" '+(sh.done?'checked':'')+'><span class="travel-shot-body"><span class="travel-shot-title">'+esc(travelCleanShotName(sh.name))+'</span><span class="travel-shot-tags"><span class="travel-type-tag">'+typLabel+'</span>'+[sh.angle,sh.fps,sh.orientation].filter(Boolean).map(v=>'<span>'+esc(v)+'</span>').join('')+'</span><span class="travel-shot-source">'+esc(x.scene.title||'Untitled scene')+'</span></span></label>';
  }).join('');
  $('travelShotList').querySelectorAll('[data-travel-shot]').forEach(input=>input.onchange=()=>{
   const shotId=input.dataset.travelShot;
-  for(const sc of (cur()?.scenes||[])){const sh=(sc.shots||[]).find(q=>q.id===shotId);if(sh){sh.done=input.checked;break;}}
+  for(const scene of (cur()?.scenes||[])){const sh=(scene.shots||[]).find(q=>q.id===shotId);if(sh){sh.done=input.checked;break;}}
   save();renderTravelShoot();
  });
  $('travelExtraList').innerHTML=(stop.extraTasks||[]).map(task=>{
@@ -473,7 +492,11 @@ function renderTravelShoot(){
  $('travelExtraList').querySelectorAll('[data-travel-extra]').forEach(input=>input.onchange=()=>{
   state.extraDone[stop.id+'::'+input.dataset.travelExtra]=input.checked;save();renderTravelShoot();
  });
- $('travelStepEmpty').classList.toggle('hidden',stopTotal!==0);
+ const visibleTasks=shownItems.length+(stop.extraTasks||[]).length;
+ $('travelStepEmpty').textContent=state.scriptType==='voiceover'
+  ?'No voice-over / B-roll shots at this stop. Switch to On-camera or continue to the next stop.'
+  :'No on-camera shots assigned to this stop. Switch to Voice-over / B-roll or continue to the next stop.';
+ $('travelStepEmpty').classList.toggle('hidden',visibleTasks!==0);
  renderTravelScript(stop,p,state);
 }
 function renderTravelScript(stop,p,state){
