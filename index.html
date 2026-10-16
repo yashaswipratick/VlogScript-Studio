@@ -22,6 +22,17 @@
 .reader-meta span{background:#f3f5f8;border-radius:30px;padding:5px 10px;color:#566274;font-size:11px;font-weight:700}
 .reader-rule{height:1px;background:var(--line);margin:28px 0}
 .reader-text{white-space:pre-wrap;overflow-wrap:anywhere;font-size:var(--reader-font-size,21px);line-height:1.9;letter-spacing:.01em;color:#263347;max-width:67ch;margin:0 auto}
+.reader-shot-list{display:flex;flex-direction:column;gap:10px;max-width:860px;margin:0 auto}
+.reader-shot{display:flex;align-items:flex-start;gap:14px;padding:16px 17px;border:1px solid #e0e6ef;border-radius:12px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
+.reader-shot:hover{border-color:#afbeef;background:#fbfcff}
+.reader-shot input{width:22px;height:22px;flex:0 0 22px;margin:3px 0 0;accent-color:#315ee8;cursor:pointer}
+.reader-shot-content{display:block;min-width:0;flex:1}
+.reader-shot-name{display:block;font-size:clamp(16px,1.7vw,20px);font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+.reader-shot.complete .reader-shot-name{text-decoration:line-through;color:#8b95a3}
+.reader-shot-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.reader-shot-meta span{display:inline-block;background:#f1f4f8;border-radius:30px;padding:4px 9px;font-size:12px;line-height:1.4;color:#556173}
+.reader-shot.complete{background:#f8fbf9;border-color:#d9eee2}
+
 .reader-empty{border:1px dashed #ccd5e2;border-radius:12px;padding:24px;color:var(--muted);background:#fafbfc;line-height:1.7}
 .reader-page-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
 .reader-fullscreen:fullscreen{background:var(--bg);overflow:auto;padding:24px}
@@ -112,6 +123,7 @@ function collectReaderScripts(){
  p.scenes.forEach((s,i)=>{
   items.push({key:s.id+'::voiceover',scene:s,sceneIndex:i,field:'voiceover',type:'Voice-over',content:s.voiceover||''});
   items.push({key:s.id+'::oncamera',scene:s,sceneIndex:i,field:'oncamera',type:'On-camera',content:s.oncamera||''});
+  items.push({key:s.id+'::shots',scene:s,sceneIndex:i,field:'shots',type:'Shooting checklist',content:'',shots:s.shots||[]});
  });
  return items;
 }
@@ -140,18 +152,34 @@ function renderReader(){
  readerScripts=collectReaderScripts();
  if(!readerScripts.some(x=>x.key===activeScriptKey))activeScriptKey=readerScripts.find(x=>x.content.trim())?.key||readerScripts[0]?.key;
  const idx=readerScripts.findIndex(x=>x.key===activeScriptKey), item=readerScripts[idx];
- $('readerScriptCount').textContent=readerScripts.length+' scripts';
- $('readerScriptList').innerHTML=readerScripts.map((x,i)=>'<button class="reader-script-item '+(x.key===activeScriptKey?'active':'')+'" data-script-key="'+esc(x.key)+'"><span class="reader-item-scene">'+String(x.sceneIndex+1).padStart(2,'0')+' · '+esc(x.scene.title||'Untitled scene')+'</span><span class="reader-item-type">'+(x.type==='Voice-over'?'◖ ':'◉ ')+x.type+(x.content.trim()?'':' · Not written yet')+'</span></button>').join('');
+ $('readerScriptCount').textContent=readerScripts.length+' reader items';
+ $('readerScriptList').innerHTML=readerScripts.map(x=>{
+  const shotsDone=(x.shots||[]).filter(sh=>sh.done).length, shotsTotal=(x.shots||[]).length;
+  const shortType=x.type==='Voice-over'?'◖ ':x.type==='On-camera'?'◉ ':'☷ ';
+  const note=x.field==='shots'?' · '+shotsDone+'/'+shotsTotal+' shots done':(x.content.trim()?'':' · Not written yet');
+  return '<button class="reader-script-item '+(x.key===activeScriptKey?'active':'')+'" data-script-key="'+esc(x.key)+'"><span class="reader-item-scene">'+String(x.sceneIndex+1).padStart(2,'0')+' · '+esc(x.scene.title||'Untitled scene')+'</span><span class="reader-item-type">'+shortType+x.type+note+'</span></button>';
+ }).join('');
  $('readerScriptList').querySelectorAll('[data-script-key]').forEach(b=>b.onclick=()=>{activeScriptKey=b.dataset.scriptKey;renderReader();});
- if(!item){$('readerTitle').textContent='No scripts yet';$('readerText').textContent='Add a scene and write a voice-over or on-camera script first.';return;}
+ if(!item){$('readerTitle').textContent='No reading items yet';$('readerText').textContent='Add a scene to begin.';return;}
  const sceneNumber=String(item.sceneIndex+1).padStart(2,'0');
- $('readerKicker').textContent='SCENE '+sceneNumber+' · '+item.type.toUpperCase()+' SCRIPT';
+ $('readerKicker').textContent='SCENE '+sceneNumber+' · '+item.type.toUpperCase();
  $('readerTitle').textContent=item.scene.title||'Untitled scene';
- $('readerSubtitle').textContent=item.scene.subtitle||'';
- $('readerMeta').innerHTML=[item.type,item.scene.location,item.scene.duration&&('Estimated duration '+item.scene.duration)].filter(Boolean).map(x=>'<span>'+esc(x)+'</span>').join('');
- $('readerText').textContent=item.content.trim()?item.content:'No script written yet. Select “Edit project” to add this script.';
+ $('readerSubtitle').textContent=item.field==='shots'?'Use this checklist while filming. Tap a checkbox as soon as each shot is recorded.':(item.scene.subtitle||'');
+ const doneShots=(item.shots||[]).filter(sh=>sh.done).length, totalShots=(item.shots||[]).length;
+ const meta=[item.type,item.scene.location,item.scene.duration&&('Estimated duration '+item.scene.duration)];
+ if(item.field==='shots')meta.push(doneShots+' of '+totalShots+' shots completed');
+ $('readerMeta').innerHTML=meta.filter(Boolean).map(x=>'<span>'+esc(x)+'</span>').join('');
+ if(item.field==='shots'){
+  $('readerText').innerHTML=totalShots?'<div class="reader-shot-list">'+item.shots.map((sh,i)=>'<label class="reader-shot '+(sh.done?'complete':'')+'"><input type="checkbox" data-reader-shot="'+esc(sh.id)+'" '+(sh.done?'checked':'')+'><span class="reader-shot-content"><span class="reader-shot-name">'+esc(sh.name||('Shot '+(i+1)))+'</span><span class="reader-shot-meta">'+[sh.angle,sh.fps,sh.orientation].filter(Boolean).map(v=>'<span>'+esc(v)+'</span>').join('')+'</span></span></label>').join('')+'</div>':'<div class="reader-empty">No shots in this checklist yet. Add shots from Edit project.</div>';
+  $('readerText').querySelectorAll('[data-reader-shot]').forEach(input=>input.onchange=()=>{
+   const sh=item.scene.shots.find(x=>x.id===input.dataset.readerShot);if(!sh)return;
+   sh.done=input.checked;save();renderReader();
+  });
+ }else{
+  $('readerText').textContent=item.content.trim()?item.content:'No script written yet. Select “Edit project” to add this script.';
+ }
  $('readerText').style.setProperty('font-size',readerFontSize+'px');
- $('readerPageNumber').textContent='Script '+(idx+1)+' of '+readerScripts.length;
+ $('readerPageNumber').textContent='Item '+(idx+1)+' of '+readerScripts.length;
  $('readerPrev').disabled=idx<=0;$('readerNext').disabled=idx>=readerScripts.length-1;
  $('readerPrev').style.opacity=idx<=0?'.45':'1';$('readerNext').style.opacity=idx>=readerScripts.length-1?'.45':'1';
 }
