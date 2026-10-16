@@ -187,12 +187,12 @@
   </section>
   <aside class="travel-script panel">
    <div class="travel-panel-head"><h3>Read the script here</h3><span class="pill">Live prompt</span></div>
-   <p class="hint">Choose a scene associated with this stop, then switch between the voice-over and the words to say on camera.</p>
+   <p class="hint">Choose from scripts that have matching shots at this stop. The script options and checklist mode stay in sync.</p>
    <label class="travel-label" for="travelScriptScene">Scene / story beat</label>
    <select id="travelScriptScene" class="travel-select"></select>
    <div class="reader-script-tabs travel-script-tabs" role="tablist" aria-label="Travel script type">
-    <button class="btn" id="travelVoiceTab" role="tab" aria-selected="false">Voice-over / B-roll</button>
-    <button class="btn primary" id="travelOnCameraTab" role="tab" aria-selected="true">On-camera</button>
+    <button class="btn" id="travelVoiceTab" role="tab" aria-selected="false">Voice-over / B-roll shots</button>
+    <button class="btn primary" id="travelOnCameraTab" role="tab" aria-selected="true">On-camera shots</button>
    </div>
    <div class="travel-script-paper">
     <div id="travelScriptKicker" class="reader-kicker">ON-CAMERA SCRIPT</div>
@@ -335,10 +335,117 @@ function travelShotTypeFor(scene,shot){
  return base;
 }
 function travelFilteredItems(stop,state){
- return (stop.items||[]).filter(x=>{
+ const matched=(stop.items||[]).filter(x=>{
   const type=travelShotTypeFor(x.scene,x.shot);
   return type===state.scriptType||type==='both';
  });
+ return travelSortItems(stop,matched);
+}
+function travelSequenceRank(stop,x){
+ const n=travelCleanShotName(x.shot?.name||'').toLowerCase();
+ const t=String(x.scene?.title||'').toLowerCase();
+ const has=(re)=>re.test(n);
+ switch(stop.id){
+  case 'travel-car-prep':
+   if(has(/car keys/))return 10;
+   if(has(/getting into the car/))return 20;
+   if(has(/starting the engine/))return 30;
+   if(has(/seatbelt/))return 40;
+   if(has(/main introduction/))return 50;
+   if(has(/full introduction/))return 60;
+   if(has(/second take/))return 70;
+   if(has(/still footage before and after/))return 80;
+   return 90;
+  case 'travel-highway':
+   if(has(/highway/))return 10;
+   if(has(/roadside scenery/))return 20;
+   if(has(/road teaser/))return 30;
+   return 40;
+  case 'travel-ramanagara-town':
+   if(has(/entering ramanagara|ramanagara signboard|road signs|town signboard/))return 10;
+   if(has(/town from a viewpoint|town with hills|town streets|town view|text-overlay background/))return 20;
+   if(has(/you with ramanagara hills|record the whole reflection|after speaking|separate wide shot of yourself/))return 30;
+   if(/one last surprise/.test(t))return 40;
+   if(has(/silk|cocoon|market activity/))return 50;
+   if(has(/ramanagara street|road leading to the hills/))return 60;
+   return 35;
+  case 'travel-rock-reveal':
+   if(has(/distant rocky hills/))return 10;
+   if(has(/first rock reveal/))return 20;
+   if(has(/rock texture/))return 30;
+   if(has(/rock height/))return 40;
+   if(has(/rock panorama/))return 50;
+   if(has(/you in front of the rocks/))return 60;
+   if(has(/full dialogue/))return 70;
+   if(has(/second take/))return 80;
+   if(has(/pointing towards the rocks/))return 90;
+   if(has(/reaction shot after speaking/))return 100;
+   return 55;
+  case 'travel-trek-hilltop':
+   if(has(/walking on the trail|you in the landscape/))return 10;
+   if(has(/steps and feet/))return 20;
+   if(has(/slow-motion detail/))return 30;
+   if(has(/hilltop view/))return 40;
+   return 50;
+  case 'travel-road-to-kanva':
+   if(has(/road and trees/))return 10;
+   if(has(/approach to reservoir/))return 20;
+   if(has(/first glimpse of water/))return 30;
+   return 40;
+  case 'travel-kanva-arrival':
+   if(has(/complete reservoir reveal/))return 10;
+   if(has(/second panorama/))return 20;
+   if(has(/landscape hold/))return 30;
+   if(has(/dam structure/))return 40;
+   if(has(/water teaser/))return 50;
+   if(has(/first impression/))return 60;
+   if(has(/walk towards the reservoir/))return 70;
+   if(has(/silent reaction/))return 80;
+   return 90;
+  case 'travel-kanva-story':
+   if(/scene 07/.test(t))return 10;
+   if(/scene 08/.test(t))return 20;
+   return 30;
+  case 'travel-water-activity':
+   if(has(/before activity/))return 10;
+   if(has(/ticket or price board/))return 20;
+   if(has(/safety equipment/))return 30;
+   if(has(/boarding or preparation/))return 40;
+   if(has(/available activity/))return 10;
+   if(has(/boat or kayak teaser/))return 15;
+   if(has(/boat or kayak moving/))return 20;
+   if(has(/during the activity/))return 50;
+   if(has(/paddle entering water/))return 30;
+   if(has(/water movement detail/))return 35;
+   if(has(/water splash or paddle stroke/))return 40;
+   if(has(/water wake/))return 50;
+   if(has(/after the activity|genuine reaction/))return 60;
+   if(has(/natural sound|quiet moment/))return 70;
+   return 45;
+  case 'travel-reflection':
+   if(has(/you sitting or standing|quiet profile/))return 10;
+   if(has(/you walking slowly/))return 20;
+   if(has(/final.*layers montage|fresh shot of yourself/))return 30;
+   return 40;
+  case 'travel-outro':
+   if(has(/main outro/))return 10;
+   if(has(/entire outro/))return 20;
+   if(has(/second complete take/))return 30;
+   if(has(/cta/))return 40;
+   if(has(/eyes on the lens/))return 50;
+   if(has(/silence before and after/))return 60;
+   if(has(/final wide landscape/))return 70;
+   return 80;
+  case 'travel-final-pickups':
+   return 10;
+  default:
+   return 50;
+ }
+}
+function travelSortItems(stop,items){
+ return items.map((item,index)=>({item,index,rank:travelSequenceRank(stop,item)}))
+  .sort((a,b)=>a.rank-b.rank||a.index-b.index)
+  .map(x=>x.item);
 }
 function travelTaskHasNoCapture(name){
  const n=String(name||'');
@@ -349,60 +456,58 @@ function travelTaskHasNoCapture(name){
   || /do not use unrelated footage/i.test(n)
   || /do not add artificial sound effects/i.test(n)
   || /reuse (?:your strongest|the clearest|silk footage|selected shots)/i.test(n)
+  || /silk footage:\s*reuse only if/i.test(n)
   || /if you cannot get a suitable on-camera location/i.test(n)
-  || /don't operate the camera while driving/i.test(n);
+  || /don't operate the camera while driving/i.test(n)
+  || /keep this scene visually calm/i.test(n);
 }
 function travelStopDefs(){
  const clean=s=>s.replace(/^(?:VO|ON[\s-]*CAMERA)\s*[·:–—-]\s*/i,'');
  const nm=(sh,rx)=>rx.test(clean(sh.name||''));
  const title=(sc,rx)=>rx.test(sc.title||'');
  return [
-  {id:'travel-car-prep',title:'Before departure — car prep',subtitle:'Get the camera-ready car shots and spoken introduction while parked.',hint:'Leaving Bengaluru',safety:'Film the car keys, getting in, engine start, seatbelt and introduction while parked. Finish setup before driving.',extraTasks:[{id:'gear-check',text:'Check battery, card space, lens cleanliness and camera mount before you set off.'}],match:(sc,sh)=>title(sc,/leaving bengaluru/i)&&nm(sh,/car keys|getting into the car|starting the engine|seatbelt|main introduction|full introduction|second take if your delivery|still footage before and after speaking/i)},
-  {id:'travel-city-traffic',title:'Bengaluru traffic',subtitle:'Capture the city atmosphere as the journey begins.',hint:'Leaving Bengaluru',safety:'Do not reach for the camera or phone while driving. Use a secure mount or ask a passenger to record.',extraTasks:[],match:(sc,sh)=>title(sc,/leaving bengaluru/i)&&nm(sh,/bengaluru traffic/i)},
-  {id:'travel-highway',title:'Highway & road out',subtitle:'Record the transition from the city to the open road.',hint:'Leaving Bengaluru',safety:'Only record while safely parked, with a secure camera setup, or with a passenger operating the camera.',extraTasks:[],match:(sc,sh)=>(title(sc,/leaving bengaluru/i)&&nm(sh,/highway|roadside scenery|keep each driving clip short/i))||(title(sc,/the hook/i)&&nm(sh,/road teaser/i))},
-  {id:'travel-ramanagara-town',title:'Entering Ramanagara — town & history',subtitle:'Capture the town identity, place signs and any genuine silk-market visuals you actually visit.',hint:'Ramanagara Wasn’t Always Ramanagara',safety:'Pull over in a legal, safe place before framing a signboard or recording yourself.',extraTasks:[],match:(sc,sh)=>(title(sc,/leaving bengaluru/i)&&nm(sh,/entering ramanagara/i))||(title(sc,/ramanagara wasn.t always ramanagara/i)&&!nm(sh,/distant rocky hills|road leading to the hills|you with ramanagara hills behind/i))||title(sc,/the silk story/i)||(title(sc,/the hook/i)&&nm(sh,/ramanagara town from a viewpoint/i))},
-  {id:'travel-rock-reveal',title:'Sholay hills — first reveal',subtitle:'Start with the establishing reveal, then record the rocks and your on-camera lines.',hint:'The Rocks',safety:'Use stable, permitted viewpoints. Don’t climb onto an exposed edge just to improve a shot.',extraTasks:[],match:(sc,sh)=>(title(sc,/the rocks/i)&&!nm(sh,/walking on the trail|steps and feet|hilltop view|slow-motion detail|standing quietly in the landscape/i))||(title(sc,/the hook/i)&&nm(sh,/distant rocky hills|final teaser of rocks/i))||(title(sc,/ramanagara wasn.t always ramanagara/i)&&nm(sh,/distant rocky hills|road leading to the hills|you with ramanagara hills behind/i))},
-  {id:'travel-trek-hilltop',title:'Trekking up & hilltop views',subtitle:'Record walking movement, footsteps, the climb and a steady view from the top.',hint:'The Rocks',safety:'Keep one hand free where needed, stay on the safe trail and never walk backwards near a drop for a shot.',extraTasks:[{id:'trek-pov',text:'Capture a short POV / feet-on-trail clip from stable ground, only where it is safe.'}],match:(sc,sh)=>(title(sc,/the rocks/i)&&nm(sh,/walking on the trail|steps and feet|hilltop view|slow-motion detail|standing quietly in the landscape/i))||(title(sc,/the hook/i)&&nm(sh,/you in the landscape/i))},
-  {id:'travel-descent',title:'Coming down — last look at the hills',subtitle:'Before leaving the hill area, capture the descent and a final look back.',hint:'The Rocks',safety:'Keep the camera secure on uneven ground. Skip any shot that makes the descent less safe.',extraTasks:[{id:'descent-walk',text:'Record a short clip of yourself coming down from a stationary, safe camera position.'},{id:'last-look-rocks',text:'Capture one last wide shot looking back at the rocks before moving on.'}],match:(sc,sh)=>false},
-  {id:'travel-road-to-kanva',title:'Drive towards Kanva Reservoir',subtitle:'Capture the road, trees and a glimpse of the water as you approach.',hint:'The Transition to Kanva',safety:'Use a secure mount or a passenger for moving-car footage. Never handle your camera while driving.',extraTasks:[],match:(sc,sh)=>title(sc,/the transition to kanva/i)&&nm(sh,/road and trees|first glimpse of water|approach to reservoir/i)},
-  {id:'travel-kanva-arrival',title:'Arrive at Kanva — first reveal',subtitle:'Get the wide water reveal before activities begin, then record your genuine first impression.',hint:'The Transition to Kanva',safety:'Film only from permitted public areas and stable ground near the water.',extraTasks:[],match:(sc,sh)=>(title(sc,/the transition to kanva/i)&&nm(sh,/dam structure|complete reservoir reveal|second panorama|landscape hold|first impression|walk towards the reservoir|silent reaction|first-impression dialogue/i))||(title(sc,/the hook/i)&&nm(sh,/water teaser/i))},
-  {id:'travel-kanva-story',title:'Reservoir story & name',subtitle:'Capture the dam, water, nearby surroundings and the story-to-camera sections.',hint:'The Real Kanva Story',safety:'Keep filming from safe, permitted ground; do not enter restricted dam areas.',extraTasks:[],match:(sc,sh)=>title(sc,/the real kanva story|why is it called kanva/i)},
-  {id:'travel-quiet-water',title:'Quiet water & natural sound',subtitle:'Slow down and record natural details, reflections, water and ambience.',hint:'Let the Place Breathe',safety:'Hold shots steadily and capture 5–8 seconds of clean natural sound where it is present.',extraTasks:[],match:(sc,sh)=>title(sc,/let the place breathe/i)},
-  {id:'travel-water-activity',title:'Water activities',subtitle:'Record the real preparation, safety equipment, movement and your genuine reaction.',hint:'Activities, But Don’t Make Them the Story',safety:'Follow operator instructions, wear required life-saving equipment and secure the action camera. Never prioritize a shot over water safety.',extraTasks:[],match:(sc,sh)=>title(sc,/activities, but don.t make them the story/i)||(title(sc,/the hook/i)&&nm(sh,/boat or kayak|water movement detail/i))},
-  {id:'travel-reflection-outro',title:'Reflection & outro',subtitle:'Finish with a calm reflection, the closing dialogue and a final landscape shot.',hint:'The Reflection',safety:'Record the full spoken section in one take first; capture extra takes only if time and conditions allow.',extraTasks:[],match:(sc,sh)=>title(sc,/the reflection|outro/i)},
-  {id:'travel-return-pickups',title:'Return route — one last surprise',subtitle:'Get the town establishing shots and the final on-camera twist on the way back, if the route allows.',hint:'One Last Surprise',safety:'Only stop for town signs and road footage where parking and filming are safe and permitted.',extraTasks:[],match:(sc,sh)=>title(sc,/one last surprise/i)},
-  {id:'travel-location-wrap',title:'Location wrap & file check',subtitle:'Before you leave, confirm footage, sound and camera settings are usable.',hint:'Departure checklist',safety:'Run this check while you are still at each location; the saved checklist marks the overall wrap-up, so use it as a reminder at earlier stops too.',extraTasks:[],match:(sc,sh)=>title(sc,/departure checklist/i)}
+  {id:'travel-car-prep',title:'Before departure — car prep',subtitle:'Set the camera and record the car keys, seatbelt, engine start and introduction while parked.',hint:'Leaving Bengaluru',safety:'Film all car-interior and talking shots while parked. Finish the camera setup before driving.',extraTasks:[{id:'gear-check',text:'Check battery, card space, lens cleanliness, audio and camera mount before setting off.'}],match:(sc,sh)=>title(sc,/leaving bengaluru/i)&&nm(sh,/car keys|getting into the car|starting the engine|seatbelt|main introduction|full introduction|second take if your delivery|still footage before and after speaking/i)},
+  {id:'travel-city-traffic',title:'Bengaluru traffic',subtitle:'Capture the city atmosphere at the start of the journey.',hint:'Leaving Bengaluru',safety:'Never handle the camera or phone while driving. Use a secure setup before moving or ask a passenger to record.',extraTasks:[],match:(sc,sh)=>title(sc,/leaving bengaluru/i)&&nm(sh,/bengaluru traffic/i)},
+  {id:'travel-highway',title:'Highway & road out',subtitle:'Film the move from city traffic to the open road.',hint:'Leaving Bengaluru',safety:'Record moving-road footage only with a securely mounted camera or a passenger. Do not operate the camera while driving.',extraTasks:[],match:(sc,sh)=>(title(sc,/leaving bengaluru/i)&&nm(sh,/highway|roadside scenery/i))||(title(sc,/the hook/i)&&nm(sh,/road teaser/i))},
+  {id:'travel-ramanagara-town',title:'Entering Ramanagara — town, history & name twist',subtitle:'Capture entry signs, town views, the Ramanagara history script, the district-name twist, and silk footage only if you actually visit a related location.',hint:'Ramanagara Wasn’t Always Ramanagara',safety:'Pull over in a safe, legal place before filming town signs or speaking to camera. Do not imply you visited a silk market or factory unless you actually did.',extraTasks:[],match:(sc,sh)=>(title(sc,/leaving bengaluru/i)&&nm(sh,/entering ramanagara/i))||(title(sc,/the hook/i)&&nm(sh,/ramanagara town from a viewpoint/i))||(title(sc,/ramanagara wasn.t always ramanagara/i)&&!nm(sh,/distant rocky hills|road leading to the hills/i))||title(sc,/the silk story/i)||title(sc,/one last surprise/i)},
+  {id:'travel-rock-reveal',title:'Sholay hills — first reveal & on-camera lines',subtitle:'Record the wide rock reveal and the on-camera lines while you have the rocks behind you.',hint:'The Rocks',safety:'Use stable, permitted viewpoints. Do not climb onto an exposed edge or attempt a moving shot near a drop.',extraTasks:[],match:(sc,sh)=>(title(sc,/the rocks/i)&&!nm(sh,/walking on the trail|steps and feet|hilltop view|slow-motion detail/i))||(title(sc,/the hook/i)&&nm(sh,/distant rocky hills|final teaser of rocks/i))||(title(sc,/ramanagara wasn.t always ramanagara/i)&&nm(sh,/distant rocky hills|road leading to the hills/i))},
+  {id:'travel-trek-hilltop',title:'Trek up — trail, steps & hilltop',subtitle:'Capture walking movement and the view as you climb. Record each shot only where the trail is safe.',hint:'The Rocks',safety:'Keep your footing first. Do not walk backwards near an edge or handle the camera on an unsafe part of the trail.',extraTasks:[{id:'trek-pov',text:'Optional: capture a short POV / feet-on-trail clip from stable ground.'}],match:(sc,sh)=>(title(sc,/the rocks/i)&&nm(sh,/walking on the trail|steps and feet|hilltop view|slow-motion detail/i))||(title(sc,/the hook/i)&&nm(sh,/you in the landscape/i))},
+  {id:'travel-descent',title:'Coming down — last look at the hills',subtitle:'Finish hill footage before moving back to the car.',hint:'The Rocks',safety:'Secure the camera on uneven ground. Skip any shot that makes your descent less safe.',extraTasks:[{id:'descent-walk',text:'Capture a short clip of yourself coming down from a stationary, safe camera position.'},{id:'last-look-rocks',text:'Before leaving, capture one last wide view looking back towards the rocks.'}],match:(sc,sh)=>false},
+  {id:'travel-road-to-kanva',title:'Drive towards Kanva Reservoir',subtitle:'Record the connecting road, roadside trees and the first glimpse of water.',hint:'The Transition to Kanva',safety:'Use a secure mount or a passenger for moving-car footage. Never handle a camera while driving.',extraTasks:[],match:(sc,sh)=>title(sc,/the transition to kanva/i)&&nm(sh,/road and trees|first glimpse of water|approach to reservoir/i)},
+  {id:'travel-kanva-arrival',title:'Arrive at Kanva — first water reveal',subtitle:'Get the wide reservoir reveal before details, then record your first impression.',hint:'The Transition to Kanva',safety:'Film from permitted, stable ground near the water. Do not enter restricted dam areas.',extraTasks:[],match:(sc,sh)=>(title(sc,/the transition to kanva/i)&&nm(sh,/dam structure|complete reservoir reveal|second panorama|landscape hold|first impression|walk towards the reservoir|silent reaction|first-impression dialogue/i))||(title(sc,/the hook/i)&&nm(sh,/water teaser/i))},
+  {id:'travel-kanva-story',title:'Reservoir story & name',subtitle:'Cover the dam, visible water structures, surroundings and the Kanva-name story.',hint:'The Real Kanva Story',safety:'Stay in public or otherwise permitted filming areas; do not approach restricted dam infrastructure.',extraTasks:[],match:(sc,sh)=>title(sc,/the real kanva story|why is it called kanva/i)},
+  {id:'travel-quiet-water',title:'Quiet water & natural sound',subtitle:'Capture calm details and genuine natural ambience before the activity shots.',hint:'Let the Place Breathe',safety:'Hold the camera steady and record several seconds of clean natural sound where it is actually present.',extraTasks:[],match:(sc,sh)=>title(sc,/let the place breathe/i)},
+  {id:'travel-water-activity',title:'Water activities',subtitle:'Record preparation and safety first, then the activity, movement and your genuine reaction.',hint:'Activities, But Don’t Make Them the Story',safety:'Follow the operator’s instructions, wear required safety equipment and secure the action camera. Never prioritize footage over water safety.',extraTasks:[],match:(sc,sh)=>title(sc,/activities, but don.t make them the story/i)||(title(sc,/the hook/i)&&nm(sh,/boat or kayak|water movement detail/i))},
+  {id:'travel-reflection',title:'Reflection by the reservoir',subtitle:'Record the reflective B-roll and any fresh shot needed for the closing montage.',hint:'The Reflection',safety:'Keep this section calm and steady; reused footage is noted for editing and is not repeated as a new filming task.',extraTasks:[],match:(sc,sh)=>title(sc,/the reflection/i)},
+  {id:'travel-outro',title:'Kanva Reservoir — outro',subtitle:'Record your closing thoughts and the final landscape while you are still at the reservoir.',hint:'Outro',safety:'Record the complete spoken outro in one take, then capture any extra landscape shots from a safe, permitted position.',extraTasks:[],match:(sc,sh)=>title(sc,/outro/i)},
+  {id:'travel-final-pickups',title:'Final pickups — check coverage',subtitle:'Capture the remaining hook landscape shot and any essential pickup before packing up.',hint:'The Hook',safety:'Only do pickups from safe, permitted positions. Do not return to a location just to complete an optional shot.',extraTasks:[{id:'last-wide',text:'Check that you have at least one stable wide landscape shot suitable for the edit.'},{id:'last-detail',text:'Check the core scenes have at least one usable close/detail shot where relevant.'}],match:(sc,sh)=>title(sc,/the hook/i)&&nm(sh,/record one silent shot of yourself looking towards the landscape/i)},
+  {id:'travel-location-wrap',title:'Location wrap & file check',subtitle:'Before leaving, confirm the required footage, audio and files are safe.',hint:'Departure checklist',safety:'Run these checks at each location before leaving it. You can revisit this final checklist as a last overall check.',extraTasks:[],match:(sc,sh)=>title(sc,/departure checklist/i)}
  ];
 }
 function buildTravelPlan(p){
  if(!p)return [];
- const ramanTrip=(p.id==='ramanagara-kanva-reservoir-project'||(p.scenes||[]).some(s=>/the rocks/i.test(s.title||''))&&(p.scenes||[]).some(s=>/transition to kanva/i.test(s.title||'')));
+ const ramanTrip=(p.id==='ramanagara-kanva-reservoir-project'||((p.scenes||[]).some(s=>/the rocks/i.test(s.title||''))&&(p.scenes||[]).some(s=>/transition to kanva/i.test(s.title||''))));
  if(!ramanTrip){
   return (p.scenes||[]).map((sc,i)=>({
    id:'scene-'+sc.id,title:(String(i+1).padStart(2,'0')+' · '+(sc.title||'Untitled scene')),
    subtitle:sc.subtitle||sc.purpose||'Record this scene’s shots at the relevant point in your trip.',
    hint:sc.title||'',safety:'Follow location rules and stay aware of your surroundings.',
-   extraTasks:[],sceneIds:[sc.id],items:(sc.shots||[]).map(sh=>({scene:sc,shot:sh}))
+   extraTasks:[],sceneIds:[sc.id],items:(sc.shots||[]).filter(sh=>isTravelChecklistShot(sc,sh)).map(sh=>({scene:sc,shot:sh}))
   }));
  }
- const defs=travelStopDefs(),used=new Set(),stops=defs.map(d=>({...d,items:[],sceneIds:[]}));
+ const defs=travelStopDefs(),stops=defs.map(d=>({...d,items:[],sceneIds:[]}));
+ const wrap=stops.find(x=>x.id==='travel-location-wrap');
+ const finalPickups=stops.find(x=>x.id==='travel-final-pickups');
  (p.scenes||[]).forEach(sc=>(sc.shots||[]).forEach(sh=>{
   if(!isTravelChecklistShot(sc,sh))return;
-  const stop=stops.find(d=>d.match(sc,sh));
-  if(stop){stop.items.push({scene:sc,shot:sh});used.add(sc.id+'::'+sh.id);}
+  const isWrap=/departure checklist/i.test(sc.title||'');
+  const matched=isWrap?wrap:stops.filter(d=>!['travel-location-wrap','travel-final-pickups'].includes(d.id)).find(d=>d.match(sc,sh));
+  const target=matched||finalPickups;
+  target.items.push({scene:sc,shot:sh});
  }));
- const wrapIndex=stops.findIndex(x=>x.id==='travel-location-wrap');
- const missing=[];
- (p.scenes||[]).forEach(sc=>(sc.shots||[]).forEach(sh=>{
-  if(!isTravelChecklistShot(sc,sh)||used.has(sc.id+'::'+sh.id))return;
-  missing.push({scene:sc,shot:sh});
- }));
- if(missing.length)stops.splice(wrapIndex,0,{id:'travel-extra-pickups',title:'Extra pickups — anything still missing',subtitle:'These capture items did not match a route stop. Use this section to avoid leaving planned coverage behind.',hint:'',safety:'Skip any pickup that requires an unsafe position or an unnecessary detour.',extraTasks:[],items:missing,sceneIds:[]});
  stops.forEach(stop=>{
-  const sceneIds=stop.items.map(x=>x.scene.id);
-  const context=(p.scenes||[]).find(sc=>String(sc.title||'').toLowerCase().includes(String(stop.hint||'').toLowerCase()));
-  if(context)sceneIds.push(context.id);
-  stop.sceneIds=[...new Set(sceneIds)];
+  stop.items=travelSortItems(stop,stop.items);
+  stop.sceneIds=[...new Set(stop.items.map(x=>x.scene.id))];
  });
  return stops;
 }
@@ -499,32 +604,61 @@ function renderTravelShoot(){
  $('travelStepEmpty').classList.toggle('hidden',visibleTasks!==0);
  renderTravelScript(stop,p,state);
 }
+function travelHasUsableScript(scene,type){
+ const text=String(scene?.[type]||'').trim();
+ if(!text)return false;
+ if(type==='oncamera'&&/^(?:no dialogue required|no spoken dialogue required|no on-camera dialogue (?:is )?required|no spoken dialogue(?:[.!:\s]|$)|this scene is voice-over driven|the reflection is carried by voice-over)/i.test(text))return false;
+ if(type==='voiceover'&&/^(?:no separate voice-over required|no voice-over required|no dialogue\.?\s*let the natural sound carry this scene)/i.test(text))return false;
+ return true;
+}
 function renderTravelScript(stop,p,state){
- let scenes=(stop.sceneIds||[]).map(id=>p.scenes.find(sc=>sc.id===id)).filter(Boolean);
- if(!scenes.length&&stop.hint){const found=p.scenes.find(sc=>String(sc.title||'').toLowerCase().includes(stop.hint.toLowerCase()));if(found)scenes=[found];}
- if(!scenes.length)scenes=p.scenes.slice(0,1);
- const selectedId=state.sceneByStop[stop.id];
- let active=scenes.find(sc=>sc.id===selectedId);
- if(!active){
-  const preferred=scenes.find(sc=>String(sc.title||'').toLowerCase().includes(String(stop.hint||'').toLowerCase()));
-  active=preferred||scenes.find(sc=>String(sc[state.scriptType]||'').trim())||scenes[0];
-  if(active)state.sceneByStop[stop.id]=active.id;
- }
- $('travelScriptScene').innerHTML=scenes.map(sc=>'<option value="'+esc(sc.id)+'" '+(active&&sc.id===active.id?'selected':'')+'>'+esc(sc.title||'Untitled scene')+'</option>').join('');
- $('travelScriptScene').disabled=!scenes.length;
- $('travelScriptScene').onchange=()=>{state.sceneByStop[stop.id]=$('travelScriptScene').value;save();renderTravelShoot();};
- $('travelVoiceTab').classList.toggle('primary',state.scriptType==='voiceover');$('travelOnCameraTab').classList.toggle('primary',state.scriptType==='oncamera');
- $('travelVoiceTab').setAttribute('aria-selected',String(state.scriptType==='voiceover'));$('travelOnCameraTab').setAttribute('aria-selected',String(state.scriptType==='oncamera'));
- const label=state.scriptType==='voiceover'?'Voice-over':'On-camera';
- $('travelScriptKicker').textContent=label.toUpperCase()+' SCRIPT';
- $('travelScriptTitle').textContent=active?.title||'Choose a scene';
- $('travelScriptMeta').textContent=active?[active.location,active.duration&&('Estimated '+active.duration)].filter(Boolean).join(' · '):'';
- const text=active?String(active[state.scriptType]||''):'';
- $('travelScriptContent').textContent=text.trim()?text:'No '+label.toLowerCase()+' script has been written for this scene yet.';
- $('travelScriptContent').classList.toggle('travel-script-empty',!text.trim());
+ const modeItems=travelFilteredItems(stop,state);
+ const candidates=[];
+ modeItems.forEach(item=>{
+  if(!travelHasUsableScript(item.scene,state.scriptType))return;
+  if(!candidates.some(sc=>sc.id===item.scene.id))candidates.push(item.scene);
+ });
+ const stateKey=stop.id+'::'+state.scriptType;
+ const oldKeyed=state.sceneByStop[stateKey];
+ const legacy=state.sceneByStop[stop.id];
+ const normalized=s=>String(s||'').toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+ const hint=normalized(stop.hint||'');
+ let active=candidates.find(sc=>sc.id===oldKeyed);
+ if(!active&&candidates.some(sc=>sc.id===legacy))active=candidates.find(sc=>sc.id===legacy);
+ if(!active&&hint)active=candidates.find(sc=>normalized(sc.title).includes(hint)||hint.includes(normalized(sc.title).replace(/^scene \d+\s*/,'').trim()));
+ if(!active)active=candidates[0]||null;
+ if(active)state.sceneByStop[stateKey]=active.id;
+
+ $('travelScriptScene').innerHTML=candidates.length
+  ?candidates.map(sc=>'<option value="'+esc(sc.id)+'" '+(active&&sc.id===active.id?'selected':'')+'>'+esc(sc.title||'Untitled scene')+'</option>').join('')
+  :'<option value="">No matching script at this stop</option>';
+ $('travelScriptScene').disabled=!candidates.length;
+ $('travelScriptScene').onchange=()=>{
+  state.sceneByStop[stateKey]=$('travelScriptScene').value;save();renderTravelShoot();
+ };
+ $('travelVoiceTab').classList.toggle('primary',state.scriptType==='voiceover');
+ $('travelOnCameraTab').classList.toggle('primary',state.scriptType==='oncamera');
+ $('travelVoiceTab').setAttribute('aria-selected',String(state.scriptType==='voiceover'));
+ $('travelOnCameraTab').setAttribute('aria-selected',String(state.scriptType==='oncamera'));
  $('travelVoiceTab').onclick=()=>{state.scriptType='voiceover';save();renderTravelShoot();};
  $('travelOnCameraTab').onclick=()=>{state.scriptType='oncamera';save();renderTravelShoot();};
- $('travelOpenReader').onclick=()=>{if(active){activeScene=active.id;activeReaderSceneId=active.id;}openScriptReader();};
+
+ const label=state.scriptType==='voiceover'?'Voice-over / B-roll':'On-camera';
+ $('travelScriptKicker').textContent=candidates.length?label.toUpperCase()+' SCRIPT':'NO SCRIPT FOR THIS FILTER';
+ $('travelScriptTitle').textContent=active?.title||(state.scriptType==='voiceover'?'No voice-over script at this stop':'No on-camera script at this stop');
+ $('travelScriptMeta').textContent=active?[active.location,active.duration&&('Estimated '+active.duration)].filter(Boolean).join(' · '):(modeItems.length?modeItems.length+' checklist item(s) are still available at this stop.':'No checklist items for this filter at this stop.');
+ let text=active?String(active[state.scriptType]||''):'';
+ if(!active){
+  text=state.scriptType==='voiceover'
+   ?'This stop has no voice-over script attached to its visible checklist items. Use the shot list to capture the required B-roll, or choose On-camera to see the spoken shots for this stop.'
+   :'This stop has no spoken on-camera script attached to its visible checklist items. The on-camera list will be empty here if no dialogue is planned; switch to Voice-over / B-roll for the visual shots.';
+ }
+ $('travelScriptContent').textContent=text;
+ $('travelScriptContent').classList.toggle('travel-script-empty',!active);
+ $('travelOpenReader').onclick=()=>{
+  if(active){activeScene=active.id;activeReaderSceneId=active.id;}
+  openScriptReader();
+ };
 }
 function stepTravel(delta){
  const p=cur();if(!p)return;
