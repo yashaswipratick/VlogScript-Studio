@@ -97,7 +97,7 @@
 .travel-script-paper h3{font-size:17px;line-height:1.4;margin:0 0 8px;overflow-wrap:anywhere}
 .travel-script-meta{font-size:10px;color:var(--muted);margin-bottom:10px}
 .travel-script-content{white-space:pre-wrap;overflow-wrap:anywhere;font-size:16px;line-height:1.8;color:#263347;min-height:180px}
-.travel-script-content.empty{font-size:13px;min-height:auto}
+.travel-script-content.travel-script-empty{font-size:13px;min-height:auto}
 .travel-script-tip{font-size:11px;line-height:1.6;color:var(--muted);margin:12px 0}
 #travelOpenReader{width:100%;white-space:normal}
 @media(max-width:1120px){.travel-layout{grid-template-columns:minmax(190px,220px) minmax(300px,1fr)}.travel-script{position:static;grid-column:2;max-height:none}.travel-rail{grid-row:1 / span 2}.travel-main{grid-column:2}.travel-script-content{min-height:130px}}
@@ -498,7 +498,7 @@ function renderTravelScript(stop,p,state){
  $('travelScriptMeta').textContent=active?[active.location,active.duration&&('Estimated '+active.duration)].filter(Boolean).join(' · '):'';
  const text=active?String(active[state.scriptType]||''):'';
  $('travelScriptContent').textContent=text.trim()?text:'No '+label.toLowerCase()+' script has been written for this scene yet.';
- $('travelScriptContent').classList.toggle('empty',!text.trim());
+ $('travelScriptContent').classList.toggle('travel-script-empty',!text.trim());
  $('travelVoiceTab').onclick=()=>{state.scriptType='voiceover';save();renderTravelShoot();};
  $('travelOnCameraTab').onclick=()=>{state.scriptType='oncamera';save();renderTravelShoot();};
  $('travelOpenReader').onclick=()=>{if(active){activeScene=active.id;activeReaderSceneId=active.id;}openScriptReader();};
@@ -508,10 +508,6 @@ function stepTravel(delta){
  const state=travelStateFor(p),plan=currentTravelPlan(p),idx=plan.findIndex(x=>x.id===state.activeStopId),next=idx+delta;
  if(next<0||next>=plan.length)return;
  state.activeStopId=plan[next].id;save();renderTravelShoot();
-}
-function isTravelChecklistShot(sc,sh){
- if(/departure checklist/i.test(sc.title||''))return true;
- return !travelTaskHasNoCapture(sh.name);
 }
 function show(v){view=v;if($('projectEditorView')&&$('scriptReaderView')){$('projectEditorView').classList.remove('hidden');$('scriptReaderView').classList.add('hidden');$('travelShootView').classList.add('hidden');if($('readScriptsBtn')){$('readScriptsBtn').textContent='Read scripts';$('readScriptsBtn').classList.remove('primary');$('travelModeBtn').textContent='Travel Shoot Mode';$('travelModeBtn').classList.remove('primary');}}$('dashboard').classList.toggle('hidden',v!=='home');$('workspace').classList.toggle('hidden',v==='home');$('homeNav').classList.toggle('active',v==='home');$('shootNav').classList.toggle('active',v==='shoot');$('crumb').innerHTML='Workspace / <b>'+esc(v==='home'?'My projects':v==='shoot'?'Shooting checklist':cur()?.title||'Project')+'</b>';if(v==='home')dash();else if(cur())workspace()}
 function dash(){stats();let g=$('projectGrid');if(!projects.length){g.innerHTML='<div class="empty" style="grid-column:1/-1"><div style="font-size:28px">▧</div><b>No projects yet</b><p>Create your first vlog plan to start organising scenes and shots.</p><button class="btn primary" id="emptyCreate">＋ Create your first project</button></div>';$('emptyCreate').onclick=create;return}g.innerHTML=projects.map(p=>{let t=totals(p),v=t.shots?Math.round(t.done/t.shots*100):0;return '<button class="project" data-open="'+p.id+'"><span class="pill">VLOG PROJECT</span><h3>'+esc(p.title||'Untitled vlog')+'</h3><p>'+esc(p.location||p.description||'Add a location and story summary')+'</p><div class="meta"><span>'+t.scenes+' scenes · '+t.shots+' shots</span><span>'+v+'% ready</span></div><div class="bar"><i style="width:'+v+'%"></i></div></button>'}).join('');g.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>open(b.dataset.open))}
