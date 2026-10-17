@@ -1,1 +1,696 @@
-{"format":"vlogscript-studio","version":1,"projects":[{"id":"coorg-kodagu-daily-episode-framework-2026","title":"Coorg — Daily Episode Framework","location":"Bengaluru ↔ Coorg / Kodagu","description":"YASH XPLORE · Corporate life. Weekend escapes. Bangalore to anywhere.\n\nThis is the repeatable daily-episode structure based on your long-distance-car-trip pattern. Day modules describe the day's rhythm; they do not assign destinations. Use the separate Coorg — Destination Script Library for any location you actually visit. The day script handles departures, journey transitions, meals, check-in, downtime, route changes, evening and episode ending.","scenes":[{"id":"coorg_day_1_bengaluru_to_kodagu","title":"Day 1 — Bengaluru to Coorg","subtitle":"Episode flow · Road trip, check-in and first night","location":"Bengaluru → Coorg / Kodagu","duration":"","purpose":"Use this as the Day 1 backbone. Do not show freshening up. Get-ready footage is optional. Destination visits on the route remain optional and are scripted independently in the Destination Script Library.","notes":"Shoot in actual order. Replace bracketed prompts with real details, and delete any line that did not happen. Never film handheld while driving; use a secure mount or passenger. Check-in and room filming only where the property permits.","voiceover":"DAY 1 — EPISODE FLOW (record VO later, after you know what really happened)\n\n1. MORNING / OPENING\n“Corporate life mein weekdays kabhi-kabhi ek hi loop jaise lagte hain—meetings, laptop, traffic, phir wahi routine. Isliye jab road trip ka mauka milta hai, toh mere liye story destination se pehle start hoti hai. Aaj Bengaluru se Coorg nikal raha hoon. List banayi hai, par har stop ko tick karne ki race nahi hai. Dekhte hain, road aaj kya story deti hai.”\n\n2. BAGS / CAR / DEPARTURE\n“Bags pack ho chuke hain, camera ready hai, aur ab bas city se nikalna hai. Destination pata hai; journey ka exact rhythm abhi dekhte hain.”\n\n3. HIGHWAY / CITY FADING\n“Traffic dheere-dheere peeche chhoot raha hai. Jaise road open hoti hai, waise hi trip ka pace bhi thoda change hone lagta hai. Abhi goal sirf jaldi pahunchna nahi—safe drive karte hue journey ko feel karna hai.”\n\n4. TEA / BREAKFAST / LUNCH STOP — USE ONLY IF IT HAPPENED\n“Road trip ke beech ek chai ya breakfast stop bhi ek chhota reset ban jaata hai. Humne abhi [actual place / food] ke liye break liya hai. Main yahan ka honest experience share karunga, bina isse kisi grand destination ki tarah present kiye.”\n\n5. INTERESTING EN-ROUTE STOP — OPTIONAL\n“Yeh stop original plan mein tha / nahi tha [choose what is true]. Route par [actual thing seen] notice hua, toh rukne ka decision liya. Kabhi-kabhi trip ki best memories itinerary mein likhi hui nahi hoti.”\n\n6. ANY DESTINATION VISITED EN ROUTE — OPTIONAL\n[EDITOR NOTE — DO NOT READ ALOUD: If you actually explore a destination during the drive, insert that place’s standalone location script here. Skip this block if no destination stop happens.]\n\n7. HOTEL ARRIVAL / CHECK-IN / ROOM\n“Finally Coorg pahunch gaye. Ab sabse pehle check-in, bags room mein, aur ek quick reset. Main room ka tour dikha raha hoon, taaki aapko wahi actual space dikhe jahan hum stay kar rahe hain.”\n\n8. EVENING / PARTY / DINNER — OPTIONAL, ONLY IF IT HAPPENED\n“First evening ka plan simple rakhna hai. Agar kuch activity ya party hoti hai toh wahi capture karenge; warna dinner, surroundings aur thoda rest bhi trip ka part hain.”\n\n9. DAY 1 ENDING\n“Drive complete ho gayi, ab body ko rest chahiye. Kal destinations explore karenge, lekin kaun-si jagah hogi woh time, weather, access aur energy dekh kar decide hoga. Good night—kal milte hain.”","oncamera":"DAY 1 — ON-CAMERA LINES\n\nA. BEFORE LEAVING (STAND BESIDE THE PARKED CAR)\n“Good morning! Aaj Bengaluru se Coorg road trip start kar raha hoon. Bags car mein ja rahe hain, camera ready hai. List mein kaafi places hain, lekin main sab cover karne ke pressure mein nahi rahunga. Jo time aur route ke hisaab se possible hoga, usko explore karenge. Chalo, nikalte hain.”\n\nB. AT A TEA / FOOD STOP (ONLY IF YOU STOP)\n“Drive ke beech abhi [actual stop/place] par rukke hain. Maine [actual food/drink] liya hai. Taste / price / place ke baare mein jo genuinely laga, woh yeh hai: [your real reaction].”\n\nC. UNPLANNED ROUTE STOP (OPTIONAL)\n“Route par [actual thing] dikha, aur humne decide kiya ki thoda rukte hain. Ye plan mein tha ya nahi, usse zyada important hai ki abhi is moment ko enjoy kar rahe hain.”\n\nD. ARRIVAL\n“Finally check-in ho gaya. Abhi room dikha deta hoon, phir thoda rest. Aaj ka drive kaisa raha, woh bhi baad mein bataunga.”\n\nE. ROOM TOUR\n“Toh yeh hai hamara room for the next few days. Main aapko quick look de raha hoon—[actual room feature / view / honest note].”\n\nF. DINNER / NIGHT (OPTIONAL)\n“Day 1 yahin wrap karte hain. Aaj ka best part tha [actual moment]. Kal ke liye list open hai—koi location fixed nahi. Weather aur travel time dekhkar decide karenge.”","shots":[{"id":"coorg_day_1_bengaluru_to_kodagu_shot_01","done":false,"name":"VO · Morning light, alarm / curtain / packed gear; do not show freshening up","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_02","done":false,"name":"VO · Bags being placed in the boot","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_03","done":false,"name":"ON-CAMERA · Day 1 intro beside car while parked","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_04","done":false,"name":"VO · Keys, door close, seatbelt, ignition sequence","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_05","done":false,"name":"VO · Bengaluru street / traffic exit using mounted camera or passenger","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_06","done":false,"name":"VO · Highway transition: safe mounted road view / landscape","angle":"Ultra-wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_07","done":false,"name":"VO · Tea, breakfast or lunch stop only if actually taken","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_08","done":false,"name":"ON-CAMERA · Short food-stop update after parking","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_09","done":false,"name":"VO · Interesting en-route detail only if actually noticed and stopped safely","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_10","done":false,"name":"ON-CAMERA · Optional route-stop reaction at the location, not from a moving car","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_11","done":false,"name":"VO · Hotel exterior / name board where permitted","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_12","done":false,"name":"ON-CAMERA · Check-in complete and actual first impression","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_13","done":false,"name":"VO · Room tour details: bed, window, view, layout; only what exists","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_14","done":false,"name":"VO · Evening surroundings / party only if it happens","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_15","done":false,"name":"ON-CAMERA · Honest dinner / evening thought","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_1_bengaluru_to_kodagu_shot_16","done":false,"name":"ON-CAMERA · Day 1 night wrap / tomorrow’s plan remains flexible","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"}]},{"id":"coorg_day_2_flexible_explore","title":"Day 2 — Explore Coorg, Your Way","subtitle":"Episode flow · Flexible destinations, activities, meals and evening","location":"Coorg / Kodagu","duration":"","purpose":"This is the day’s episode backbone only. It does not assign any location to Day 2. For every place actually visited, open the matching destination module in the separate Destination Script Library.","notes":"Use the destination module for the place's researched context and local on-camera script. Keep this daily module for transitions, personal reactions, meals and chronology. All destination choices remain yours.","voiceover":"DAY 2 — EPISODE FLOW\n\n1. MORNING\n“Good morning from Coorg. Kal ka drive complete hua, aur aaj finally explore karne ka din hai. Main list bana kar aaya hoon, lekin aaj ka plan clock ke against race karna nahi. Dekhte hain kaunsi jagah ke liye time, weather aur access saath dete hain.”\n\n2. VIEW / STAY SURROUNDINGS — OPTIONAL, CAN BE SHOT ANY TIME\n“Agar stay ke aas-paas koi view ya interesting detail milti hai, toh usko bhi story mein jagah denge. Har shot ke liye famous location par hona zaroori nahi hota.”\n\n3. GET READY / BREAKFAST\n“Ready ho gaye, breakfast bhi ho gaya. Ab list ko route aur time ke hisaab se dekhenge. Jo jagah choose karenge, uske details aur story ke liye separate destination script ready hai.”\n\n4. START EXPLORING / ARRIVAL AT ANY DESTINATION\n“Ab hum [destination name] par hain. Har jagah ka apna context aur apna mood hota hai. Pehle is place ko samajhte hain, phir dekhte hain ki ground par iska actual experience kaisa hai.”\n\n5. ACTIVITY / WATERFALL / PHOTO WALK — ONLY IF IT HAPPENED AND IS SAFE\n“Location ki story sirf dekhne mein nahi, experience karne mein bhi hai. Aaj main [actual activity] try kar raha hoon / kar raha tha. Main wahi share karunga jo actually kiya—aur jahan water, trail ya edge unsafe lagega, wahan shot lene ki koshish nahi karunga.”\n\n6. LUNCH BREAK\n“Subah se explore kar rahe hain, toh ab lunch break. [actual food/place] liya hai. Road trip mein meals bhi day ka rhythm set kar dete hain.”\n\n7. SECOND LOCATION / CHANGE OF PLAN\n“Lunch ke baad plan tha [original plan], lekin [actual reason: weather, time, crowd, closure, mood] ki wajah se ab [actual next step] kar rahe hain. Mere liye trip ko successful dikhane se zyada important hai trip ko honestly show karna.”\n\n8. SHOPPING / SNACKS — OPTIONAL\n“Ab ek chhota snack / shopping stop liya hai, agar time bacha hai. Isko force nahi karna—agar directly next place jaana hai, montage ko skip kar do.”\n\n9. BACK TO HOTEL / EVENING\n“Aaj jitna explore possible tha, utna kar liya. Ab stay par wapas aa rahe hain / abhi bhi bahar hain [choose actual situation].”\n\n10. DINNER / EPISODE END\n“Day 2 ka best moment mere liye [actual moment] tha. List mein abhi bhi places bachi ho sakti hain, lekin kal ki story aaj ki energy aur remaining time dekhkar decide hogi.”","oncamera":"DAY 2 — ON-CAMERA LINES\n\nA. MORNING (ROOM / BALCONY / OUTSIDE, IF VIEW EXISTS)\n“Good morning! Aaj pura din Coorg explore karne ke liye hai. Agar yahan se koi view mila hai toh woh bhi dikhaunga, warna seedha breakfast aur road par milte hain.”\n\nB. BEFORE LEAVING\n“Breakfast ho gaya. Ab list kholkar route, weather aur time dekhenge. Main aaj kaun-si jagah cover karunga, woh abhi fix nahi kar raha—jo possible hoga usko enjoy karenge.”\n\nC. AT EACH ACTUAL DESTINATION\n“Abhi hum [destination name] par hain. Is jagah ke baare mein kuch interesting baatein padhi thi, ab dekhte hain ki actual mein yahan aakar kaisa lagta hai. Jo bhi experience hoga, aapke saath share karunga.”\n\nD. ACTIVITY / WALK / PHOTO SESSION\n“Abhi [actual activity] kar raha hoon. Main pehle surroundings aur safety dekh raha hoon; jo footage safe aur allowed hoga, wahi record hoga.”\n\nE. LUNCH\n“Ab lunch break le rahe hain. Aaj ka ab tak ka best moment [actual moment] raha hai. Lunch ke baad dekhenge kitna time bacha hai aur next location jaana practical hai ya nahi.”\n\nF. CHANGE OF PLAN\n“Plan thoda change hua hai kyunki [actual reason]. Main isko force karne ke bajay route adjust kar raha hoon. Trip mein yeh bhi part of the story hai.”\n\nG. RETURN / SHOPPING / DINNER\n“Ab [actual place/activity] ke baad [hotel / next stop] ja rahe hain. Aaj ka final update dinner ke baad deta hoon.”\n\nH. NIGHT WRAP\n“Day 2 yahin end karte hain. Aaj humne [actual places] explore kiye aur [actual highlight] sabse memorable raha. Kal ka plan abhi open hai.”","shots":[{"id":"coorg_day_2_flexible_explore_shot_01","done":false,"name":"VO · Actual morning light / window / outside surroundings if visible","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_02","done":false,"name":"ON-CAMERA · Morning check-in at stay, only if convenient","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_2_flexible_explore_shot_03","done":false,"name":"VO · Optional surroundings of stay: garden, trees, weather, sounds","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_04","done":false,"name":"VO · Get-ready detail if desired; do not show freshening up","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_05","done":false,"name":"ON-CAMERA · Breakfast complete / open-plan update","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_2_flexible_explore_shot_06","done":false,"name":"VO · Safe car setup, route screen only while parked, doors/seatbelt","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_07","done":false,"name":"VO · Drive transition to first actual destination, mounted or passenger shot","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_08","done":false,"name":"ON-CAMERA · Arrival intro at the actual chosen destination; use its matching module","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_2_flexible_explore_shot_09","done":false,"name":"VO · The chosen destination's specific B-roll from its standalone module","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_10","done":false,"name":"VO · Actual walk / activity / waterfall / photo moment only if done safely","angle":"Wide","fps":"4K / 60 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_11","done":false,"name":"ON-CAMERA · Reaction after activity or viewing, not while moving through hazards","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_2_flexible_explore_shot_12","done":false,"name":"ON-CAMERA · Lunch break update after parking","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_2_flexible_explore_shot_13","done":false,"name":"VO · Transition to second selected destination, if time/access allow","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_14","done":false,"name":"VO · Optional snack / shopping, only if it happened","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_15","done":false,"name":"VO · Return to stay or continue exploring; show actual choice","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_2_flexible_explore_shot_16","done":false,"name":"ON-CAMERA · End-of-day update with real highlight and actual places visited","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"}]},{"id":"coorg_day_3_flex_explore_decision","title":"Day 3 — Flexible Explore & Decide","subtitle":"Episode flow · Checkout, possible last stop and real return-or-extend decision","location":"Coorg / Kodagu","duration":"","purpose":"This module does not decide where you go. Use any destination module for each place visited. Keep the return branch and extension branch separate until you make the real decision.","notes":"The user's pattern says to start the drive home around 5 PM if returning. Make the decision based on actual time, weather, road conditions, check-out rules, fatigue and remaining plans. Do not say you are extending until it is decided.","voiceover":"DAY 3 — EPISODE FLOW\n\n1. MORNING / CHECKOUT PREP\n“Good morning. Coorg ka aakhri planned day hai, lekin iska matlab yeh nahi ki hum har bachi hui jagah ko rush mein cover karenge. Pehle ready hona, breakfast, aur phir actual time aur route dekhkar decide karenge ki kya possible hai.”\n\n2. SURROUNDINGS / BREAKFAST\n“Agar stay ke around koi morning view ya sound milta hai, usko capture karenge. Nahi toh seedha breakfast aur packing. Trip ka rhythm aaj thoda different hai, kyunki checkout aur return ka decision bhi hai.”\n\n3. LAST EXPLORING WINDOW\n“Abhi [actual selected destination] explore karne ka chance hai. Bachi hui list ko complete karna goal nahi hai; main jitni jagah jaaun, uski story aur actual experience ko dhang se capture karna chahta hoon. Safe return aur trip ka pace dono important hain.”\n\n4. DECISION POINT — RECORD ONLY WHEN YOU REALLY KNOW\n“Ab time [actual time] ho raha hai. Ab mere paas do options hain: agar road, energy aur stay arrangement allow kare toh ek din extend kar sakte hain; warna around 5 PM Bengaluru ke liye nikalna sensible hoga. Jo decision actual mein lunga, uski story isi point se continue hogi.”\n\n5. IF RETURNING\n“Decision ho gaya—ab Bengaluru ke liye nikal rahe hain. Ab focus safe drive par hai, aur route ke shots sirf secure mounted camera ya passenger se. Homeward drive bhi is trip ka final chapter hai.”\n\n6. IF EXTENDING\n“Decision ho gaya—trip ek din aur extend kar raha hoon. Iska matlab kal ek naya chapter hoga. Jo location kal explore hogi, woh abhi fix nahi; same destination modules use karenge, aur actual route ke hisaab se day plan banayenge.”","oncamera":"DAY 3 — ON-CAMERA LINES\n\nA. MORNING\n“Good morning! Aaj last planned day hai. Breakfast aur checkout ka plan handle karte hain, phir dekhte hain ki kitna time exploration ke liye bachta hai.”\n\nB. BEFORE LEAVING FOR A LOCATION\n“Aaj [destination name] explore karne ja rahe hain. Main sirf wohi place cover karunga jo route aur time ke hisaab se possible hai.”\n\nC. AFTER THE ACTUAL VISIT\n“Abhi [actual place] se nikle hain. Mere liye yahan ka best part [actual observation] raha. Ab time check karke next decision lenge.”\n\nD. DECISION POINT (ONLY WHEN DECISION IS REAL)\n“Abhi time [actual time] hai. Main ab decide kar raha hoon ki aaj around 5 PM Bengaluru ke liye return karna hai, ya ek extra day stay extend karna hai. Main decision [actual reasons] ko dekhkar karunga.”\n\nE. IF YOU RETURN\n“Plan clear hai—ab Bengaluru ke liye nikalte hain. Aage driving ke dauran camera operate nahi karunga; safe road footage mounted setup / passenger se hi aayega.”\n\nF. IF YOU EXTEND\n“Final decision: hum trip ek din aur extend kar rahe hain. Kal ka episode ek extra chapter hoga. Kaun-si location cover karenge, woh kal ke weather aur route se decide karenge.”","shots":[{"id":"coorg_day_3_flex_explore_decision_shot_01","done":false,"name":"VO · Actual morning light and stay surroundings if there is a view","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_02","done":false,"name":"ON-CAMERA · Day 3 opening update","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_flex_explore_decision_shot_03","done":false,"name":"VO · Packing bags / checkout prep; actual hotel details only","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_04","done":false,"name":"ON-CAMERA · Breakfast / checkout status after it actually happens","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_flex_explore_decision_shot_05","done":false,"name":"VO · Last exploration window: drive approach to the actual chosen place","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_06","done":false,"name":"ON-CAMERA · Arrival line and use the matching destination module","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_flex_explore_decision_shot_07","done":false,"name":"VO · Destination-specific B-roll from whichever module was actually visited","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_08","done":false,"name":"VO · Show actual clock / parked decision-point setup, no staged timestamp","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_09","done":false,"name":"ON-CAMERA · Real return-or-extend decision at a safe stationary spot","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_flex_explore_decision_shot_10","done":false,"name":"VO · Check-out bags / car boot after the real choice is made","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_11","done":false,"name":"VO · Return-drive road / landscape only with safe mount or passenger","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_flex_explore_decision_shot_12","done":false,"name":"ON-CAMERA · Closing line only after the real branch is selected","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"}]},{"id":"coorg_day_3_return_bengaluru","title":"Day 3 Branch — Return to Bengaluru","subtitle":"Optional episode ending · Use only if leaving around 5 PM","location":"Coorg / Kodagu → Bengaluru","duration":"","purpose":"Alternate ending for Day 3 if you choose to return. Do not use this if you extend the stay.","notes":"Use only after the decision to return is real. Film while parked / by a passenger / secure mount; fatigue matters, take breaks and do not operate the camera while driving.","voiceover":"DAY 3 BRANCH — RETURN TO BENGALURU\n\n1. LEAVING\n“Trip ka final drive start ho raha hai. Around 5 PM ke aas-paas Coorg se nikal rahe hain, aur ab story ka last part road par unfold hoga. Main aaj ke poore trip ka review abhi force nahi karunga—drive ke beech thoughts aayenge, aur unko honestly share karunga.”\n\n2. ON THE ROAD\n“Return drive mein ek alag feeling hoti hai. Aate waqt excitement hoti hai ki kya-kya dekhne milega; wapas jaate waqt mind moments ko sort karna start karta hai. Aaj ke best memory ke liye mujhe [actual moment] yaad aa raha hai.”\n\n3. SAFE BREAK IF NEEDED\n“Agar fatigue ya traffic ke liye break chahiye, toh hum stop lenge. Reach time se zyada important safe drive hai.”\n\n4. ARRIVAL / END\n“Bengaluru wapas aa gaye. Coorg mein sab kuch cover nahi hua, aur woh theek hai. Is trip ki story unhi places aur moments se bani jo humne actually experience kiye. Agli trip par phir milte hain.”","oncamera":"A. BEFORE DEPARTURE (PARKED)\n“Decision ho gaya—ab hum Bengaluru return kar rahe hain. Bags car mein, check-out complete. Main aaj around 5 PM ke aas-paas nikal raha hoon. Aage camera safe mounted setup ya passenger handle karega.”\n\nB. OPTIONAL SAFE HALT\n“Ek break liya hai because [actual reason]. Road trip ko safe finish karna hi priority hai.”\n\nC. ARRIVING HOME\n“Finally Bengaluru wapas. Is trip mein sab destinations cover nahi hue, lekin humne jo actual experiences liye wohi vlog ki story hain. Agar aapne video yahan tak dekha, thanks for joining this road trip.”","shots":[{"id":"coorg_day_3_return_bengaluru_shot_01","done":false,"name":"ON-CAMERA · Real decision to return before moving off, filmed while parked","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_return_bengaluru_shot_02","done":false,"name":"VO · Bags / checkout / boot close-up","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_return_bengaluru_shot_03","done":false,"name":"VO · Safe mounted road footage or passenger view only","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_return_bengaluru_shot_04","done":false,"name":"VO · Actual late-day light / roadside landscape, when safely captured","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_return_bengaluru_shot_05","done":false,"name":"ON-CAMERA · Optional break update after parking","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_return_bengaluru_shot_06","done":false,"name":"VO · Arrival sign / homeward transition if safely captured","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_return_bengaluru_shot_07","done":false,"name":"ON-CAMERA · Final outro after parking at home / safe spot","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_return_bengaluru_shot_08","done":false,"name":"VO · Reuse only real strongest shots from places actually visited","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"}]},{"id":"coorg_day_3_extend_branch","title":"Day 3 Branch — Extend the Stay","subtitle":"Optional episode transition · Use only after extension is confirmed","location":"Coorg / Kodagu","duration":"","purpose":"Use if you actually decide to add a night. This is a transition into an extra day, not a destination assignment.","notes":"Don't announce extension until the accommodation and travel arrangements are confirmed. The extra day remains open and uses the same location library.","voiceover":"DAY 3 BRANCH — EXTEND THE STAY\n\n1. THE DECISION\n“Plan mein three days the, but aaj ka final decision hai ki hum stay ek din aur extend kar rahe hain. Yeh decision sirf ek aur destination tick karne ke liye nahi—main trip ko rush mein end karne ke bajay ek extra day dena chahta hoon. Kal ka route weather, distance aur availability dekhkar decide karenge.”\n\n2. EVENING RESET\n“Ab extra night ke arrangements confirm karenge, thoda rest, dinner aur footage ka quick check. Kal ki story ko aaj ki list mein lock nahi karenge.”\n\n3. NEXT CHAPTER\n“Coorg ka ek extra din mil gaya hai. Kal kya explore hoga, woh list aur actual conditions dekhkar decide hoga. Har location ki separate script ready hai, toh jo bhi choose karenge, uski story usi module se shoot karenge.”","oncamera":"A. CONFIRM THE PLAN (ONLY AFTER CONFIRMATION)\n“Update: humne stay ek din extend karne ka decision confirm kar liya hai. Extra night ka arrangement [actual booking detail] hai. Kal ka plan abhi open rakhenge aur route ke hisaab se choose karenge.”\n\nB. NIGHT WRAP\n“Ab aaj ka plan finish, dinner / rest, aur kal ek extra episode. Main locations ko pehle se fixed nahi karunga—jo possible hoga wahi cover hoga.”","shots":[{"id":"coorg_day_3_extend_branch_shot_01","done":false,"name":"ON-CAMERA · Extension announcement only after booking / stay is confirmed","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_extend_branch_shot_02","done":false,"name":"VO · Evening surroundings / actual dinner / relaxed hotel detail","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_extend_branch_shot_03","done":false,"name":"VO · Camera gear / battery / card check for another day","angle":"Close-up","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_3_extend_branch_shot_04","done":false,"name":"ON-CAMERA · Explain the real reason for extending, only if comfortable sharing","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_3_extend_branch_shot_05","done":false,"name":"ON-CAMERA · Transition into the optional Day 4 episode","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"}]},{"id":"coorg_day_4_extra_episode","title":"Day 4 — Extra Day If You Extend","subtitle":"Optional extra episode · Open destination choice and final return","location":"Coorg / Kodagu → Bengaluru","duration":"","purpose":"This only applies if the stay is extended. Use any destination module, then record a final return when you actually decide to leave.","notes":"No place is pre-assigned. Keep the final departure flexible. Use destination scripts for researched facts. Plan the return around actual travel time, weather, fatigue and road conditions.","voiceover":"DAY 4 — OPTIONAL EXTRA EPISODE\n\n1. MORNING\n“Good morning—Coorg mein ek extra day mil gaya hai. Aaj list ka pressure nahi, bas route, weather aur time dekhkar decide karenge ki kaunsi jagah worth exploring hai.”\n\n2. CHOOSE THE DAY\n“Destination choose karte waqt main teen cheezein dekh raha hoon: kitna drive karna padega, location open hai ya nahi, aur usko enjoy karne ke liye kitna time bachega. Jo jagah choose hogi, uske context ke saath uska actual experience capture karenge.”\n\n3. EXPLORE / MEAL / CHANGE OF PLAN\n“Abhi [actual chosen place] se / par hain. Aaj [actual highlight] sabse interesting raha. Ab [actual meal / next step] ke baad decide karenge ki ek aur stop possible hai ya seedha return karna better rahega.”\n\n4. FINAL RETURN\n“Extra day ne trip ko ek aur chapter diya. Ab ghar ke liye nikal rahe hain / [actual departure decision]. Is episode ka end wahi hoga jo real trip mein hua, not a forced montage of places we didn't visit.”","oncamera":"A. MORNING INTRO\n“Coorg mein extra day mil gaya hai. Aaj jo bhi explore karenge, weather aur route ke hisaab se choose hoga. Chalo dekhte hain, aaj ka din kya story deta hai.”\n\nB. BEFORE CHOSEN DESTINATION\n“Today I’m choosing [destination] because [actual reason]. Pehle access / route check kar liya hai, ab dekhte hain experience kaisa hota hai.”\n\nC. OPTIONAL MIDDAY UPDATE\n“Abhi tak ka best part [actual moment] raha. Plan thoda flexible hai, isliye next stop route aur time confirm karne ke baad decide karenge.”\n\nD. FINAL OUTRO\n“Extra day ka trip yahin / [actual point] par complete ho raha hai. Coorg mein har jagah cover karna possible nahi, lekin kuch real moments ek achhi travel story ke liye enough hote hain.”","shots":[{"id":"coorg_day_4_extra_episode_shot_01","done":false,"name":"ON-CAMERA · Optional Day 4 morning introduction","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_4_extra_episode_shot_02","done":false,"name":"VO · Actual morning surroundings / coffee / breakfast detail","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_4_extra_episode_shot_03","done":false,"name":"VO · Safe road transition to the chosen destination","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_4_extra_episode_shot_04","done":false,"name":"ON-CAMERA · Arrival line at the actual destination","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_4_extra_episode_shot_05","done":false,"name":"VO · Location-specific B-roll; use its separate destination module","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_4_extra_episode_shot_06","done":false,"name":"ON-CAMERA · Actual experience reaction and meal update","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_4_extra_episode_shot_07","done":false,"name":"VO · Checkout / luggage / final departure, when it happens","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_4_extra_episode_shot_08","done":false,"name":"ON-CAMERA · Final decision to leave, filmed while parked","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"},{"id":"coorg_day_4_extra_episode_shot_09","done":false,"name":"VO · Return-drive landscape with secure mount or passenger operation","angle":"Wide","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"voiceover"},{"id":"coorg_day_4_extra_episode_shot_10","done":false,"name":"ON-CAMERA · Final episode conclusion when safely parked","angle":"Medium","fps":"4K / 30 FPS","orientation":"Landscape","scriptType":"oncamera"}]}]}]}
+{
+  "format": "vlogscript-studio",
+  "version": 1,
+  "projects": [
+    {
+      "id": "coorg-kodagu-daily-episode-framework-2026",
+      "title": "Coorg — Daily Episode Framework",
+      "location": "Bengaluru ↔ Coorg / Kodagu",
+      "description": "YASH XPLORE · Corporate life. Weekend escapes. Bangalore to anywhere.\n\nEpisode Framework v2: every core episode is planned for 8–10 minutes using a story-led personal-vlog arc: hook, personal setup, journey, arrival, one anchor story, real experience, payoff and close. Destination choice stays flexible. Use the separate Destination Script Library for whichever place you actually visit; never force every saved destination into one day. Day 3 return/extension blocks are alternate endings inside Episode 3, not separate uploads. Day 4 is a separate optional episode only if the stay is genuinely extended.",
+      "scenes": [
+        {
+          "id": "coorg_day_1_bengaluru_to_kodagu",
+          "title": "EPISODE 1 — Day 1: Bengaluru to Coorg",
+          "subtitle": "8–10 min · The weekend escape begins before arrival",
+          "location": "Bengaluru → Coorg / Kodagu",
+          "duration": "08:00–10:00",
+          "purpose": "Episode 1 establishes the personal reason for the escape and turns the drive into a journey viewers experience with you. Use the strongest real moment as the hook, then cover departure, one or two genuine road moments, arrival and the first evening. En-route destinations remain optional and use their own destination modules.",
+          "notes": "EDITING RULE: Build the opening hook after the trip from the strongest real moment; do not invent a surprise. Replace bracketed prompts with what really happened. Keep only one or two meaningful road stops. Use the destination library only for a place actually visited. Show getting ready only if useful; no bathroom/freshening-up footage. Never film handheld while driving—use a secure mount or passenger. Film room/property only where permitted.",
+          "voiceover": "EPISODE 1 — STORY PLAN (target 8–10 minutes; final narration after the trip)\n\n0:00–0:20 | HOOK — EDIT AFTER FILMING\n[EDITOR NOTE — DO NOT READ: Open on the most interesting real moment from this episode: an unexpected road moment, a striking first view, a funny mishap, or a detail that pays off later. Do not open with a logo or a long montage. A possible line, only if it is true: “Bengaluru se Coorg nikla tha sochkar ki [real expectation]… lekin aaj ka sabse yaad rehne wala moment [actual moment] nikla.”]\n\n0:20–1:15 | WHY THIS ESCAPE?\nVoice-over should give one honest reason for this trip—needing a change of scene, wanting a drive, exploring a place you have postponed, or simply having a free weekend. Use your real reason, not a manufactured struggle. Example prompt: “Is weekend ka plan Coorg nikalne ka bana. Is baar mera focus har jagah tick karna nahi; dekhte hain journey aur actual experience kaisa rehta hai.”\n\n1:15–2:15 | LEAVING BENGALURU\nUse the real departure sequence: bags, car, seatbelt, starting the route, city traffic fading. Let road sound breathe. Narrate only what adds a thought: “City dheere-dheere peeche chhoot rahi hai, aur drive ka pace badal raha hai. Abhi safar shuru hua hai; baaki din ka rhythm road par hi decide hoga.”\n\n2:15–3:45 | THE DRIVE HAS ITS OWN RHYTHM\nUse actual highway views, weather, traffic and conversation. If you stop for tea or food, capture what you ordered and your honest reaction. If there is no meaningful stop, do not stretch the sequence with repetitive road shots.\n\n3:45–5:00 | A REAL DETOUR OR A QUIET STRETCH\nIf something genuinely catches your attention and you safely stop, give it a small moment. If nothing unexpected happens, keep this section short and let music / natural sound bridge the drive. Do not pretend an unplanned stop happened.\n\n5:00–6:30 | ARRIVAL AND CHECK-IN\nFirst show the transition into Coorg and the actual stay. On-camera, share your first impression rather than a property sales pitch. A room tour should include only real features you noticed and are allowed to film.\n\n6:30–8:00 | FIRST FEEL OF COORG\nWhat did you notice first—weather, trees, quiet, traffic, a smell, a view, or something that differed from expectation? If you actually visited a destination on the route, insert its standalone story module here; otherwise this can remain a simple arrival-and-surroundings sequence. No need to force a historical story into Day 1.\n\n8:00–9:15 | DAY 1 PAYOFF AND OPEN LOOP\nEnd on the most genuine moment of the day and one question for tomorrow. Example prompt: “Aaj ka best part [actual moment] tha. Kal list mein options hain, par kis jagah jaana practical hoga woh weather, route aur energy dekhkar decide karenge.” Do not promise a specific destination before the plan is confirmed.",
+          "oncamera": "EPISODE 1 — ON-CAMERA PROMPTS\n\nA. 0:20–1:15 | BEFORE DEPARTURE (beside the parked car)\n“Good morning! Aaj Bengaluru se Coorg nikal rahe hain. Is trip se main [real expectation / personal reason] chahta hoon. List ready hai, lekin poori list complete karne ka pressure nahi lenge. Chalo, nikalte hain.”\n\nB. 2:15–3:45 | FOOD / TEA STOP (only if it happens; speak after parking)\n“Abhi [actual place] par rukke hain. Maine [actual food/drink] liya hai. Honest review: [your real reaction].”\n\nC. 3:45–5:00 | UNPLANNED MOMENT (only if it happens)\n“Route par [actual thing] notice hua, toh safe jagah par rukkar dekhne ka decide kiya. Yeh plan mein tha / nahi tha [choose what is true].”\n\nD. 5:00–6:30 | ARRIVAL\n“Finally Coorg pahunch gaye. Drive ka [best / hardest / most unexpected] part [actual moment] tha. Ab check-in karte hain aur thoda rest.”\n\nE. ROOM / STAY TOUR\n“Toh yeh hai hamara stay. Pehli impression [honest note]. Mere liye yahan sabse useful / interesting cheez [actual feature] hai.”\n\nF. 6:30–8:00 | FIRST IMPRESSION\n“Coorg aake sabse pehle jo cheez notice hui woh [actual sensory detail] hai. Photos se alag / same laga because [genuine thought].”\n\nG. 8:00–9:15 | DAY-END WRAP\n“Aaj ka best moment [actual moment] raha. Kal ka plan open rakhenge—route, weather aur time dekhkar choose karenge. Milte hain kal.”\n\nPERFORMANCE NOTE: Speak in your natural voice. These are prompts, not lines you must memorise. Keep pauses and spontaneous reactions if they feel real.",
+          "shots": [
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_01",
+              "done": false,
+              "name": "VO · Hook: strongest genuine moment from later in this episode; decide in edit",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_02",
+              "done": false,
+              "name": "VO · Real trip premise / bags and packed gear",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_03",
+              "done": false,
+              "name": "ON-CAMERA · Personal reason and Day 1 intro beside parked car",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_04",
+              "done": false,
+              "name": "VO · Keys, car door, seatbelt and ignition sequence",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_05",
+              "done": false,
+              "name": "VO · City exit / traffic fading, filmed safely",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_06",
+              "done": false,
+              "name": "VO · Highway transition and changing landscape",
+              "angle": "Ultra-wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_07",
+              "done": false,
+              "name": "VO · Actual food or tea stop only if taken",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_08",
+              "done": false,
+              "name": "ON-CAMERA · Honest food-stop reaction after parking",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_09",
+              "done": false,
+              "name": "VO · Genuine detour or detail noticed on the route, if any",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_10",
+              "done": false,
+              "name": "ON-CAMERA · Real reaction at a safe, actual route stop",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_11",
+              "done": false,
+              "name": "VO · Arrival / property exterior where permitted",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_12",
+              "done": false,
+              "name": "ON-CAMERA · First impression after arrival/check-in",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_13",
+              "done": false,
+              "name": "VO · Real room details / window / stay feature, only if present",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_14",
+              "done": false,
+              "name": "VO · First evening atmosphere or actual activity",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_15",
+              "done": false,
+              "name": "ON-CAMERA · Day 1 highlight: what really stayed with you",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_1_bengaluru_to_kodagu_shot_16",
+              "done": false,
+              "name": "ON-CAMERA · Day 1 close and open question for tomorrow",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            }
+          ]
+        },
+        {
+          "id": "coorg_day_2_flexible_explore",
+          "title": "EPISODE 2 — Day 2: One Coorg Day, One Main Story",
+          "subtitle": "8–10 min · Explore flexibly; let one real destination anchor the episode",
+          "location": "Coorg / Kodagu",
+          "duration": "08:00–10:00",
+          "purpose": "Episode 2 is an exploration episode, not a destination checklist. Select one anchor destination you actually visit and give it the strongest story + personal experience. A second stop is optional and should be lighter. Keep route, weather, access and energy in control.",
+          "notes": "Choose the anchor destination after checking real route/time/weather. Only destinations actually visited should appear. Insert the matching standalone module for the anchor place; edit facts to match actual access and experience. Do not narrate a visit, activity, crowd, view or emotion that did not happen. Keep at least one genuine on-camera reaction after the anchor story.",
+          "voiceover": "EPISODE 2 — STORY PLAN (target 8–10 minutes; destination choice remains open)\n\n0:00–0:20 | HOOK — CHOOSE THE REAL DAY'S BEST MOMENT\n[EDITOR NOTE — DO NOT READ: Start with a striking moment from the anchor destination or an unexpected event that really happened later in the episode. If the day was ordinary, use the strongest honest observation. A possible line: “Aaj Coorg mein [actual experience] dekhne ko mila, aur is jagah ki ek baat ne mera perspective badal diya.” Never imply a dramatic event that did not happen.]\n\n0:20–1:00 | MORNING SETUP\nEstablish where you are, how the morning actually feels, and what constraints matter today. “Aaj kuch places list mein hain, lekin pehle route, weather aur travel time dekhenge. Ek jagah ko properly experience karna, chaar jagah jaldi-jaldi cover karne se better ho sakta hai.”\n\n1:00–2:00 | JOURNEY TO THE ANCHOR DESTINATION\nPick the one place that becomes this episode’s centre. Use the drive, parking, entry and first view to build anticipation. Avoid a long map/route explanation unless it helps viewers understand a real trade-off.\n\n2:00–4:15 | THE STORY REVEAL\nUse the matching destination module from “Coorg — Destination Script Library”. Keep one strong story arc: first impression → reliable history/culture/geography or a real question → what changes when you understand it. Trim any fact that does not support the main idea. Clearly distinguish documented facts from religious tradition.\n\n4:15–6:00 | THE EXPERIENCE — BACK TO YOU\nStop explaining and let the real place take over. Show what you actually walked through, heard, tried or noticed. Add on-camera reaction after the experience—not just before it. Include ambient sound where useful. If the destination feels underwhelming, say so honestly rather than forcing a poetic ending.\n\n6:00–7:15 | SECOND STOP OR A CHANGE OF PLAN\nA second destination is optional. If chosen, keep it shorter and use its module only if it has a meaningful story. If timing/weather/crowds change the plan, make the change part of the journey instead of cramming in an extra stop.\n\n7:15–8:30 | FOOD / BREAK / SMALL HUMAN MOMENT\nUse a real meal, interaction, rest, or quiet drive. Do not hold on repetitive landscape B-roll just to fill time.\n\n8:30–9:30 | DAY'S PAYOFF + TOMORROW'S OPEN QUESTION\n“What stayed with me today was [actual moment]. I came expecting [actual expectation], but [what actually changed / or what did not]. Kal last exploration window hai, toh route aur checkout/return options dekhkar decide karenge.” Use only if it matches reality.",
+          "oncamera": "EPISODE 2 — ON-CAMERA PROMPTS\n\nA. 0:20–1:00 | MORNING SETUP\n“Good morning from Coorg. Aaj ka plan hai explore karna, lekin main saari locations ek din mein rush nahi karunga. Route aur weather dekhkar aaj ki main destination choose karte hain.”\n\nB. 1:00–2:00 | BEFORE THE ANCHOR DESTINATION\n“Ab hum [actual destination] ja rahe hain. Is jagah mein mujhe [real reason / question] interesting lag raha hai. Pehle dekhte hain ground par experience kaisa hai.”\n\nC. 2:00–4:15 | ARRIVAL / PERSONAL OBSERVATION\n“Yahan aake sabse pehle [actual detail] notice hui. Jo maine pehle expect kiya tha, woh [match / differ] karta hai because [honest detail].”\n\nD. 4:15–6:00 | AFTER THE EXPERIENCE\n“Ab thoda time yahan spend karne ke baad, mere liye sabse interesting part [actual moment] tha. Is jagah ka [historical / cultural / natural point] jaanne ke baad view ko dekhna bhi thoda different lagta hai.”\n\nE. 6:00–7:15 | SECOND STOP / ROUTE CHANGE\n“Ab time aur conditions dekhkar [actual next stop] choose kar rahe hain / original plan skip kar rahe hain. Reason [real reason].”\n\nF. 7:15–8:30 | FOOD / REST\n“Ab break le rahe hain. Maine [actual food] try kiya. Mere hisaab se [real reaction].”\n\nG. 8:30–9:30 | DAY-END WRAP\n“Aaj ka highlight [actual highlight] tha. Kal last exploration ka chance hai. Dekhte hain [actual options] mein se kya practical rehta hai.”\n\nPERFORMANCE NOTE: Use the standalone destination VO for researched context, then come back on-camera for your real reaction. Do not narrate every action shown on screen.",
+          "shots": [
+            {
+              "id": "coorg_day_2_flexible_explore_shot_01",
+              "done": false,
+              "name": "VO · Hook: strongest genuine destination or experience moment; choose in edit",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_02",
+              "done": false,
+              "name": "ON-CAMERA · Morning check-in / today's real constraints",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_03",
+              "done": false,
+              "name": "VO · Optional stay surroundings and morning atmosphere",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_04",
+              "done": false,
+              "name": "VO · Get-ready detail only if useful; no freshening-up footage",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_05",
+              "done": false,
+              "name": "ON-CAMERA · Route, weather and anchor-destination decision",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_06",
+              "done": false,
+              "name": "VO · Safe car setup / route detail while parked",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_07",
+              "done": false,
+              "name": "VO · Drive transition to the actual anchor destination",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_08",
+              "done": false,
+              "name": "ON-CAMERA · Arrival and personal first impression",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_09",
+              "done": false,
+              "name": "VO · Anchor destination's story B-roll using its separate module",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_10",
+              "done": false,
+              "name": "VO · Real walking/activity/ambient detail from the anchor stop",
+              "angle": "Wide",
+              "fps": "4K / 60 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_11",
+              "done": false,
+              "name": "ON-CAMERA · Reaction after experiencing the main destination",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_12",
+              "done": false,
+              "name": "ON-CAMERA · Meal / break update after stopping",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_13",
+              "done": false,
+              "name": "VO · Optional second stop or real plan change",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_14",
+              "done": false,
+              "name": "VO · Actual snack, meal detail, or a short atmospheric reset",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_15",
+              "done": false,
+              "name": "VO · Return drive / change of light / real end-of-day transition",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_2_flexible_explore_shot_16",
+              "done": false,
+              "name": "ON-CAMERA · Day highlight and open question for the final day",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            }
+          ]
+        },
+        {
+          "id": "coorg_day_3_flex_explore_decision",
+          "title": "Day 3 — Flexible Explore & Decide",
+          "subtitle": "Episode flow · Checkout, possible last stop and real return-or-extend decision",
+          "location": "Coorg / Kodagu",
+          "duration": "",
+          "purpose": "This module does not decide where you go. Use any destination module for each place visited. Keep the return branch and extension branch separate until you make the real decision.",
+          "notes": "The user's pattern says to start the drive home around 5 PM if returning. Make the decision based on actual time, weather, road conditions, check-out rules, fatigue and remaining plans. Do not say you are extending until it is decided.",
+          "voiceover": "DAY 3 — EPISODE FLOW\n\n1. MORNING / CHECKOUT PREP\n“Good morning. Coorg ka aakhri planned day hai, lekin iska matlab yeh nahi ki hum har bachi hui jagah ko rush mein cover karenge. Pehle ready hona, breakfast, aur phir actual time aur route dekhkar decide karenge ki kya possible hai.”\n\n2. SURROUNDINGS / BREAKFAST\n“Agar stay ke around koi morning view ya sound milta hai, usko capture karenge. Nahi toh seedha breakfast aur packing. Trip ka rhythm aaj thoda different hai, kyunki checkout aur return ka decision bhi hai.”\n\n3. LAST EXPLORING WINDOW\n“Abhi [actual selected destination] explore karne ka chance hai. Bachi hui list ko complete karna goal nahi hai; main jitni jagah jaaun, uski story aur actual experience ko dhang se capture karna chahta hoon. Safe return aur trip ka pace dono important hain.”\n\n4. DECISION POINT — RECORD ONLY WHEN YOU REALLY KNOW\n“Ab time [actual time] ho raha hai. Ab mere paas do options hain: agar road, energy aur stay arrangement allow kare toh ek din extend kar sakte hain; warna around 5 PM Bengaluru ke liye nikalna sensible hoga. Jo decision actual mein lunga, uski story isi point se continue hogi.”\n\n5. IF RETURNING\n“Decision ho gaya—ab Bengaluru ke liye nikal rahe hain. Ab focus safe drive par hai, aur route ke shots sirf secure mounted camera ya passenger se. Homeward drive bhi is trip ka final chapter hai.”\n\n6. IF EXTENDING\n“Decision ho gaya—trip ek din aur extend kar raha hoon. Iska matlab kal ek naya chapter hoga. Jo location kal explore hogi, woh abhi fix nahi; same destination modules use karenge, aur actual route ke hisaab se day plan banayenge.”",
+          "oncamera": "DAY 3 — ON-CAMERA LINES\n\nA. MORNING\n“Good morning! Aaj last planned day hai. Breakfast aur checkout ka plan handle karte hain, phir dekhte hain ki kitna time exploration ke liye bachta hai.”\n\nB. BEFORE LEAVING FOR A LOCATION\n“Aaj [destination name] explore karne ja rahe hain. Main sirf wohi place cover karunga jo route aur time ke hisaab se possible hai.”\n\nC. AFTER THE ACTUAL VISIT\n“Abhi [actual place] se nikle hain. Mere liye yahan ka best part [actual observation] raha. Ab time check karke next decision lenge.”\n\nD. DECISION POINT (ONLY WHEN DECISION IS REAL)\n“Abhi time [actual time] hai. Main ab decide kar raha hoon ki aaj around 5 PM Bengaluru ke liye return karna hai, ya ek extra day stay extend karna hai. Main decision [actual reasons] ko dekhkar karunga.”\n\nE. IF YOU RETURN\n“Plan clear hai—ab Bengaluru ke liye nikalte hain. Aage driving ke dauran camera operate nahi karunga; safe road footage mounted setup / passenger se hi aayega.”\n\nF. IF YOU EXTEND\n“Final decision: hum trip ek din aur extend kar rahe hain. Kal ka episode ek extra chapter hoga. Kaun-si location cover karenge, woh kal ke weather aur route se decide karenge.”",
+          "shots": [
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_01",
+              "done": false,
+              "name": "VO · Actual morning light and stay surroundings if there is a view",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_02",
+              "done": false,
+              "name": "ON-CAMERA · Day 3 opening update",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_03",
+              "done": false,
+              "name": "VO · Packing bags / checkout prep; actual hotel details only",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_04",
+              "done": false,
+              "name": "ON-CAMERA · Breakfast / checkout status after it actually happens",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_05",
+              "done": false,
+              "name": "VO · Last exploration window: drive approach to the actual chosen place",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_06",
+              "done": false,
+              "name": "ON-CAMERA · Arrival line and use the matching destination module",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_07",
+              "done": false,
+              "name": "VO · Destination-specific B-roll from whichever module was actually visited",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_08",
+              "done": false,
+              "name": "VO · Show actual clock / parked decision-point setup, no staged timestamp",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_09",
+              "done": false,
+              "name": "ON-CAMERA · Real return-or-extend decision at a safe stationary spot",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_10",
+              "done": false,
+              "name": "VO · Check-out bags / car boot after the real choice is made",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_11",
+              "done": false,
+              "name": "VO · Return-drive road / landscape only with safe mount or passenger",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_flex_explore_decision_shot_12",
+              "done": false,
+              "name": "ON-CAMERA · Closing line only after the real branch is selected",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            }
+          ]
+        },
+        {
+          "id": "coorg_day_3_return_bengaluru",
+          "title": "Day 3 Branch — Return to Bengaluru",
+          "subtitle": "Optional episode ending · Use only if leaving around 5 PM",
+          "location": "Coorg / Kodagu → Bengaluru",
+          "duration": "",
+          "purpose": "Alternate ending for Day 3 if you choose to return. Do not use this if you extend the stay.",
+          "notes": "Use only after the decision to return is real. Film while parked / by a passenger / secure mount; fatigue matters, take breaks and do not operate the camera while driving.",
+          "voiceover": "DAY 3 BRANCH — RETURN TO BENGALURU\n\n1. LEAVING\n“Trip ka final drive start ho raha hai. Around 5 PM ke aas-paas Coorg se nikal rahe hain, aur ab story ka last part road par unfold hoga. Main aaj ke poore trip ka review abhi force nahi karunga—drive ke beech thoughts aayenge, aur unko honestly share karunga.”\n\n2. ON THE ROAD\n“Return drive mein ek alag feeling hoti hai. Aate waqt excitement hoti hai ki kya-kya dekhne milega; wapas jaate waqt mind moments ko sort karna start karta hai. Aaj ke best memory ke liye mujhe [actual moment] yaad aa raha hai.”\n\n3. SAFE BREAK IF NEEDED\n“Agar fatigue ya traffic ke liye break chahiye, toh hum stop lenge. Reach time se zyada important safe drive hai.”\n\n4. ARRIVAL / END\n“Bengaluru wapas aa gaye. Coorg mein sab kuch cover nahi hua, aur woh theek hai. Is trip ki story unhi places aur moments se bani jo humne actually experience kiye. Agli trip par phir milte hain.”",
+          "oncamera": "A. BEFORE DEPARTURE (PARKED)\n“Decision ho gaya—ab hum Bengaluru return kar rahe hain. Bags car mein, check-out complete. Main aaj around 5 PM ke aas-paas nikal raha hoon. Aage camera safe mounted setup ya passenger handle karega.”\n\nB. OPTIONAL SAFE HALT\n“Ek break liya hai because [actual reason]. Road trip ko safe finish karna hi priority hai.”\n\nC. ARRIVING HOME\n“Finally Bengaluru wapas. Is trip mein sab destinations cover nahi hue, lekin humne jo actual experiences liye wohi vlog ki story hain. Agar aapne video yahan tak dekha, thanks for joining this road trip.”",
+          "shots": [
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_01",
+              "done": false,
+              "name": "ON-CAMERA · Real decision to return before moving off, filmed while parked",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_02",
+              "done": false,
+              "name": "VO · Bags / checkout / boot close-up",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_03",
+              "done": false,
+              "name": "VO · Safe mounted road footage or passenger view only",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_04",
+              "done": false,
+              "name": "VO · Actual late-day light / roadside landscape, when safely captured",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_05",
+              "done": false,
+              "name": "ON-CAMERA · Optional break update after parking",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_06",
+              "done": false,
+              "name": "VO · Arrival sign / homeward transition if safely captured",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_07",
+              "done": false,
+              "name": "ON-CAMERA · Final outro after parking at home / safe spot",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_return_bengaluru_shot_08",
+              "done": false,
+              "name": "VO · Reuse only real strongest shots from places actually visited",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            }
+          ]
+        },
+        {
+          "id": "coorg_day_3_extend_branch",
+          "title": "Day 3 Branch — Extend the Stay",
+          "subtitle": "Optional episode transition · Use only after extension is confirmed",
+          "location": "Coorg / Kodagu",
+          "duration": "",
+          "purpose": "Use if you actually decide to add a night. This is a transition into an extra day, not a destination assignment.",
+          "notes": "Don't announce extension until the accommodation and travel arrangements are confirmed. The extra day remains open and uses the same location library.",
+          "voiceover": "DAY 3 BRANCH — EXTEND THE STAY\n\n1. THE DECISION\n“Plan mein three days the, but aaj ka final decision hai ki hum stay ek din aur extend kar rahe hain. Yeh decision sirf ek aur destination tick karne ke liye nahi—main trip ko rush mein end karne ke bajay ek extra day dena chahta hoon. Kal ka route weather, distance aur availability dekhkar decide karenge.”\n\n2. EVENING RESET\n“Ab extra night ke arrangements confirm karenge, thoda rest, dinner aur footage ka quick check. Kal ki story ko aaj ki list mein lock nahi karenge.”\n\n3. NEXT CHAPTER\n“Coorg ka ek extra din mil gaya hai. Kal kya explore hoga, woh list aur actual conditions dekhkar decide hoga. Har location ki separate script ready hai, toh jo bhi choose karenge, uski story usi module se shoot karenge.”",
+          "oncamera": "A. CONFIRM THE PLAN (ONLY AFTER CONFIRMATION)\n“Update: humne stay ek din extend karne ka decision confirm kar liya hai. Extra night ka arrangement [actual booking detail] hai. Kal ka plan abhi open rakhenge aur route ke hisaab se choose karenge.”\n\nB. NIGHT WRAP\n“Ab aaj ka plan finish, dinner / rest, aur kal ek extra episode. Main locations ko pehle se fixed nahi karunga—jo possible hoga wahi cover hoga.”",
+          "shots": [
+            {
+              "id": "coorg_day_3_extend_branch_shot_01",
+              "done": false,
+              "name": "ON-CAMERA · Extension announcement only after booking / stay is confirmed",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_extend_branch_shot_02",
+              "done": false,
+              "name": "VO · Evening surroundings / actual dinner / relaxed hotel detail",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_extend_branch_shot_03",
+              "done": false,
+              "name": "VO · Camera gear / battery / card check for another day",
+              "angle": "Close-up",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_3_extend_branch_shot_04",
+              "done": false,
+              "name": "ON-CAMERA · Explain the real reason for extending, only if comfortable sharing",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_3_extend_branch_shot_05",
+              "done": false,
+              "name": "ON-CAMERA · Transition into the optional Day 4 episode",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            }
+          ]
+        },
+        {
+          "id": "coorg_day_4_extra_episode",
+          "title": "Day 4 — Extra Day If You Extend",
+          "subtitle": "Optional extra episode · Open destination choice and final return",
+          "location": "Coorg / Kodagu → Bengaluru",
+          "duration": "",
+          "purpose": "This only applies if the stay is extended. Use any destination module, then record a final return when you actually decide to leave.",
+          "notes": "No place is pre-assigned. Keep the final departure flexible. Use destination scripts for researched facts. Plan the return around actual travel time, weather, fatigue and road conditions.",
+          "voiceover": "DAY 4 — OPTIONAL EXTRA EPISODE\n\n1. MORNING\n“Good morning—Coorg mein ek extra day mil gaya hai. Aaj list ka pressure nahi, bas route, weather aur time dekhkar decide karenge ki kaunsi jagah worth exploring hai.”\n\n2. CHOOSE THE DAY\n“Destination choose karte waqt main teen cheezein dekh raha hoon: kitna drive karna padega, location open hai ya nahi, aur usko enjoy karne ke liye kitna time bachega. Jo jagah choose hogi, uske context ke saath uska actual experience capture karenge.”\n\n3. EXPLORE / MEAL / CHANGE OF PLAN\n“Abhi [actual chosen place] se / par hain. Aaj [actual highlight] sabse interesting raha. Ab [actual meal / next step] ke baad decide karenge ki ek aur stop possible hai ya seedha return karna better rahega.”\n\n4. FINAL RETURN\n“Extra day ne trip ko ek aur chapter diya. Ab ghar ke liye nikal rahe hain / [actual departure decision]. Is episode ka end wahi hoga jo real trip mein hua, not a forced montage of places we didn't visit.”",
+          "oncamera": "A. MORNING INTRO\n“Coorg mein extra day mil gaya hai. Aaj jo bhi explore karenge, weather aur route ke hisaab se choose hoga. Chalo dekhte hain, aaj ka din kya story deta hai.”\n\nB. BEFORE CHOSEN DESTINATION\n“Today I’m choosing [destination] because [actual reason]. Pehle access / route check kar liya hai, ab dekhte hain experience kaisa hota hai.”\n\nC. OPTIONAL MIDDAY UPDATE\n“Abhi tak ka best part [actual moment] raha. Plan thoda flexible hai, isliye next stop route aur time confirm karne ke baad decide karenge.”\n\nD. FINAL OUTRO\n“Extra day ka trip yahin / [actual point] par complete ho raha hai. Coorg mein har jagah cover karna possible nahi, lekin kuch real moments ek achhi travel story ke liye enough hote hain.”",
+          "shots": [
+            {
+              "id": "coorg_day_4_extra_episode_shot_01",
+              "done": false,
+              "name": "ON-CAMERA · Optional Day 4 morning introduction",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_02",
+              "done": false,
+              "name": "VO · Actual morning surroundings / coffee / breakfast detail",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_03",
+              "done": false,
+              "name": "VO · Safe road transition to the chosen destination",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_04",
+              "done": false,
+              "name": "ON-CAMERA · Arrival line at the actual destination",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_05",
+              "done": false,
+              "name": "VO · Location-specific B-roll; use its separate destination module",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_06",
+              "done": false,
+              "name": "ON-CAMERA · Actual experience reaction and meal update",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_07",
+              "done": false,
+              "name": "VO · Checkout / luggage / final departure, when it happens",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_08",
+              "done": false,
+              "name": "ON-CAMERA · Final decision to leave, filmed while parked",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_09",
+              "done": false,
+              "name": "VO · Return-drive landscape with secure mount or passenger operation",
+              "angle": "Wide",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "voiceover"
+            },
+            {
+              "id": "coorg_day_4_extra_episode_shot_10",
+              "done": false,
+              "name": "ON-CAMERA · Final episode conclusion when safely parked",
+              "angle": "Medium",
+              "fps": "4K / 30 FPS",
+              "orientation": "Landscape",
+              "scriptType": "oncamera"
+            }
+          ]
+        }
+      ],
+      "episodeFrameworkVersion": 2
+    }
+  ]
+}
