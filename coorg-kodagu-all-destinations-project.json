@@ -23,7 +23,7 @@
             {
               "id": "coorgall_scene_01_hook_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Use only real trip footage: 2–3 strongest destination glimpses",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -32,7 +32,7 @@
             {
               "id": "coorgall_scene_01_hook_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Cutaway details: camera, car, road sign or bags",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -41,7 +41,7 @@
             {
               "id": "coorgall_scene_01_hook_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Natural sound teaser: engine start, road ambience or rain",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -50,7 +50,7 @@
             {
               "id": "coorgall_scene_01_hook_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Bengaluru → Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -59,7 +59,7 @@
             {
               "id": "coorgall_scene_01_hook_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Bengaluru → Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -68,7 +68,7 @@
             {
               "id": "coorgall_scene_01_hook_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Bengaluru → Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -90,7 +90,7 @@
             {
               "id": "coorgall_scene_02_departure_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Parked car keys, packed bags and camera setup",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -99,7 +99,7 @@
             {
               "id": "coorgall_scene_02_departure_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Seatbelt / dashboard detail while the car is parked",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -108,7 +108,7 @@
             {
               "id": "coorgall_scene_02_departure_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Bengaluru exit sign or traffic from a safe fixed mount",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -117,7 +117,7 @@
             {
               "id": "coorgall_scene_02_departure_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Bengaluru; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -126,7 +126,7 @@
             {
               "id": "coorgall_scene_02_departure_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Bengaluru; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -135,7 +135,7 @@
             {
               "id": "coorgall_scene_02_departure_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Bengaluru; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -157,7 +157,7 @@
             {
               "id": "coorgall_scene_03_road_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Safe mounted road view or passenger-shot landscape",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -166,7 +166,7 @@
             {
               "id": "coorgall_scene_03_road_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Change from urban streets to open road / greenery",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -175,7 +175,7 @@
             {
               "id": "coorgall_scene_03_road_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Road ambience with no talking for clean edit audio",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -184,7 +184,7 @@
             {
               "id": "coorgall_scene_03_road_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Bengaluru → Coorg / Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -193,7 +193,7 @@
             {
               "id": "coorgall_scene_03_road_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Bengaluru → Coorg / Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -202,7 +202,7 @@
             {
               "id": "coorgall_scene_03_road_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Bengaluru → Coorg / Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -224,7 +224,7 @@
             {
               "id": "coorgall_scene_04_checkin_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Property sign / exterior only if visible and permitted",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -233,7 +233,7 @@
             {
               "id": "coorgall_scene_04_checkin_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Room details and bags being set down",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -242,7 +242,7 @@
             {
               "id": "coorgall_scene_04_checkin_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · View from the stay or nearby surroundings as actually seen",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -251,7 +251,7 @@
             {
               "id": "coorgall_scene_04_checkin_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Amritara Ambatty Greens Resort, Bittangala / Virajpet, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -260,7 +260,7 @@
             {
               "id": "coorgall_scene_04_checkin_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Amritara Ambatty Greens Resort, Bittangala / Virajpet, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -269,7 +269,7 @@
             {
               "id": "coorgall_scene_04_checkin_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Amritara Ambatty Greens Resort, Bittangala / Virajpet, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -291,7 +291,7 @@
             {
               "id": "coorgall_scene_05_first-evening_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Actual first-evening light, rain, trees or surroundings",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -300,7 +300,7 @@
             {
               "id": "coorgall_scene_05_first-evening_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Coffee / meal / quiet detail if it happens naturally",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -309,7 +309,7 @@
             {
               "id": "coorgall_scene_05_first-evening_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · A still ambient shot to bridge into the next morning",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -318,7 +318,7 @@
             {
               "id": "coorgall_scene_05_first-evening_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Virajpet / stay area; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -327,7 +327,7 @@
             {
               "id": "coorgall_scene_05_first-evening_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Virajpet / stay area; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -336,7 +336,7 @@
             {
               "id": "coorgall_scene_05_first-evening_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Virajpet / stay area; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -358,7 +358,7 @@
             {
               "id": "coorgall_scene_06_dubare_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Camp sign / entrance only if public access is allowed",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -367,7 +367,7 @@
             {
               "id": "coorgall_scene_06_dubare_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Cauvery river and surrounding landscape from a permitted area",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -376,7 +376,7 @@
             {
               "id": "coorgall_scene_06_dubare_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Any authorised learning display or activity; no unauthorised close-ups",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -385,7 +385,7 @@
             {
               "id": "coorgall_scene_06_dubare_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Dubare Elephant Camp, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -394,7 +394,7 @@
             {
               "id": "coorgall_scene_06_dubare_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Dubare Elephant Camp, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -403,7 +403,7 @@
             {
               "id": "coorgall_scene_06_dubare_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Dubare Elephant Camp, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -425,7 +425,7 @@
             {
               "id": "coorgall_scene_07_harangi-camp_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Harangi camp / tree park sign from the public entrance",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -434,7 +434,7 @@
             {
               "id": "coorgall_scene_07_harangi-camp_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Tree park paths and foliage where visitors are allowed",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -443,7 +443,7 @@
             {
               "id": "coorgall_scene_07_harangi-camp_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Reservoir backwater or viewpoint only if open to visitors",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -452,7 +452,7 @@
             {
               "id": "coorgall_scene_07_harangi-camp_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Harangi Tree Park and Elephant Camp, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -461,7 +461,7 @@
             {
               "id": "coorgall_scene_07_harangi-camp_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Harangi Tree Park and Elephant Camp, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -470,7 +470,7 @@
             {
               "id": "coorgall_scene_07_harangi-camp_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Harangi Tree Park and Elephant Camp, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -492,7 +492,7 @@
             {
               "id": "coorgall_scene_08_harangi-reservoir_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Wide reservoir view from an authorised safe viewpoint",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -501,7 +501,7 @@
             {
               "id": "coorgall_scene_08_harangi-reservoir_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Water texture and reflections without approaching the bank",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -510,7 +510,7 @@
             {
               "id": "coorgall_scene_08_harangi-reservoir_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Slow pan that includes the reservoir and green surroundings",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -519,7 +519,7 @@
             {
               "id": "coorgall_scene_08_harangi-reservoir_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Harangi Reservoir, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -528,7 +528,7 @@
             {
               "id": "coorgall_scene_08_harangi-reservoir_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Harangi Reservoir, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -537,7 +537,7 @@
             {
               "id": "coorgall_scene_08_harangi-reservoir_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Harangi Reservoir, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -559,7 +559,7 @@
             {
               "id": "coorgall_scene_09_greenway-coffee_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Plantation rows or nature-walk path with guide permission",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -568,7 +568,7 @@
             {
               "id": "coorgall_scene_09_greenway-coffee_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Close details of leaves / coffee fruit only if actually present",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -577,7 +577,7 @@
             {
               "id": "coorgall_scene_09_greenway-coffee_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Guide demonstration or explanation only with consent",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -586,7 +586,7 @@
             {
               "id": "coorgall_scene_09_greenway-coffee_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Greenway Coffee Island Plantation Tour, 7th Hosakote / Suntikoppa area; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -595,7 +595,7 @@
             {
               "id": "coorgall_scene_09_greenway-coffee_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Greenway Coffee Island Plantation Tour, 7th Hosakote / Suntikoppa area; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -604,7 +604,7 @@
             {
               "id": "coorgall_scene_09_greenway-coffee_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Greenway Coffee Island Plantation Tour, 7th Hosakote / Suntikoppa area; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -626,7 +626,7 @@
             {
               "id": "coorgall_scene_10_hanging-bridge_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Bridge approach from the safe riverbank",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -635,7 +635,7 @@
             {
               "id": "coorgall_scene_10_hanging-bridge_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Bridge ropes / planks / structure from a stable position",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -644,7 +644,7 @@
             {
               "id": "coorgall_scene_10_hanging-bridge_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · River below or beside the bridge from a permitted viewpoint",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -653,7 +653,7 @@
             {
               "id": "coorgall_scene_10_hanging-bridge_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Coorg Hanging Bridge, Basavanahalli, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -662,7 +662,7 @@
             {
               "id": "coorgall_scene_10_hanging-bridge_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Coorg Hanging Bridge, Basavanahalli, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -671,7 +671,7 @@
             {
               "id": "coorgall_scene_10_hanging-bridge_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Coorg Hanging Bridge, Basavanahalli, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -693,7 +693,7 @@
             {
               "id": "coorgall_scene_11_adventure-park_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Adventure park sign and entrance if open",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -702,7 +702,7 @@
             {
               "id": "coorgall_scene_11_adventure-park_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Safety equipment / briefing before an activity",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -711,7 +711,7 @@
             {
               "id": "coorgall_scene_11_adventure-park_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Actual activity moment only if you participate and filming is allowed",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -720,7 +720,7 @@
             {
               "id": "coorgall_scene_11_adventure-park_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Coorg Adventure Park, BM Road near Nisargadhama, Baichanahalli; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -729,7 +729,7 @@
             {
               "id": "coorgall_scene_11_adventure-park_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Coorg Adventure Park, BM Road near Nisargadhama, Baichanahalli; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -738,7 +738,7 @@
             {
               "id": "coorgall_scene_11_adventure-park_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Coorg Adventure Park, BM Road near Nisargadhama, Baichanahalli; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -760,7 +760,7 @@
             {
               "id": "coorgall_scene_12_nisargadhama_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Bamboo grove or wooded path if park is open",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -769,7 +769,7 @@
             {
               "id": "coorgall_scene_12_nisargadhama_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · River / foliage texture from designated public paths",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -778,7 +778,7 @@
             {
               "id": "coorgall_scene_12_nisargadhama_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Rope bridge only if open; wide stable shot, no risky movement",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -787,7 +787,7 @@
             {
               "id": "coorgall_scene_12_nisargadhama_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Kaveri Nisargadhama, Kushalnagar, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -796,7 +796,7 @@
             {
               "id": "coorgall_scene_12_nisargadhama_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Kaveri Nisargadhama, Kushalnagar, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -805,7 +805,7 @@
             {
               "id": "coorgall_scene_12_nisargadhama_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Kaveri Nisargadhama, Kushalnagar, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -827,7 +827,7 @@
             {
               "id": "coorgall_scene_13_mandalpatti_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Road or arrival approach to build anticipation",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -836,7 +836,7 @@
             {
               "id": "coorgall_scene_13_mandalpatti_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Reveal of the real viewpoint visibility: clear, cloudy or misty",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -845,7 +845,7 @@
             {
               "id": "coorgall_scene_13_mandalpatti_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Cloud movement / ridgelines / surroundings from a safe viewing point",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -854,7 +854,7 @@
             {
               "id": "coorgall_scene_13_mandalpatti_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Mandalpatti Viewpoint, Madikeri; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -863,7 +863,7 @@
             {
               "id": "coorgall_scene_13_mandalpatti_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Mandalpatti Viewpoint, Madikeri; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -872,7 +872,7 @@
             {
               "id": "coorgall_scene_13_mandalpatti_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Mandalpatti Viewpoint, Madikeri; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -894,7 +894,7 @@
             {
               "id": "coorgall_scene_14_abbey-falls_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Approach path and greenery on the way to the viewing area",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -903,7 +903,7 @@
             {
               "id": "coorgall_scene_14_abbey-falls_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Waterfall wide from the designated viewing platform",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -912,7 +912,7 @@
             {
               "id": "coorgall_scene_14_abbey-falls_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · 10–15 seconds of clean waterfall sound with no dialogue",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -921,7 +921,7 @@
             {
               "id": "coorgall_scene_14_abbey-falls_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Abbey Falls, Madikeri; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -930,7 +930,7 @@
             {
               "id": "coorgall_scene_14_abbey-falls_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Abbey Falls, Madikeri; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -939,7 +939,7 @@
             {
               "id": "coorgall_scene_14_abbey-falls_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Abbey Falls, Madikeri; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -961,7 +961,7 @@
             {
               "id": "coorgall_scene_15_rajas-seat_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Garden / pavilion establishing shot",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -970,7 +970,7 @@
             {
               "id": "coorgall_scene_15_rajas-seat_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Valley view as it actually appears in current weather",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -979,7 +979,7 @@
             {
               "id": "coorgall_scene_15_rajas-seat_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Architecture, garden path or flowers for edit cutaways",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -988,7 +988,7 @@
             {
               "id": "coorgall_scene_15_rajas-seat_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Raja’s Seat, Madikeri; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -997,7 +997,7 @@
             {
               "id": "coorgall_scene_15_rajas-seat_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Raja’s Seat, Madikeri; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1006,7 +1006,7 @@
             {
               "id": "coorgall_scene_15_rajas-seat_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Raja’s Seat, Madikeri; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1028,7 +1028,7 @@
             {
               "id": "coorgall_scene_16_madikeri-fort_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Fort exterior / entrance and visible architecture",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1037,7 +1037,7 @@
             {
               "id": "coorgall_scene_16_madikeri-fort_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Wall, doorway or architectural texture where access is permitted",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1046,7 +1046,7 @@
             {
               "id": "coorgall_scene_16_madikeri-fort_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Information board only if photography is allowed and text is legible",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1055,7 +1055,7 @@
             {
               "id": "coorgall_scene_16_madikeri-fort_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Madikeri Fort, Karnataka; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1064,7 +1064,7 @@
             {
               "id": "coorgall_scene_16_madikeri-fort_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Madikeri Fort, Karnataka; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1073,7 +1073,7 @@
             {
               "id": "coorgall_scene_16_madikeri-fort_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Madikeri Fort, Karnataka; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1095,7 +1095,7 @@
             {
               "id": "coorgall_scene_17_rajas-tomb_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Respectful wide establishing frame of the tomb complex",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1104,7 +1104,7 @@
             {
               "id": "coorgall_scene_17_rajas-tomb_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Domes, symmetry or exterior architectural details",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1113,7 +1113,7 @@
             {
               "id": "coorgall_scene_17_rajas-tomb_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Surrounding grounds / stone details without filming visitors close-up",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1122,7 +1122,7 @@
             {
               "id": "coorgall_scene_17_rajas-tomb_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Raja’s Tomb (Gaddige), Madikeri; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1131,7 +1131,7 @@
             {
               "id": "coorgall_scene_17_rajas-tomb_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Raja’s Tomb (Gaddige), Madikeri; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1140,7 +1140,7 @@
             {
               "id": "coorgall_scene_17_rajas-tomb_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Raja’s Tomb (Gaddige), Madikeri; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1162,7 +1162,7 @@
             {
               "id": "coorgall_scene_18_bhagamandala_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Bhagandeshwara Temple exterior / sign where filming is allowed",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1171,7 +1171,7 @@
             {
               "id": "coorgall_scene_18_bhagamandala_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Triveni Sangama from a safe public riverside viewpoint",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1180,7 +1180,7 @@
             {
               "id": "coorgall_scene_18_bhagamandala_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · River movement and ambient sound; avoid intrusive filming of worshippers",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1189,7 +1189,7 @@
             {
               "id": "coorgall_scene_18_bhagamandala_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Bhagamandala & Triveni Sangama, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1198,7 +1198,7 @@
             {
               "id": "coorgall_scene_18_bhagamandala_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Bhagamandala & Triveni Sangama, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1207,7 +1207,7 @@
             {
               "id": "coorgall_scene_18_bhagamandala_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Bhagamandala & Triveni Sangama, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1229,7 +1229,7 @@
             {
               "id": "coorgall_scene_19_mallalli_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Trail / steps from the marked safe route",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1238,7 +1238,7 @@
             {
               "id": "coorgall_scene_19_mallalli_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Falls at distance from the official viewing area",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1247,7 +1247,7 @@
             {
               "id": "coorgall_scene_19_mallalli_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Clean forest and waterfall ambience; no edge or barrier crossing",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1256,7 +1256,7 @@
             {
               "id": "coorgall_scene_19_mallalli_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Mallalli Falls, Somwarpet, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1265,7 +1265,7 @@
             {
               "id": "coorgall_scene_19_mallalli_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Mallalli Falls, Somwarpet, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1274,7 +1274,7 @@
             {
               "id": "coorgall_scene_19_mallalli_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Mallalli Falls, Somwarpet, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1296,7 +1296,7 @@
             {
               "id": "coorgall_scene_20_chelavara_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Approach road / greenery only where safely stopped",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1305,7 +1305,7 @@
             {
               "id": "coorgall_scene_20_chelavara_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Waterfall view from a designated, open and safe area",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1314,7 +1314,7 @@
             {
               "id": "coorgall_scene_20_chelavara_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Natural sound and wet foliage details without entering the water",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1323,7 +1323,7 @@
             {
               "id": "coorgall_scene_20_chelavara_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Chelavara Waterfalls, Cheyyandane village, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1332,7 +1332,7 @@
             {
               "id": "coorgall_scene_20_chelavara_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Chelavara Waterfalls, Cheyyandane village, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1341,7 +1341,7 @@
             {
               "id": "coorgall_scene_20_chelavara_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Chelavara Waterfalls, Cheyyandane village, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1363,7 +1363,7 @@
             {
               "id": "coorgall_scene_21_iruppu_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Official trail signage / forest approach if open",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1372,7 +1372,7 @@
             {
               "id": "coorgall_scene_21_iruppu_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Waterfall from the authorised viewing area",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1381,7 +1381,7 @@
             {
               "id": "coorgall_scene_21_iruppu_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Temple exterior only if actually visited and filming is permitted",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1390,7 +1390,7 @@
             {
               "id": "coorgall_scene_21_iruppu_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Iruppu Falls, Kutta, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1399,7 +1399,7 @@
             {
               "id": "coorgall_scene_21_iruppu_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Iruppu Falls, Kutta, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1408,7 +1408,7 @@
             {
               "id": "coorgall_scene_21_iruppu_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Iruppu Falls, Kutta, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1430,7 +1430,7 @@
             {
               "id": "coorgall_scene_22_talakaveri_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Temple / approach establishing frame following local rules",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1439,7 +1439,7 @@
             {
               "id": "coorgall_scene_22_talakaveri_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Designated source-area view if permitted to film",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1448,7 +1448,7 @@
             {
               "id": "coorgall_scene_22_talakaveri_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Brahmagiri hill view: record actual visibility, including cloud cover",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1457,7 +1457,7 @@
             {
               "id": "coorgall_scene_22_talakaveri_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Talakaveri Temple, Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1466,7 +1466,7 @@
             {
               "id": "coorgall_scene_22_talakaveri_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Talakaveri Temple, Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1475,7 +1475,7 @@
             {
               "id": "coorgall_scene_22_talakaveri_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Talakaveri Temple, Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1497,7 +1497,7 @@
             {
               "id": "coorgall_scene_23_checkout-drive_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Packing bags / room departure only if permitted",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1506,7 +1506,7 @@
             {
               "id": "coorgall_scene_23_checkout-drive_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · Checkout / car loaded while parked",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1515,7 +1515,7 @@
             {
               "id": "coorgall_scene_23_checkout-drive_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Departure road sign or safely mounted road view",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1524,7 +1524,7 @@
             {
               "id": "coorgall_scene_23_checkout-drive_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Virajpet / Kodagu → Bengaluru; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1533,7 +1533,7 @@
             {
               "id": "coorgall_scene_23_checkout-drive_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Virajpet / Kodagu → Bengaluru; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1542,7 +1542,7 @@
             {
               "id": "coorgall_scene_23_checkout-drive_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Virajpet / Kodagu → Bengaluru; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1564,7 +1564,7 @@
             {
               "id": "coorgall_scene_24_outro_shot_01",
               "done": false,
-              "name": "VO · Establishing wide: reveal the location and hold steady for 6–8 seconds",
+              "name": "VO · Only revisit destinations actually visited on this trip",
               "angle": "Wide",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1573,7 +1573,7 @@
             {
               "id": "coorgall_scene_24_outro_shot_02",
               "done": false,
-              "name": "VO · Details and texture: capture water / trees / architecture / path relevant to this stop",
+              "name": "VO · One honest personal moment or quiet landscape hold",
               "angle": "Close-up",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1582,7 +1582,7 @@
             {
               "id": "coorgall_scene_24_outro_shot_03",
               "done": false,
-              "name": "VO · Natural sound / slow movement: record a clean ambience clip and one slow pan",
+              "name": "VO · Final car / road / sky shot with space for end screen",
               "angle": "POV",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1591,7 +1591,7 @@
             {
               "id": "coorgall_scene_24_outro_shot_04",
               "done": false,
-              "name": "ON-CAMERA · Main scripted delivery: medium shot; leave a pause before and after the line",
+              "name": "ON-CAMERA · Main script delivery at Coorg / Kodagu; medium stable frame, pause before/after",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1600,7 +1600,7 @@
             {
               "id": "coorgall_scene_24_outro_shot_05",
               "done": false,
-              "name": "ON-CAMERA · Personal reaction: one honest first impression in your own words",
+              "name": "ON-CAMERA · First honest reaction at Coorg / Kodagu; record immediately after looking around",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
@@ -1609,7 +1609,7 @@
             {
               "id": "coorgall_scene_24_outro_shot_06",
               "done": false,
-              "name": "ON-CAMERA · Transition / wrap: a short line that leads to the next actual stop",
+              "name": "ON-CAMERA · Wrap / transition from Coorg / Kodagu; say only what the next actual plan is",
               "angle": "Medium",
               "fps": "4K / 30 FPS",
               "orientation": "Landscape",
