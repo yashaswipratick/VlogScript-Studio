@@ -773,20 +773,37 @@ $('addScene').onclick=()=>{let s=newScene(cur().scenes.length+1);cur().scenes.pu
   }
  }catch(e){console.warn('Could not automatically load or upgrade the Coorg destination library. You can import coorg-kodagu-all-destinations-project.json from the repository.',e);}
  try{
-  const dailySeedKey='vlogscript-coorg-daily-framework-seeded-v1';
-  if(!localStorage.getItem(dailySeedKey)){
+  const dailySeedKey='vlogscript-coorg-daily-framework-seeded-v2';
+  const frameworkId='coorg-kodagu-daily-episode-framework-2026';
+  const existingFramework=projects.find(p=>p.id===frameworkId);
+  if(!localStorage.getItem(dailySeedKey)||!existingFramework||Number(existingFramework.episodeFrameworkVersion||0)<2){
    const response=await fetch('./coorg-kodagu-daily-episode-framework.json',{cache:'no-store'});
    if(!response.ok)throw new Error('Coorg daily episode framework fetch failed: '+response.status);
    const pack=await response.json();
    const incoming=Array.isArray(pack)?pack:(Array.isArray(pack.projects)?pack.projects:[]);
    let changed=false;
    incoming.forEach(starter=>{
-    if(starter&&starter.id&&!projects.some(p=>p.id===starter.id)){projects.push(starter);changed=true;}
+    if(!starter||!starter.id)return;
+    const existingIndex=projects.findIndex(p=>p.id===starter.id);
+    if(existingIndex<0){projects.push(starter);changed=true;return;}
+    const existing=projects[existingIndex];
+    if(Number(existing.episodeFrameworkVersion||0)>=Number(starter.episodeFrameworkVersion||1))return;
+    const previousModules=new Map((existing.scenes||[]).map(module=>[module.id,module]));
+    starter.scenes=(starter.scenes||[]).map(module=>{
+     const previous=previousModules.get(module.id);
+     const previousShots=new Map((previous?.shots||[]).map(shot=>[shot.id,shot]));
+     return {...module,shots:(module.shots||[]).map(shot=>{
+      const oldShot=previousShots.get(shot.id);
+      return {...shot,done:oldShot?!!oldShot.done:!!shot.done};
+     })};
+    });
+    if(existing.travelState)starter.travelState=existing.travelState;
+    projects[existingIndex]=starter;changed=true;
    });
    if(changed)localStorage.setItem(KEY,JSON.stringify(projects));
    localStorage.setItem(dailySeedKey,'1');
   }
- }catch(e){console.warn('Could not automatically load the Coorg daily episode framework. You can import coorg-kodagu-daily-episode-framework.json from the repository.',e);}
+ }}catch(e){console.warn('Could not automatically load the Coorg daily episode framework. You can import coorg-kodagu-daily-episode-framework.json from the repository.',e);}
  dash();
 }
 bootstrap();
