@@ -803,7 +803,7 @@ $('addScene').onclick=()=>{let s=newScene(cur().scenes.length+1);cur().scenes.pu
    if(changed)localStorage.setItem(KEY,JSON.stringify(projects));
    localStorage.setItem(dailySeedKey,'1');
   }
- }}catch(e){console.warn('Could not automatically load the Coorg daily episode framework. You can import coorg-kodagu-daily-episode-framework.json from the repository.',e);}
+ }catch(e){console.warn('Could not automatically load the Coorg daily episode framework. You can import coorg-kodagu-daily-episode-framework.json from the repository.',e);}
  dash();
 }
 bootstrap();
