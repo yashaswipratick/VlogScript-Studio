@@ -740,6 +740,22 @@ $('addScene').onclick=()=>{let s=newScene(cur().scenes.length+1);cur().scenes.pu
    localStorage.setItem(coorgSeedKey,'1');
   }
  }catch(e){console.warn('Could not automatically load the Coorg project. You can import coorg-kodagu-3-day-project.json from the repository.',e);}
+ try{
+  const allDestKey='vlogscript-coorg-all-destinations-seeded-v1';
+  if(!localStorage.getItem(allDestKey)){
+   const response=await fetch('./coorg-kodagu-all-destinations-project.json',{cache:'no-store'});
+   if(!response.ok)throw new Error('Coorg all-destinations file fetch failed: '+response.status);
+   const pack=await response.json();
+   const incoming=Array.isArray(pack)?pack:(Array.isArray(pack.projects)?pack.projects:[]);
+   let changed=false;
+   incoming.forEach(starter=>{
+    if(!starter||!starter.id)return;
+    if(!projects.some(p=>p.id===starter.id)){projects.push(starter);changed=true;}
+   });
+   if(changed)localStorage.setItem(KEY,JSON.stringify(projects));
+   localStorage.setItem(allDestKey,'1');
+  }
+ }catch(e){console.warn('Could not automatically load the Coorg all-destinations script library. You can import coorg-kodagu-all-destinations-project.json from the repository.',e);}
  dash();
 }
 bootstrap();
