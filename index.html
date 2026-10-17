@@ -741,10 +741,10 @@ $('addScene').onclick=()=>{let s=newScene(cur().scenes.length+1);cur().scenes.pu
   }
  }catch(e){console.warn('Could not automatically load the Coorg project. You can import coorg-kodagu-3-day-project.json from the repository.',e);}
  try{
-  const allDestKey='vlogscript-coorg-all-destinations-seeded-v4';
+  const allDestKey='vlogscript-coorg-all-destinations-seeded-v5';
   const destId='coorg-kodagu-all-destinations-oct-2026';
   const existingDest=projects.find(p=>p.id===destId);
-  if(!localStorage.getItem(allDestKey)||!existingDest||Number(existingDest.scriptLibraryVersion||0)<4){
+  if(!localStorage.getItem(allDestKey)||!existingDest||Number(existingDest.scriptLibraryVersion||0)<5){
    const response=await fetch('./coorg-kodagu-all-destinations-project.json',{cache:'no-store'});
    if(!response.ok)throw new Error('Coorg destination library fetch failed: '+response.status);
    const pack=await response.json();
